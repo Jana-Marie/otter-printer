@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:printer-otter-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLegal 14000 8500
