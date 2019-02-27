@@ -1276,43 +1276,43 @@ Text GLabel 11600 2000 0    60   Input ~ 0
 F5
 Text GLabel 12600 1650 3    60   Input ~ 0
 F5_HV
-Text GLabel 4250 5800 0    60   Input ~ 0
+Text GLabel 4250 5700 0    60   Input ~ 0
 S1_HV
-Text GLabel 4250 6000 0    60   Input ~ 0
-S2_HV
-Text GLabel 4250 5200 0    60   Input ~ 0
-S3_HV
 Text GLabel 4250 5900 0    60   Input ~ 0
-S4_HV
-Text GLabel 4300 5700 0    60   Input ~ 0
-S5_HV
-Text GLabel 4250 5300 0    60   Input ~ 0
-DCLK_HV
+S2_HV
 Text GLabel 4250 5100 0    60   Input ~ 0
-D1_HV
-Text GLabel 4250 4900 0    60   Input ~ 0
-D2_HV
+S3_HV
+Text GLabel 4250 5800 0    60   Input ~ 0
+S4_HV
 Text GLabel 4250 5600 0    60   Input ~ 0
-D3_HV
+S5_HV
+Text GLabel 4250 5200 0    60   Input ~ 0
+DCLK_HV
+Text GLabel 4250 5000 0    60   Input ~ 0
+D1_HV
+Text GLabel 4250 4800 0    60   Input ~ 0
+D2_HV
 Text GLabel 4250 5500 0    60   Input ~ 0
+D3_HV
+Text GLabel 4250 5400 0    60   Input ~ 0
 CSYNC_HV
 $Comp
 L power:GND #PWR0155
 U 1 1 5C893C32
-P 4250 4700
-F 0 "#PWR0155" H 4250 4450 50  0001 C CNN
-F 1 "GND" V 4255 4572 50  0000 R CNN
-F 2 "" H 4250 4700 50  0001 C CNN
-F 3 "" H 4250 4700 50  0001 C CNN
-	1    4250 4700
+P 4250 6100
+F 0 "#PWR0155" H 4250 5850 50  0001 C CNN
+F 1 "GND" V 4255 5972 50  0000 R CNN
+F 2 "" H 4250 6100 50  0001 C CNN
+F 3 "" H 4250 6100 50  0001 C CNN
+	1    4250 6100
 	0    1    1    0   
 $EndComp
-Text GLabel 4250 5400 0    60   Input ~ 0
+Text GLabel 4250 5300 0    60   Input ~ 0
 F5_HV
-Text GLabel 4250 4800 0    60   Input ~ 0
+Text GLabel 4250 4700 0    60   Input ~ 0
 F3_HV
-NoConn ~ 4250 5000
-NoConn ~ 4250 6100
+NoConn ~ 4250 4900
+NoConn ~ 4250 6000
 $Comp
 L Device:C C?
 U 1 1 5C8FBAE4
