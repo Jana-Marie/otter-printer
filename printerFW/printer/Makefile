@@ -65,7 +65,8 @@ Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c \
 Src/usb_device.c \
 Src/usbd_conf.c \
 Src/usbd_desc.c \
-Src/usbd_cdc_if.c
+Src/usbd_cdc_if.c \
+Src/init.c
 
 # ASM sources
 ASM_SOURCES =  \
