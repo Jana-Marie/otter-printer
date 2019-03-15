@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccyBn0vl.s 			page 1
+ARM GAS  /tmp/ccPRA22F.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -17,13 +17,15 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
   14              		.cfi_sections	.debug_frame
   15              		.section	.text.UARTEx_Wakeup_AddressConfig,"ax",%progbits
   16              		.align	1
-  17              		.syntax unified
-  18              		.code	16
-  19              		.thumb_func
-  20              		.fpu softvfp
-  22              	UARTEx_Wakeup_AddressConfig:
-  23              	.LFB45:
-  24              		.file 1 "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c"
+  17              		.arch armv6s-m
+  18              		.syntax unified
+  19              		.code	16
+  20              		.thumb_func
+  21              		.fpu softvfp
+  23              	UARTEx_Wakeup_AddressConfig:
+  24              	.LVL0:
+  25              	.LFB45:
+  26              		.file 1 "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c"
    1:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** /**
    2:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   ******************************************************************************
    3:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @file    stm32f0xx_hal_uart_ex.c
@@ -56,11 +58,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * are permitted provided that the following conditions are met:
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *   1. Redistributions of source code must retain the above copyright notice,
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      this list of conditions and the following disclaimer.
+ARM GAS  /tmp/ccPRA22F.s 			page 2
+
+
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
   34:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      this list of conditions and the following disclaimer in the documentation
-ARM GAS  /tmp/ccyBn0vl.s 			page 2
-
-
   35:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      and/or other materials provided with the distribution.
   36:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *   3. Neither the name of STMicroelectronics nor the names of its contributors
   37:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      may be used to endorse or promote products derived from this software
@@ -116,11 +118,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
   87:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @{
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   */
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 3
+
+
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** /** @defgroup UARTEx_Exported_Functions_Group1 Extended Initialization and de-initialization functi
   91:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @brief    Extended Initialization and Configuration Functions
-ARM GAS  /tmp/ccyBn0vl.s 			page 3
-
-
   92:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *
   93:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** @verbatim
   94:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** ===============================================================================
@@ -176,11 +178,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  144:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |         1         |     1     |    | SB | 8-bit data | PB | STB |     |
  145:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       +-----------------------------------------------------------------------+
  146:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |  M1 bit |  M0 bit |  PCE bit  |             UART frame                |
+ARM GAS  /tmp/ccPRA22F.s 			page 4
+
+
  147:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |---------|---------|-----------|---------------------------------------|
  148:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |    0    |    0    |     0     |    | SB |    8 bit data   | STB |     |
-ARM GAS  /tmp/ccyBn0vl.s 			page 4
-
-
  149:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |---------|---------|-----------|---------------------------------------|
  150:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |    0    |    0    |     1     |    | SB | 7 bit data | PB | STB |     |
  151:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |---------|---------|-----------|---------------------------------------|
@@ -236,11 +238,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  201:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   assert_param(IS_UART_DEASSERTIONTIME(DeassertionTime));
  202:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if(huart->gState == HAL_UART_STATE_RESET)
+ARM GAS  /tmp/ccPRA22F.s 			page 5
+
+
  204:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  205:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     /* Allocate lock resource and initialize it */
-ARM GAS  /tmp/ccyBn0vl.s 			page 5
-
-
  206:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     huart->Lock = HAL_UNLOCKED;
  207:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  208:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     /* Init the low level hardware : GPIO, CLOCK, CORTEX */
@@ -296,11 +298,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  258:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** {
  259:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
  260:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if(huart == NULL)
+ARM GAS  /tmp/ccPRA22F.s 			page 6
+
+
  261:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  262:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     return HAL_ERROR;
-ARM GAS  /tmp/ccyBn0vl.s 			page 6
-
-
  263:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
  264:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  265:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the LIN UART instance */
@@ -356,11 +358,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  315:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Set the USART LIN Break detection length. */
  316:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR2, USART_CR2_LBDL, BreakDetectLength);
  317:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 7
+
+
  318:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Enable the Peripheral */
  319:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_UART_ENABLE(huart);
-ARM GAS  /tmp/ccyBn0vl.s 			page 7
-
-
  320:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  321:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* TEACK and/or REACK to check before moving huart->gState and huart->RxState to Ready */
  322:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   return (UART_CheckIdleState(huart));
@@ -416,11 +418,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  372:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** @verbatim
  373:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****  ===============================================================================
  374:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****                       ##### Peripheral Control functions #####
+ARM GAS  /tmp/ccPRA22F.s 			page 8
+
+
  375:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****  ===============================================================================
  376:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     [..]
-ARM GAS  /tmp/ccyBn0vl.s 			page 8
-
-
  377:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     This subsection provides extended functions allowing to control the UART.         
  378:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****      (+) HAL_UARTEx_StopModeWakeUpSourceConfig() API sets Wakeup from Stop mode interrupt flag sele
  379:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****      (+) HAL_UARTEx_EnableStopMode() API allows the UART to wake up the MCU from Stop mode as 
@@ -476,11 +478,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  429:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_UART_ENABLE(huart);
  430:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  431:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Init tickstart for timeout managment*/
+ARM GAS  /tmp/ccPRA22F.s 			page 9
+
+
  432:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   tickstart = HAL_GetTick();
  433:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccyBn0vl.s 			page 9
-
-
  434:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Wait until REACK flag is set */
  435:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if(UART_WaitOnFlagUntilTimeout(huart, USART_ISR_REACK, RESET, tickstart, HAL_UART_TIMEOUT_VALUE) 
  436:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
@@ -536,11 +538,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  486:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parameter */
  487:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   assert_param(IS_UART_WAKEUP_FROMSTOP_INSTANCE(huart->Instance));
  488:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 10
+
+
  489:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Process Locked */
  490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
-ARM GAS  /tmp/ccyBn0vl.s 			page 10
-
-
  491:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  492:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   huart->gState = HAL_UART_STATE_BUSY;
  493:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -596,11 +598,11 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  543:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
  544:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  545:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 11
+
+
  546:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #if !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F070x6)&
  547:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** /**
-ARM GAS  /tmp/ccyBn0vl.s 			page 11
-
-
  548:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @brief  Transmit break characters.
  549:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @param  huart UART handle.
  550:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @retval HAL status
@@ -648,904 +650,1104 @@ ARM GAS  /tmp/ccyBn0vl.s 			page 1
  592:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   */
  593:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** static void UARTEx_Wakeup_AddressConfig(UART_HandleTypeDef *huart, UART_WakeUpTypeDef WakeUpSelecti
  594:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** {
-  25              		.loc 1 594 0
-  26              		.cfi_startproc
-  27              		@ args = 0, pretend = 0, frame = 8
-  28              		@ frame_needed = 0, uses_anonymous_args = 0
-  29              		@ link register save eliminated.
-  30              	.LVL0:
-  31 0000 82B0     		sub	sp, sp, #8
-  32              	.LCFI0:
-  33              		.cfi_def_cfa_offset 8
-  34 0002 0091     		str	r1, [sp]
-ARM GAS  /tmp/ccyBn0vl.s 			page 12
+  27              		.loc 1 594 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 594 1 is_stmt 0 view .LVU1
+  33 0000 82B0     		sub	sp, sp, #8
+  34              	.LCFI0:
+ARM GAS  /tmp/ccPRA22F.s 			page 12
 
 
-  35 0004 0192     		str	r2, [sp, #4]
+  35              		.cfi_def_cfa_offset 8
+  36 0002 0091     		str	r1, [sp]
+  37 0004 0192     		str	r2, [sp, #4]
  595:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parmeters */
  596:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   assert_param(IS_UART_WAKEUP_FROMSTOP_INSTANCE(huart->Instance));
+  38              		.loc 1 596 3 is_stmt 1 view .LVU2
  597:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   assert_param(IS_UART_ADDRESSLENGTH_DETECT(WakeUpSelection.AddressLength));
+  39              		.loc 1 597 3 view .LVU3
  598:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  599:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Set the USART address length */
  600:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR2, USART_CR2_ADDM7, WakeUpSelection.AddressLength);
-  36              		.loc 1 600 0
-  37 0006 0268     		ldr	r2, [r0]
-  38 0008 5368     		ldr	r3, [r2, #4]
-  39 000a 1021     		movs	r1, #16
-  40 000c 8B43     		bics	r3, r1
-  41 000e 6946     		mov	r1, sp
-  42 0010 8988     		ldrh	r1, [r1, #4]
-  43 0012 0B43     		orrs	r3, r1
-  44 0014 5360     		str	r3, [r2, #4]
+  40              		.loc 1 600 3 view .LVU4
+  41 0006 0268     		ldr	r2, [r0]
+  42 0008 5368     		ldr	r3, [r2, #4]
+  43 000a 1021     		movs	r1, #16
+  44 000c 8B43     		bics	r3, r1
+  45 000e 6946     		mov	r1, sp
+  46 0010 8988     		ldrh	r1, [r1, #4]
+  47 0012 0B43     		orrs	r3, r1
+  48 0014 5360     		str	r3, [r2, #4]
  601:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  602:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Set the USART address node */
  603:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR2, USART_CR2_ADD, ((uint32_t)WakeUpSelection.Address << UART_CR2_AD
-  45              		.loc 1 603 0
-  46 0016 0168     		ldr	r1, [r0]
-  47 0018 4B68     		ldr	r3, [r1, #4]
-  48 001a 1B02     		lsls	r3, r3, #8
-  49 001c 1B0A     		lsrs	r3, r3, #8
-  50 001e 6A46     		mov	r2, sp
-  51 0020 9279     		ldrb	r2, [r2, #6]
-  52 0022 1206     		lsls	r2, r2, #24
-  53 0024 1343     		orrs	r3, r2
-  54 0026 4B60     		str	r3, [r1, #4]
+  49              		.loc 1 603 3 view .LVU5
+  50 0016 0168     		ldr	r1, [r0]
+  51 0018 4B68     		ldr	r3, [r1, #4]
+  52 001a 1B02     		lsls	r3, r3, #8
+  53 001c 1B0A     		lsrs	r3, r3, #8
+  54 001e 6A46     		mov	r2, sp
+  55 0020 9279     		ldrb	r2, [r2, #6]
+  56 0022 1206     		lsls	r2, r2, #24
+  57 0024 1343     		orrs	r3, r2
+  58 0026 4B60     		str	r3, [r1, #4]
  604:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
-  55              		.loc 1 604 0
-  56 0028 02B0     		add	sp, sp, #8
-  57              		@ sp needed
-  58 002a 7047     		bx	lr
-  59              		.cfi_endproc
-  60              	.LFE45:
-  62              		.section	.text.HAL_RS485Ex_Init,"ax",%progbits
-  63              		.align	1
-  64              		.global	HAL_RS485Ex_Init
-  65              		.syntax unified
-  66              		.code	16
-  67              		.thumb_func
-  68              		.fpu softvfp
-  70              	HAL_RS485Ex_Init:
-  71              	.LFB37:
+  59              		.loc 1 604 1 is_stmt 0 view .LVU6
+  60 0028 02B0     		add	sp, sp, #8
+  61              		@ sp needed
+  62 002a 7047     		bx	lr
+  63              		.cfi_endproc
+  64              	.LFE45:
+  66              		.section	.text.HAL_RS485Ex_Init,"ax",%progbits
+  67              		.align	1
+  68              		.global	HAL_RS485Ex_Init
+  69              		.syntax unified
+  70              		.code	16
+  71              		.thumb_func
+  72              		.fpu softvfp
+  74              	HAL_RS485Ex_Init:
+  75              	.LVL1:
+  76              	.LFB37:
  183:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   uint32_t temp = 0x0U;
-  72              		.loc 1 183 0
-  73              		.cfi_startproc
-  74              		@ args = 0, pretend = 0, frame = 0
-  75              		@ frame_needed = 0, uses_anonymous_args = 0
-  76              	.LVL1:
-  77 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
-  78              	.LCFI1:
-  79              		.cfi_def_cfa_offset 24
-  80              		.cfi_offset 3, -24
-  81              		.cfi_offset 4, -20
-  82              		.cfi_offset 5, -16
-ARM GAS  /tmp/ccyBn0vl.s 			page 13
+  77              		.loc 1 183 1 is_stmt 1 view -0
+  78              		.cfi_startproc
+  79              		@ args = 0, pretend = 0, frame = 0
+  80              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   uint32_t temp = 0x0U;
+  81              		.loc 1 183 1 is_stmt 0 view .LVU8
+ARM GAS  /tmp/ccPRA22F.s 			page 13
 
 
-  83              		.cfi_offset 6, -12
-  84              		.cfi_offset 7, -8
-  85              		.cfi_offset 14, -4
-  86 0002 0400     		movs	r4, r0
-  87 0004 0F00     		movs	r7, r1
-  88 0006 1600     		movs	r6, r2
-  89 0008 1D00     		movs	r5, r3
-  90              	.LVL2:
+  82 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  83              	.LCFI1:
+  84              		.cfi_def_cfa_offset 24
+  85              		.cfi_offset 3, -24
+  86              		.cfi_offset 4, -20
+  87              		.cfi_offset 5, -16
+  88              		.cfi_offset 6, -12
+  89              		.cfi_offset 7, -8
+  90              		.cfi_offset 14, -4
+  91 0002 0400     		movs	r4, r0
+  92 0004 0F00     		movs	r7, r1
+  93 0006 1600     		movs	r6, r2
+  94 0008 1D00     		movs	r5, r3
+ 184:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+  95              		.loc 1 184 3 is_stmt 1 view .LVU9
+  96              	.LVL2:
  187:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
-  91              		.loc 1 187 0
-  92 000a 0028     		cmp	r0, #0
-  93 000c 3BD0     		beq	.L6
+  97              		.loc 1 187 3 view .LVU10
+ 187:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+  98              		.loc 1 187 5 is_stmt 0 view .LVU11
+  99 000a 0028     		cmp	r0, #0
+ 100 000c 3BD0     		beq	.L6
+ 192:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 101              		.loc 1 192 3 is_stmt 1 view .LVU12
+ 195:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 102              		.loc 1 195 3 view .LVU13
+ 198:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 103              		.loc 1 198 3 view .LVU14
+ 201:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 104              		.loc 1 201 3 view .LVU15
  203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
-  94              		.loc 1 203 0
-  95 000e 6923     		movs	r3, #105
-  96              	.LVL3:
-  97 0010 C35C     		ldrb	r3, [r0, r3]
-  98 0012 002B     		cmp	r3, #0
-  99 0014 2DD0     		beq	.L7
- 100              	.LVL4:
- 101              	.L4:
+ 105              		.loc 1 203 3 view .LVU16
+ 203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 106              		.loc 1 203 11 is_stmt 0 view .LVU17
+ 107 000e 6923     		movs	r3, #105
+ 108              	.LVL3:
+ 203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 109              		.loc 1 203 11 view .LVU18
+ 110 0010 C35C     		ldrb	r3, [r0, r3]
+ 203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 111              		.loc 1 203 5 view .LVU19
+ 112 0012 002B     		cmp	r3, #0
+ 113 0014 2DD0     		beq	.L7
+ 114              	.LVL4:
+ 115              	.L4:
  212:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 102              		.loc 1 212 0
- 103 0016 6923     		movs	r3, #105
- 104 0018 2422     		movs	r2, #36
- 105 001a E254     		strb	r2, [r4, r3]
+ 116              		.loc 1 212 3 is_stmt 1 view .LVU20
+ 212:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 117              		.loc 1 212 17 is_stmt 0 view .LVU21
+ 118 0016 6923     		movs	r3, #105
+ 119 0018 2422     		movs	r2, #36
+ 120 001a E254     		strb	r2, [r4, r3]
  215:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 106              		.loc 1 215 0
- 107 001c 2268     		ldr	r2, [r4]
- 108 001e 1368     		ldr	r3, [r2]
- 109 0020 0121     		movs	r1, #1
- 110 0022 8B43     		bics	r3, r1
- 111 0024 1360     		str	r3, [r2]
+ 121              		.loc 1 215 3 is_stmt 1 view .LVU22
+ 122 001c 2268     		ldr	r2, [r4]
+ 123 001e 1368     		ldr	r3, [r2]
+ 124 0020 0121     		movs	r1, #1
+ARM GAS  /tmp/ccPRA22F.s 			page 14
+
+
+ 125 0022 8B43     		bics	r3, r1
+ 126 0024 1360     		str	r3, [r2]
  218:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 112              		.loc 1 218 0
- 113 0026 2000     		movs	r0, r4
- 114 0028 FFF7FEFF 		bl	UART_SetConfig
- 115              	.LVL5:
- 116 002c 0128     		cmp	r0, #1
- 117 002e 1FD0     		beq	.L3
+ 127              		.loc 1 218 3 view .LVU23
+ 218:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 128              		.loc 1 218 7 is_stmt 0 view .LVU24
+ 129 0026 2000     		movs	r0, r4
+ 130 0028 FFF7FEFF 		bl	UART_SetConfig
+ 131              	.LVL5:
+ 218:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 132              		.loc 1 218 6 view .LVU25
+ 133 002c 0128     		cmp	r0, #1
+ 134 002e 1FD0     		beq	.L3
  223:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 118              		.loc 1 223 0
- 119 0030 636A     		ldr	r3, [r4, #36]
- 120 0032 002B     		cmp	r3, #0
- 121 0034 23D1     		bne	.L8
- 122              	.L5:
+ 135              		.loc 1 223 3 is_stmt 1 view .LVU26
+ 223:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 136              		.loc 1 223 5 is_stmt 0 view .LVU27
+ 137 0030 636A     		ldr	r3, [r4, #36]
+ 138 0032 002B     		cmp	r3, #0
+ 139 0034 23D1     		bne	.L8
+ 140              	.L5:
  229:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 123              		.loc 1 229 0
- 124 0036 2268     		ldr	r2, [r4]
- 125 0038 9168     		ldr	r1, [r2, #8]
- 126 003a 8023     		movs	r3, #128
- 127 003c DB01     		lsls	r3, r3, #7
- 128 003e 0B43     		orrs	r3, r1
- 129 0040 9360     		str	r3, [r2, #8]
+ 141              		.loc 1 229 3 is_stmt 1 view .LVU28
+ 142 0036 2268     		ldr	r2, [r4]
+ 143 0038 9168     		ldr	r1, [r2, #8]
+ 144 003a 8023     		movs	r3, #128
+ 145 003c DB01     		lsls	r3, r3, #7
+ 146 003e 0B43     		orrs	r3, r1
+ 147 0040 9360     		str	r3, [r2, #8]
  232:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 130              		.loc 1 232 0
- 131 0042 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccyBn0vl.s 			page 14
-
-
- 132 0044 9368     		ldr	r3, [r2, #8]
- 133 0046 1149     		ldr	r1, .L9
- 134 0048 0B40     		ands	r3, r1
- 135 004a 1F43     		orrs	r7, r3
- 136              	.LVL6:
- 137 004c 9760     		str	r7, [r2, #8]
+ 148              		.loc 1 232 3 view .LVU29
+ 149 0042 2268     		ldr	r2, [r4]
+ 150 0044 9368     		ldr	r3, [r2, #8]
+ 151 0046 1149     		ldr	r1, .L9
+ 152 0048 0B40     		ands	r3, r1
+ 153 004a 1F43     		orrs	r7, r3
+ 154              	.LVL6:
+ 232:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 155              		.loc 1 232 3 is_stmt 0 view .LVU30
+ 156 004c 9760     		str	r7, [r2, #8]
  235:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   temp |= (DeassertionTime << UART_CR1_DEDT_ADDRESS_LSB_POS);
- 138              		.loc 1 235 0
- 139 004e 7605     		lsls	r6, r6, #21
- 140              	.LVL7:
+ 157              		.loc 1 235 3 is_stmt 1 view .LVU31
+ 235:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   temp |= (DeassertionTime << UART_CR1_DEDT_ADDRESS_LSB_POS);
+ 158              		.loc 1 235 8 is_stmt 0 view .LVU32
+ 159 004e 7605     		lsls	r6, r6, #21
+ 160              	.LVL7:
  236:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT|USART_CR1_DEAT), temp);
- 141              		.loc 1 236 0
- 142 0050 2D04     		lsls	r5, r5, #16
- 143              	.LVL8:
- 144 0052 2E43     		orrs	r6, r5
- 145              	.LVL9:
+ 161              		.loc 1 236 3 is_stmt 1 view .LVU33
+ 236:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT|USART_CR1_DEAT), temp);
+ 162              		.loc 1 236 28 is_stmt 0 view .LVU34
+ 163 0050 2D04     		lsls	r5, r5, #16
+ 164              	.LVL8:
+ 236:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT|USART_CR1_DEAT), temp);
+ 165              		.loc 1 236 8 view .LVU35
+ 166 0052 2E43     		orrs	r6, r5
+ 167              	.LVL9:
  237:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 146              		.loc 1 237 0
- 147 0054 2368     		ldr	r3, [r4]
- 148 0056 1D68     		ldr	r5, [r3]
- 149 0058 0D4A     		ldr	r2, .L9+4
- 150 005a 1540     		ands	r5, r2
- 151 005c 2E43     		orrs	r6, r5
- 152              	.LVL10:
- 153 005e 1E60     		str	r6, [r3]
+ARM GAS  /tmp/ccPRA22F.s 			page 15
+
+
+ 168              		.loc 1 237 3 is_stmt 1 view .LVU36
+ 169 0054 2368     		ldr	r3, [r4]
+ 170 0056 1D68     		ldr	r5, [r3]
+ 171 0058 0D4A     		ldr	r2, .L9+4
+ 172 005a 1540     		ands	r5, r2
+ 173 005c 2E43     		orrs	r6, r5
+ 174              	.LVL10:
+ 237:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 175              		.loc 1 237 3 is_stmt 0 view .LVU37
+ 176 005e 1E60     		str	r6, [r3]
  240:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 154              		.loc 1 240 0
- 155 0060 2268     		ldr	r2, [r4]
- 156 0062 1368     		ldr	r3, [r2]
- 157 0064 0121     		movs	r1, #1
- 158 0066 0B43     		orrs	r3, r1
- 159 0068 1360     		str	r3, [r2]
+ 177              		.loc 1 240 3 is_stmt 1 view .LVU38
+ 178 0060 2268     		ldr	r2, [r4]
+ 179 0062 1368     		ldr	r3, [r2]
+ 180 0064 0121     		movs	r1, #1
+ 181 0066 0B43     		orrs	r3, r1
+ 182 0068 1360     		str	r3, [r2]
  243:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 160              		.loc 1 243 0
- 161 006a 2000     		movs	r0, r4
- 162 006c FFF7FEFF 		bl	UART_CheckIdleState
- 163              	.LVL11:
- 164              	.L3:
+ 183              		.loc 1 243 3 view .LVU39
+ 243:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 184              		.loc 1 243 11 is_stmt 0 view .LVU40
+ 185 006a 2000     		movs	r0, r4
+ 186 006c FFF7FEFF 		bl	UART_CheckIdleState
+ 187              	.LVL11:
+ 188              	.L3:
  244:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 165              		.loc 1 244 0
- 166              		@ sp needed
- 167              	.LVL12:
- 168 0070 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 169              	.LVL13:
- 170              	.L7:
+ 189              		.loc 1 244 1 view .LVU41
+ 190              		@ sp needed
+ 191              	.LVL12:
+ 244:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 192              		.loc 1 244 1 view .LVU42
+ 193 0070 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 194              	.LVL13:
+ 195              	.L7:
  206:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 171              		.loc 1 206 0
- 172 0072 6833     		adds	r3, r3, #104
- 173 0074 0022     		movs	r2, #0
- 174              	.LVL14:
- 175 0076 C254     		strb	r2, [r0, r3]
+ 196              		.loc 1 206 5 is_stmt 1 view .LVU43
+ 206:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 197              		.loc 1 206 17 is_stmt 0 view .LVU44
+ 198 0072 6833     		adds	r3, r3, #104
+ 199 0074 0022     		movs	r2, #0
+ 200              	.LVL14:
+ 206:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 201              		.loc 1 206 17 view .LVU45
+ 202 0076 C254     		strb	r2, [r0, r3]
  209:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 176              		.loc 1 209 0
- 177 0078 FFF7FEFF 		bl	HAL_UART_MspInit
- 178              	.LVL15:
- 179 007c CBE7     		b	.L4
- 180              	.L8:
-ARM GAS  /tmp/ccyBn0vl.s 			page 15
-
-
+ 203              		.loc 1 209 5 is_stmt 1 view .LVU46
+ 204 0078 FFF7FEFF 		bl	HAL_UART_MspInit
+ 205              	.LVL15:
+ 209:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 206              		.loc 1 209 5 is_stmt 0 view .LVU47
+ 207 007c CBE7     		b	.L4
+ 208              	.L8:
  225:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 181              		.loc 1 225 0
- 182 007e 2000     		movs	r0, r4
- 183 0080 FFF7FEFF 		bl	UART_AdvFeatureConfig
- 184              	.LVL16:
- 185 0084 D7E7     		b	.L5
- 186              	.LVL17:
- 187              	.L6:
+ 209              		.loc 1 225 5 is_stmt 1 view .LVU48
+ 210 007e 2000     		movs	r0, r4
+ 211 0080 FFF7FEFF 		bl	UART_AdvFeatureConfig
+ 212              	.LVL16:
+ARM GAS  /tmp/ccPRA22F.s 			page 16
+
+
+ 213 0084 D7E7     		b	.L5
+ 214              	.LVL17:
+ 215              	.L6:
  189:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 188              		.loc 1 189 0
- 189 0086 0120     		movs	r0, #1
- 190              	.LVL18:
- 191 0088 F2E7     		b	.L3
- 192              	.L10:
- 193 008a C046     		.align	2
- 194              	.L9:
- 195 008c FF7FFFFF 		.word	-32769
- 196 0090 FFFF00FC 		.word	-67043329
- 197              		.cfi_endproc
- 198              	.LFE37:
- 200              		.section	.text.HAL_LIN_Init,"ax",%progbits
- 201              		.align	1
- 202              		.global	HAL_LIN_Init
- 203              		.syntax unified
- 204              		.code	16
- 205              		.thumb_func
- 206              		.fpu softvfp
- 208              	HAL_LIN_Init:
- 209              	.LFB38:
+ 216              		.loc 1 189 12 is_stmt 0 view .LVU49
+ 217 0086 0120     		movs	r0, #1
+ 218              	.LVL18:
+ 189:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 219              		.loc 1 189 12 view .LVU50
+ 220 0088 F2E7     		b	.L3
+ 221              	.L10:
+ 222 008a C046     		.align	2
+ 223              	.L9:
+ 224 008c FF7FFFFF 		.word	-32769
+ 225 0090 FFFF00FC 		.word	-67043329
+ 226              		.cfi_endproc
+ 227              	.LFE37:
+ 229              		.section	.text.HAL_LIN_Init,"ax",%progbits
+ 230              		.align	1
+ 231              		.global	HAL_LIN_Init
+ 232              		.syntax unified
+ 233              		.code	16
+ 234              		.thumb_func
+ 235              		.fpu softvfp
+ 237              	HAL_LIN_Init:
+ 238              	.LVL19:
+ 239              	.LFB38:
  258:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
- 210              		.loc 1 258 0
- 211              		.cfi_startproc
- 212              		@ args = 0, pretend = 0, frame = 0
- 213              		@ frame_needed = 0, uses_anonymous_args = 0
- 214              	.LVL19:
- 215 0000 70B5     		push	{r4, r5, r6, lr}
- 216              	.LCFI2:
- 217              		.cfi_def_cfa_offset 16
- 218              		.cfi_offset 4, -16
- 219              		.cfi_offset 5, -12
- 220              		.cfi_offset 6, -8
- 221              		.cfi_offset 14, -4
- 222 0002 0400     		movs	r4, r0
- 223 0004 0D00     		movs	r5, r1
+ 240              		.loc 1 258 1 is_stmt 1 view -0
+ 241              		.cfi_startproc
+ 242              		@ args = 0, pretend = 0, frame = 0
+ 243              		@ frame_needed = 0, uses_anonymous_args = 0
+ 258:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
+ 244              		.loc 1 258 1 is_stmt 0 view .LVU52
+ 245 0000 70B5     		push	{r4, r5, r6, lr}
+ 246              	.LCFI2:
+ 247              		.cfi_def_cfa_offset 16
+ 248              		.cfi_offset 4, -16
+ 249              		.cfi_offset 5, -12
+ 250              		.cfi_offset 6, -8
+ 251              		.cfi_offset 14, -4
+ 252 0002 0400     		movs	r4, r0
+ 253 0004 0D00     		movs	r5, r1
  260:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 224              		.loc 1 260 0
- 225 0006 0028     		cmp	r0, #0
- 226 0008 44D0     		beq	.L15
+ 254              		.loc 1 260 3 is_stmt 1 view .LVU53
+ 260:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 255              		.loc 1 260 5 is_stmt 0 view .LVU54
+ 256 0006 0028     		cmp	r0, #0
+ 257 0008 44D0     		beq	.L15
+ 266:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the Break detection length parameter */
+ 258              		.loc 1 266 3 is_stmt 1 view .LVU55
+ 268:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 259              		.loc 1 268 3 view .LVU56
  271:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 227              		.loc 1 271 0
- 228 000a 8023     		movs	r3, #128
- 229 000c 1B02     		lsls	r3, r3, #8
- 230 000e C269     		ldr	r2, [r0, #28]
- 231 0010 9A42     		cmp	r2, r3
- 232 0012 41D0     		beq	.L16
+ 260              		.loc 1 271 3 view .LVU57
+ 271:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 261              		.loc 1 271 5 is_stmt 0 view .LVU58
+ARM GAS  /tmp/ccPRA22F.s 			page 17
+
+
+ 262 000a 8023     		movs	r3, #128
+ 263 000c 1B02     		lsls	r3, r3, #8
+ 264 000e C269     		ldr	r2, [r0, #28]
+ 265 0010 9A42     		cmp	r2, r3
+ 266 0012 41D0     		beq	.L16
  276:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 233              		.loc 1 276 0
-ARM GAS  /tmp/ccyBn0vl.s 			page 16
-
-
- 234 0014 8368     		ldr	r3, [r0, #8]
- 235 0016 002B     		cmp	r3, #0
- 236 0018 40D1     		bne	.L17
+ 267              		.loc 1 276 3 is_stmt 1 view .LVU59
+ 276:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 268              		.loc 1 276 5 is_stmt 0 view .LVU60
+ 269 0014 8368     		ldr	r3, [r0, #8]
+ 270 0016 002B     		cmp	r3, #0
+ 271 0018 40D1     		bne	.L17
  281:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 237              		.loc 1 281 0
- 238 001a 6933     		adds	r3, r3, #105
- 239 001c C35C     		ldrb	r3, [r0, r3]
- 240 001e 002B     		cmp	r3, #0
- 241 0020 2ED0     		beq	.L18
- 242              	.LVL20:
- 243              	.L13:
+ 272              		.loc 1 281 3 is_stmt 1 view .LVU61
+ 281:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 273              		.loc 1 281 11 is_stmt 0 view .LVU62
+ 274 001a 6933     		adds	r3, r3, #105
+ 275 001c C35C     		ldrb	r3, [r0, r3]
+ 281:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 276              		.loc 1 281 5 view .LVU63
+ 277 001e 002B     		cmp	r3, #0
+ 278 0020 2ED0     		beq	.L18
+ 279              	.LVL20:
+ 280              	.L13:
  290:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 244              		.loc 1 290 0
- 245 0022 6923     		movs	r3, #105
- 246 0024 2422     		movs	r2, #36
- 247 0026 E254     		strb	r2, [r4, r3]
+ 281              		.loc 1 290 3 is_stmt 1 view .LVU64
+ 290:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 282              		.loc 1 290 17 is_stmt 0 view .LVU65
+ 283 0022 6923     		movs	r3, #105
+ 284 0024 2422     		movs	r2, #36
+ 285 0026 E254     		strb	r2, [r4, r3]
  293:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 248              		.loc 1 293 0
- 249 0028 2268     		ldr	r2, [r4]
- 250 002a 1368     		ldr	r3, [r2]
- 251 002c 0121     		movs	r1, #1
- 252 002e 8B43     		bics	r3, r1
- 253 0030 1360     		str	r3, [r2]
+ 286              		.loc 1 293 3 is_stmt 1 view .LVU66
+ 287 0028 2268     		ldr	r2, [r4]
+ 288 002a 1368     		ldr	r3, [r2]
+ 289 002c 0121     		movs	r1, #1
+ 290 002e 8B43     		bics	r3, r1
+ 291 0030 1360     		str	r3, [r2]
  296:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 254              		.loc 1 296 0
- 255 0032 2000     		movs	r0, r4
- 256 0034 FFF7FEFF 		bl	UART_SetConfig
- 257              	.LVL21:
- 258 0038 0128     		cmp	r0, #1
- 259 003a 2CD0     		beq	.L12
+ 292              		.loc 1 296 3 view .LVU67
+ 296:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 293              		.loc 1 296 7 is_stmt 0 view .LVU68
+ 294 0032 2000     		movs	r0, r4
+ 295 0034 FFF7FEFF 		bl	UART_SetConfig
+ 296              	.LVL21:
+ 296:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 297              		.loc 1 296 6 view .LVU69
+ 298 0038 0128     		cmp	r0, #1
+ 299 003a 20D0     		beq	.L12
  301:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 260              		.loc 1 301 0
- 261 003c 636A     		ldr	r3, [r4, #36]
- 262 003e 002B     		cmp	r3, #0
- 263 0040 24D1     		bne	.L19
- 264              	.L14:
+ 300              		.loc 1 301 3 is_stmt 1 view .LVU70
+ 301:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 301              		.loc 1 301 6 is_stmt 0 view .LVU71
+ 302 003c 636A     		ldr	r3, [r4, #36]
+ 303 003e 002B     		cmp	r3, #0
+ 304 0040 24D1     		bne	.L19
+ 305              	.L14:
+ARM GAS  /tmp/ccPRA22F.s 			page 18
+
+
  309:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   CLEAR_BIT(huart->Instance->CR3, (USART_CR3_HDSEL | USART_CR3_IREN | USART_CR3_SCEN));
- 265              		.loc 1 309 0
- 266 0042 2268     		ldr	r2, [r4]
- 267 0044 5368     		ldr	r3, [r2, #4]
- 268 0046 1649     		ldr	r1, .L20
- 269 0048 0B40     		ands	r3, r1
- 270 004a 5360     		str	r3, [r2, #4]
+ 306              		.loc 1 309 3 is_stmt 1 view .LVU72
+ 307 0042 2268     		ldr	r2, [r4]
+ 308 0044 5368     		ldr	r3, [r2, #4]
+ 309 0046 1649     		ldr	r1, .L20
+ 310 0048 0B40     		ands	r3, r1
+ 311 004a 5360     		str	r3, [r2, #4]
  310:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 271              		.loc 1 310 0
- 272 004c 2268     		ldr	r2, [r4]
- 273 004e 9368     		ldr	r3, [r2, #8]
- 274 0050 2A21     		movs	r1, #42
- 275 0052 8B43     		bics	r3, r1
- 276 0054 9360     		str	r3, [r2, #8]
+ 312              		.loc 1 310 3 view .LVU73
+ 313 004c 2268     		ldr	r2, [r4]
+ 314 004e 9368     		ldr	r3, [r2, #8]
+ 315 0050 2A21     		movs	r1, #42
+ 316 0052 8B43     		bics	r3, r1
+ 317 0054 9360     		str	r3, [r2, #8]
  313:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 277              		.loc 1 313 0
- 278 0056 2268     		ldr	r2, [r4]
- 279 0058 5168     		ldr	r1, [r2, #4]
- 280 005a 8023     		movs	r3, #128
- 281 005c DB01     		lsls	r3, r3, #7
- 282 005e 0B43     		orrs	r3, r1
-ARM GAS  /tmp/ccyBn0vl.s 			page 17
-
-
- 283 0060 5360     		str	r3, [r2, #4]
+ 318              		.loc 1 313 3 view .LVU74
+ 319 0056 2268     		ldr	r2, [r4]
+ 320 0058 5168     		ldr	r1, [r2, #4]
+ 321 005a 8023     		movs	r3, #128
+ 322 005c DB01     		lsls	r3, r3, #7
+ 323 005e 0B43     		orrs	r3, r1
+ 324 0060 5360     		str	r3, [r2, #4]
  316:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 284              		.loc 1 316 0
- 285 0062 2268     		ldr	r2, [r4]
- 286 0064 5368     		ldr	r3, [r2, #4]
- 287 0066 2021     		movs	r1, #32
- 288 0068 8B43     		bics	r3, r1
- 289 006a 1D43     		orrs	r5, r3
- 290              	.LVL22:
- 291 006c 5560     		str	r5, [r2, #4]
+ 325              		.loc 1 316 3 view .LVU75
+ 326 0062 2368     		ldr	r3, [r4]
+ 327 0064 5968     		ldr	r1, [r3, #4]
+ 328 0066 2022     		movs	r2, #32
+ 329 0068 9143     		bics	r1, r2
+ 330 006a 2943     		orrs	r1, r5
+ 331 006c 5960     		str	r1, [r3, #4]
  319:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 292              		.loc 1 319 0
- 293 006e 2268     		ldr	r2, [r4]
- 294 0070 1368     		ldr	r3, [r2]
- 295 0072 1F39     		subs	r1, r1, #31
- 296 0074 0B43     		orrs	r3, r1
- 297 0076 1360     		str	r3, [r2]
+ 332              		.loc 1 319 3 view .LVU76
+ 333 006e 2268     		ldr	r2, [r4]
+ 334 0070 1368     		ldr	r3, [r2]
+ 335 0072 0121     		movs	r1, #1
+ 336 0074 0B43     		orrs	r3, r1
+ 337 0076 1360     		str	r3, [r2]
  322:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 298              		.loc 1 322 0
- 299 0078 2000     		movs	r0, r4
- 300 007a FFF7FEFF 		bl	UART_CheckIdleState
- 301              	.LVL23:
- 302 007e 0AE0     		b	.L12
- 303              	.LVL24:
- 304              	.L18:
- 284:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 305              		.loc 1 284 0
- 306 0080 6833     		adds	r3, r3, #104
- 307 0082 0022     		movs	r2, #0
- 308 0084 C254     		strb	r2, [r0, r3]
- 287:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 309              		.loc 1 287 0
- 310 0086 FFF7FEFF 		bl	HAL_UART_MspInit
- 311              	.LVL25:
- 312 008a CAE7     		b	.L13
- 313              	.L19:
- 303:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 314              		.loc 1 303 0
- 315 008c 2000     		movs	r0, r4
- 316 008e FFF7FEFF 		bl	UART_AdvFeatureConfig
- 317              	.LVL26:
- 318 0092 D6E7     		b	.L14
- 319              	.LVL27:
- 320              	.L15:
- 262:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 321              		.loc 1 262 0
- 322 0094 0120     		movs	r0, #1
- 323              	.LVL28:
- 324              	.L12:
+ 338              		.loc 1 322 3 view .LVU77
+ 322:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 339              		.loc 1 322 11 is_stmt 0 view .LVU78
+ 340 0078 2000     		movs	r0, r4
+ 341 007a FFF7FEFF 		bl	UART_CheckIdleState
+ 342              	.LVL22:
+ 343              	.L12:
  323:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F0
- 325              		.loc 1 323 0
- 326              		@ sp needed
- 327              	.LVL29:
- 328 0096 70BD     		pop	{r4, r5, r6, pc}
- 329              	.LVL30:
- 330              	.L16:
+ 344              		.loc 1 323 1 view .LVU79
+ 345              		@ sp needed
+ 346              	.LVL23:
+ 347              	.LVL24:
+ 323:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F0
+ 348              		.loc 1 323 1 view .LVU80
+ 349 007e 70BD     		pop	{r4, r5, r6, pc}
+ 350              	.LVL25:
+ 351              	.L18:
+ 284:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 352              		.loc 1 284 5 is_stmt 1 view .LVU81
+ARM GAS  /tmp/ccPRA22F.s 			page 19
+
+
+ 284:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 353              		.loc 1 284 17 is_stmt 0 view .LVU82
+ 354 0080 6833     		adds	r3, r3, #104
+ 355 0082 0022     		movs	r2, #0
+ 356 0084 C254     		strb	r2, [r0, r3]
+ 287:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 357              		.loc 1 287 5 is_stmt 1 view .LVU83
+ 358 0086 FFF7FEFF 		bl	HAL_UART_MspInit
+ 359              	.LVL26:
+ 287:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 360              		.loc 1 287 5 is_stmt 0 view .LVU84
+ 361 008a CAE7     		b	.L13
+ 362              	.L19:
+ 303:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 363              		.loc 1 303 5 is_stmt 1 view .LVU85
+ 364 008c 2000     		movs	r0, r4
+ 365 008e FFF7FEFF 		bl	UART_AdvFeatureConfig
+ 366              	.LVL27:
+ 367 0092 D6E7     		b	.L14
+ 368              	.LVL28:
+ 369              	.L15:
+ 262:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 370              		.loc 1 262 12 is_stmt 0 view .LVU86
+ 371 0094 0120     		movs	r0, #1
+ 372              	.LVL29:
+ 262:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 373              		.loc 1 262 12 view .LVU87
+ 374 0096 F2E7     		b	.L12
+ 375              	.LVL30:
+ 376              	.L16:
  273:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccyBn0vl.s 			page 18
-
-
- 331              		.loc 1 273 0
- 332 0098 0120     		movs	r0, #1
- 333              	.LVL31:
- 334 009a FCE7     		b	.L12
- 335              	.LVL32:
- 336              	.L17:
+ 377              		.loc 1 273 12 view .LVU88
+ 378 0098 0120     		movs	r0, #1
+ 379              	.LVL31:
+ 273:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 380              		.loc 1 273 12 view .LVU89
+ 381 009a F0E7     		b	.L12
+ 382              	.LVL32:
+ 383              	.L17:
  278:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 337              		.loc 1 278 0
- 338 009c 0120     		movs	r0, #1
- 339              	.LVL33:
- 340 009e FAE7     		b	.L12
- 341              	.L21:
- 342              		.align	2
- 343              	.L20:
- 344 00a0 FFF7FFFF 		.word	-2049
- 345              		.cfi_endproc
- 346              	.LFE38:
- 348              		.section	.text.HAL_UARTEx_WakeupCallback,"ax",%progbits
- 349              		.align	1
- 350              		.weak	HAL_UARTEx_WakeupCallback
- 351              		.syntax unified
- 352              		.code	16
- 353              		.thumb_func
- 354              		.fpu softvfp
- 356              	HAL_UARTEx_WakeupCallback:
- 357              	.LFB39:
+ 384              		.loc 1 278 12 view .LVU90
+ 385 009c 0120     		movs	r0, #1
+ 386              	.LVL33:
+ 278:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 387              		.loc 1 278 12 view .LVU91
+ 388 009e EEE7     		b	.L12
+ 389              	.L21:
+ 390              		.align	2
+ 391              	.L20:
+ 392 00a0 FFF7FFFF 		.word	-2049
+ 393              		.cfi_endproc
+ 394              	.LFE38:
+ 396              		.section	.text.HAL_UARTEx_WakeupCallback,"ax",%progbits
+ 397              		.align	1
+ 398              		.weak	HAL_UARTEx_WakeupCallback
+ 399              		.syntax unified
+ 400              		.code	16
+ARM GAS  /tmp/ccPRA22F.s 			page 20
+
+
+ 401              		.thumb_func
+ 402              		.fpu softvfp
+ 404              	HAL_UARTEx_WakeupCallback:
+ 405              	.LVL34:
+ 406              	.LFB39:
  354:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Prevent unused argument(s) compilation warning */
- 358              		.loc 1 354 0
- 359              		.cfi_startproc
- 360              		@ args = 0, pretend = 0, frame = 0
- 361              		@ frame_needed = 0, uses_anonymous_args = 0
- 362              		@ link register save eliminated.
- 363              	.LVL34:
+ 407              		.loc 1 354 1 is_stmt 1 view -0
+ 408              		.cfi_startproc
+ 409              		@ args = 0, pretend = 0, frame = 0
+ 410              		@ frame_needed = 0, uses_anonymous_args = 0
+ 411              		@ link register save eliminated.
+ 356:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 412              		.loc 1 356 3 view .LVU93
  361:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /*!defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F07
- 364              		.loc 1 361 0
- 365              		@ sp needed
- 366 0000 7047     		bx	lr
- 367              		.cfi_endproc
- 368              	.LFE39:
- 370              		.section	.text.HAL_UARTEx_StopModeWakeUpSourceConfig,"ax",%progbits
- 371              		.align	1
- 372              		.global	HAL_UARTEx_StopModeWakeUpSourceConfig
- 373              		.syntax unified
- 374              		.code	16
- 375              		.thumb_func
- 376              		.fpu softvfp
- 378              	HAL_UARTEx_StopModeWakeUpSourceConfig:
- 379              	.LFB40:
+ 413              		.loc 1 361 1 is_stmt 0 view .LVU94
+ 414              		@ sp needed
+ 415 0000 7047     		bx	lr
+ 416              		.cfi_endproc
+ 417              	.LFE39:
+ 419              		.section	.text.HAL_UARTEx_StopModeWakeUpSourceConfig,"ax",%progbits
+ 420              		.align	1
+ 421              		.global	HAL_UARTEx_StopModeWakeUpSourceConfig
+ 422              		.syntax unified
+ 423              		.code	16
+ 424              		.thumb_func
+ 425              		.fpu softvfp
+ 427              	HAL_UARTEx_StopModeWakeUpSourceConfig:
+ 428              	.LVL35:
+ 429              	.LFB40:
  403:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
- 380              		.loc 1 403 0
- 381              		.cfi_startproc
- 382              		@ args = 0, pretend = 0, frame = 8
- 383              		@ frame_needed = 0, uses_anonymous_args = 0
- 384              	.LVL35:
- 385 0000 10B5     		push	{r4, lr}
- 386              	.LCFI3:
- 387              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccyBn0vl.s 			page 19
+ 430              		.loc 1 403 1 is_stmt 1 view -0
+ 431              		.cfi_startproc
+ 432              		@ args = 0, pretend = 0, frame = 8
+ 433              		@ frame_needed = 0, uses_anonymous_args = 0
+ 403:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
+ 434              		.loc 1 403 1 is_stmt 0 view .LVU96
+ 435 0000 10B5     		push	{r4, lr}
+ 436              	.LCFI3:
+ 437              		.cfi_def_cfa_offset 8
+ 438              		.cfi_offset 4, -8
+ 439              		.cfi_offset 14, -4
+ 440 0002 84B0     		sub	sp, sp, #16
+ 441              	.LCFI4:
+ 442              		.cfi_def_cfa_offset 24
+ 443 0004 0400     		movs	r4, r0
+ 444 0006 0291     		str	r1, [sp, #8]
+ 445 0008 0392     		str	r2, [sp, #12]
+ 404:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   uint32_t tickstart = 0U;
+ 446              		.loc 1 404 3 is_stmt 1 view .LVU97
+ 447              	.LVL36:
+ 405:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 448              		.loc 1 405 3 view .LVU98
+ 408:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* check the wake-up selection parameter */
+ 449              		.loc 1 408 3 view .LVU99
+ 410:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 450              		.loc 1 410 3 view .LVU100
+ 413:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 21
 
 
- 388              		.cfi_offset 4, -8
- 389              		.cfi_offset 14, -4
- 390 0002 84B0     		sub	sp, sp, #16
- 391              	.LCFI4:
- 392              		.cfi_def_cfa_offset 24
- 393 0004 0400     		movs	r4, r0
- 394 0006 0291     		str	r1, [sp, #8]
- 395 0008 0392     		str	r2, [sp, #12]
- 396              	.LVL36:
+ 451              		.loc 1 413 3 view .LVU101
  413:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 397              		.loc 1 413 0
- 398 000a 6823     		movs	r3, #104
- 399 000c C35C     		ldrb	r3, [r0, r3]
- 400 000e 012B     		cmp	r3, #1
- 401 0010 33D0     		beq	.L27
+ 452              		.loc 1 413 3 view .LVU102
+ 453 000a 6823     		movs	r3, #104
+ 454 000c C35C     		ldrb	r3, [r0, r3]
+ 455 000e 012B     		cmp	r3, #1
+ 456 0010 33D0     		beq	.L27
  413:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 402              		.loc 1 413 0 is_stmt 0 discriminator 2
- 403 0012 0121     		movs	r1, #1
- 404 0014 6823     		movs	r3, #104
- 405 0016 C154     		strb	r1, [r0, r3]
+ 457              		.loc 1 413 3 discriminator 2 view .LVU103
+ 458 0012 0121     		movs	r1, #1
+ 459 0014 6823     		movs	r3, #104
+ 460 0016 C154     		strb	r1, [r0, r3]
  415:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 406              		.loc 1 415 0 is_stmt 1 discriminator 2
- 407 0018 0133     		adds	r3, r3, #1
- 408 001a 2422     		movs	r2, #36
- 409 001c C254     		strb	r2, [r0, r3]
+ 461              		.loc 1 415 3 discriminator 2 view .LVU104
+ 415:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 462              		.loc 1 415 17 is_stmt 0 discriminator 2 view .LVU105
+ 463 0018 0133     		adds	r3, r3, #1
+ 464 001a 2422     		movs	r2, #36
+ 465 001c C254     		strb	r2, [r0, r3]
  418:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 410              		.loc 1 418 0 discriminator 2
- 411 001e 0268     		ldr	r2, [r0]
- 412 0020 1368     		ldr	r3, [r2]
- 413 0022 8B43     		bics	r3, r1
- 414 0024 1360     		str	r3, [r2]
+ 466              		.loc 1 418 3 is_stmt 1 discriminator 2 view .LVU106
+ 467 001e 0268     		ldr	r2, [r0]
+ 468 0020 1368     		ldr	r3, [r2]
+ 469 0022 8B43     		bics	r3, r1
+ 470 0024 1360     		str	r3, [r2]
  421:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 415              		.loc 1 421 0 discriminator 2
- 416 0026 0168     		ldr	r1, [r0]
- 417 0028 8B68     		ldr	r3, [r1, #8]
- 418 002a 154A     		ldr	r2, .L30
- 419 002c 1340     		ands	r3, r2
- 420 002e 029A     		ldr	r2, [sp, #8]
- 421 0030 1343     		orrs	r3, r2
- 422 0032 8B60     		str	r3, [r1, #8]
+ 471              		.loc 1 421 3 discriminator 2 view .LVU107
+ 472 0026 0168     		ldr	r1, [r0]
+ 473 0028 8B68     		ldr	r3, [r1, #8]
+ 474 002a 154A     		ldr	r2, .L30
+ 475 002c 1340     		ands	r3, r2
+ 476 002e 029A     		ldr	r2, [sp, #8]
+ 477 0030 1343     		orrs	r3, r2
+ 478 0032 8B60     		str	r3, [r1, #8]
  423:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 423              		.loc 1 423 0 discriminator 2
- 424 0034 002A     		cmp	r2, #0
- 425 0036 15D0     		beq	.L29
- 426              	.LVL37:
- 427              	.L25:
+ 479              		.loc 1 423 3 discriminator 2 view .LVU108
+ 423:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 480              		.loc 1 423 6 is_stmt 0 discriminator 2 view .LVU109
+ 481 0034 002A     		cmp	r2, #0
+ 482 0036 19D0     		beq	.L29
+ 483              	.LVL37:
+ 484              	.L25:
  429:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 428              		.loc 1 429 0
- 429 0038 2268     		ldr	r2, [r4]
- 430 003a 1368     		ldr	r3, [r2]
- 431 003c 0121     		movs	r1, #1
- 432 003e 0B43     		orrs	r3, r1
- 433 0040 1360     		str	r3, [r2]
+ 485              		.loc 1 429 3 is_stmt 1 view .LVU110
+ 486 0038 2268     		ldr	r2, [r4]
+ 487 003a 1368     		ldr	r3, [r2]
+ 488 003c 0121     		movs	r1, #1
+ 489 003e 0B43     		orrs	r3, r1
+ 490 0040 1360     		str	r3, [r2]
  432:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 434              		.loc 1 432 0
- 435 0042 FFF7FEFF 		bl	HAL_GetTick
- 436              	.LVL38:
-ARM GAS  /tmp/ccyBn0vl.s 			page 20
+ 491              		.loc 1 432 3 view .LVU111
+ 432:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 492              		.loc 1 432 15 is_stmt 0 view .LVU112
+ 493 0042 FFF7FEFF 		bl	HAL_GetTick
+ 494              	.LVL38:
+ 495 0046 0300     		movs	r3, r0
+ 496              	.LVL39:
+ARM GAS  /tmp/ccPRA22F.s 			page 22
 
 
- 437 0046 0300     		movs	r3, r0
- 438              	.LVL39:
  435:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 439              		.loc 1 435 0
- 440 0048 8021     		movs	r1, #128
- 441 004a 0E4A     		ldr	r2, .L30+4
- 442 004c 0092     		str	r2, [sp]
- 443 004e 0022     		movs	r2, #0
- 444 0050 C903     		lsls	r1, r1, #15
- 445 0052 2000     		movs	r0, r4
- 446              	.LVL40:
- 447 0054 FFF7FEFF 		bl	UART_WaitOnFlagUntilTimeout
- 448              	.LVL41:
- 449 0058 0028     		cmp	r0, #0
- 450 005a 08D1     		bne	.L28
+ 497              		.loc 1 435 3 is_stmt 1 view .LVU113
+ 435:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 498              		.loc 1 435 6 is_stmt 0 view .LVU114
+ 499 0048 8021     		movs	r1, #128
+ 500 004a 0E4A     		ldr	r2, .L30+4
+ 501 004c 0092     		str	r2, [sp]
+ 502 004e 0022     		movs	r2, #0
+ 503 0050 C903     		lsls	r1, r1, #15
+ 504 0052 2000     		movs	r0, r4
+ 505              	.LVL40:
+ 435:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 506              		.loc 1 435 6 view .LVU115
+ 507 0054 FFF7FEFF 		bl	UART_WaitOnFlagUntilTimeout
+ 508              	.LVL41:
+ 435:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 509              		.loc 1 435 5 view .LVU116
+ 510 0058 0028     		cmp	r0, #0
+ 511 005a 0CD1     		bne	.L28
  442:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 451              		.loc 1 442 0
- 452 005c 6923     		movs	r3, #105
- 453 005e 2022     		movs	r2, #32
- 454 0060 E254     		strb	r2, [r4, r3]
- 455 0062 05E0     		b	.L26
- 456              	.LVL42:
- 457              	.L29:
- 425:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 458              		.loc 1 425 0
- 459 0064 1100     		movs	r1, r2
- 460 0066 039A     		ldr	r2, [sp, #12]
- 461 0068 FFF7FEFF 		bl	UARTEx_Wakeup_AddressConfig
- 462              	.LVL43:
- 463 006c E4E7     		b	.L25
- 464              	.LVL44:
- 465              	.L28:
- 437:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 466              		.loc 1 437 0
- 467 006e 0320     		movs	r0, #3
- 468              	.L26:
- 469              	.LVL45:
+ 512              		.loc 1 442 5 is_stmt 1 view .LVU117
+ 442:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 513              		.loc 1 442 19 is_stmt 0 view .LVU118
+ 514 005c 6923     		movs	r3, #105
+ 515 005e 2022     		movs	r2, #32
+ 516 0060 E254     		strb	r2, [r4, r3]
+ 517              	.L26:
+ 518              	.LVL42:
  446:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 470              		.loc 1 446 0
- 471 0070 6823     		movs	r3, #104
- 472 0072 0022     		movs	r2, #0
- 473 0074 E254     		strb	r2, [r4, r3]
- 474              	.LVL46:
- 475              	.L24:
+ 519              		.loc 1 446 3 is_stmt 1 view .LVU119
+ 446:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 520              		.loc 1 446 3 view .LVU120
+ 521 0062 6823     		movs	r3, #104
+ 522 0064 0022     		movs	r2, #0
+ 523 0066 E254     		strb	r2, [r4, r3]
+ 448:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 524              		.loc 1 448 3 view .LVU121
+ 525              	.LVL43:
+ 526              	.L24:
  449:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 476              		.loc 1 449 0
- 477 0076 04B0     		add	sp, sp, #16
- 478              		@ sp needed
- 479              	.LVL47:
- 480 0078 10BD     		pop	{r4, pc}
- 481              	.LVL48:
- 482              	.L27:
+ 527              		.loc 1 449 1 is_stmt 0 view .LVU122
+ 528 0068 04B0     		add	sp, sp, #16
+ 529              		@ sp needed
+ 530              	.LVL44:
+ 449:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 531              		.loc 1 449 1 view .LVU123
+ 532 006a 10BD     		pop	{r4, pc}
+ 533              	.LVL45:
+ 534              	.L29:
+ 425:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 535              		.loc 1 425 5 is_stmt 1 view .LVU124
+ 536 006c 1100     		movs	r1, r2
+ 537 006e 039A     		ldr	r2, [sp, #12]
+ 538 0070 FFF7FEFF 		bl	UARTEx_Wakeup_AddressConfig
+ 539              	.LVL46:
+ 425:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 540              		.loc 1 425 5 is_stmt 0 view .LVU125
+ARM GAS  /tmp/ccPRA22F.s 			page 23
+
+
+ 541 0074 E0E7     		b	.L25
+ 542              	.LVL47:
+ 543              	.L28:
+ 437:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 544              		.loc 1 437 12 view .LVU126
+ 545 0076 0320     		movs	r0, #3
+ 546 0078 F3E7     		b	.L26
+ 547              	.LVL48:
+ 548              	.L27:
  413:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 483              		.loc 1 413 0
- 484 007a 0220     		movs	r0, #2
- 485              	.LVL49:
- 486 007c FBE7     		b	.L24
-ARM GAS  /tmp/ccyBn0vl.s 			page 21
-
-
- 487              	.L31:
- 488 007e C046     		.align	2
- 489              	.L30:
- 490 0080 FFFFCFFF 		.word	-3145729
- 491 0084 FFFFFF01 		.word	33554431
- 492              		.cfi_endproc
- 493              	.LFE40:
- 495              		.section	.text.HAL_UARTEx_EnableStopMode,"ax",%progbits
- 496              		.align	1
- 497              		.global	HAL_UARTEx_EnableStopMode
- 498              		.syntax unified
- 499              		.code	16
- 500              		.thumb_func
- 501              		.fpu softvfp
- 503              	HAL_UARTEx_EnableStopMode:
- 504              	.LFB41:
+ 549              		.loc 1 413 3 view .LVU127
+ 550 007a 0220     		movs	r0, #2
+ 551              	.LVL49:
+ 413:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 552              		.loc 1 413 3 view .LVU128
+ 553 007c F4E7     		b	.L24
+ 554              	.L31:
+ 555 007e C046     		.align	2
+ 556              	.L30:
+ 557 0080 FFFFCFFF 		.word	-3145729
+ 558 0084 FFFFFF01 		.word	33554431
+ 559              		.cfi_endproc
+ 560              	.LFE40:
+ 562              		.section	.text.HAL_UARTEx_EnableStopMode,"ax",%progbits
+ 563              		.align	1
+ 564              		.global	HAL_UARTEx_EnableStopMode
+ 565              		.syntax unified
+ 566              		.code	16
+ 567              		.thumb_func
+ 568              		.fpu softvfp
+ 570              	HAL_UARTEx_EnableStopMode:
+ 571              	.LVL50:
+ 572              	.LFB41:
  459:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parameter */
- 505              		.loc 1 459 0
- 506              		.cfi_startproc
- 507              		@ args = 0, pretend = 0, frame = 0
- 508              		@ frame_needed = 0, uses_anonymous_args = 0
- 509              	.LVL50:
- 510 0000 30B5     		push	{r4, r5, lr}
- 511              	.LCFI5:
- 512              		.cfi_def_cfa_offset 12
- 513              		.cfi_offset 4, -12
- 514              		.cfi_offset 5, -8
- 515              		.cfi_offset 14, -4
+ 573              		.loc 1 459 1 is_stmt 1 view -0
+ 574              		.cfi_startproc
+ 575              		@ args = 0, pretend = 0, frame = 0
+ 576              		@ frame_needed = 0, uses_anonymous_args = 0
+ 459:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parameter */
+ 577              		.loc 1 459 1 is_stmt 0 view .LVU130
+ 578 0000 30B5     		push	{r4, r5, lr}
+ 579              	.LCFI5:
+ 580              		.cfi_def_cfa_offset 12
+ 581              		.cfi_offset 4, -12
+ 582              		.cfi_offset 5, -8
+ 583              		.cfi_offset 14, -4
+ 461:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 584              		.loc 1 461 3 is_stmt 1 view .LVU131
  464:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 516              		.loc 1 464 0
- 517 0002 6823     		movs	r3, #104
- 518 0004 C35C     		ldrb	r3, [r0, r3]
- 519 0006 012B     		cmp	r3, #1
- 520 0008 10D0     		beq	.L34
+ 585              		.loc 1 464 3 view .LVU132
  464:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 521              		.loc 1 464 0 is_stmt 0 discriminator 2
- 522 000a 6822     		movs	r2, #104
- 523 000c 0123     		movs	r3, #1
- 524 000e 8354     		strb	r3, [r0, r2]
+ 586              		.loc 1 464 3 view .LVU133
+ 587 0002 6823     		movs	r3, #104
+ 588 0004 C35C     		ldrb	r3, [r0, r3]
+ 589 0006 012B     		cmp	r3, #1
+ 590 0008 10D0     		beq	.L34
+ 464:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 24
+
+
+ 591              		.loc 1 464 3 discriminator 2 view .LVU134
+ 592 000a 6822     		movs	r2, #104
+ 593 000c 0123     		movs	r3, #1
+ 594 000e 8354     		strb	r3, [r0, r2]
  466:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 525              		.loc 1 466 0 is_stmt 1 discriminator 2
- 526 0010 6921     		movs	r1, #105
- 527 0012 2333     		adds	r3, r3, #35
- 528 0014 4354     		strb	r3, [r0, r1]
+ 595              		.loc 1 466 3 discriminator 2 view .LVU135
+ 466:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 596              		.loc 1 466 17 is_stmt 0 discriminator 2 view .LVU136
+ 597 0010 6921     		movs	r1, #105
+ 598 0012 2333     		adds	r3, r3, #35
+ 599 0014 4354     		strb	r3, [r0, r1]
  469:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 529              		.loc 1 469 0 discriminator 2
- 530 0016 0468     		ldr	r4, [r0]
- 531 0018 2368     		ldr	r3, [r4]
- 532 001a 0225     		movs	r5, #2
- 533 001c 2B43     		orrs	r3, r5
- 534 001e 2360     		str	r3, [r4]
+ 600              		.loc 1 469 3 is_stmt 1 discriminator 2 view .LVU137
+ 601 0016 0468     		ldr	r4, [r0]
+ 602 0018 2368     		ldr	r3, [r4]
+ 603 001a 0225     		movs	r5, #2
+ 604 001c 2B43     		orrs	r3, r5
+ 605 001e 2360     		str	r3, [r4]
  471:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 535              		.loc 1 471 0 discriminator 2
- 536 0020 2023     		movs	r3, #32
- 537 0022 4354     		strb	r3, [r0, r1]
+ 606              		.loc 1 471 3 discriminator 2 view .LVU138
+ 471:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 607              		.loc 1 471 17 is_stmt 0 discriminator 2 view .LVU139
+ 608 0020 2023     		movs	r3, #32
+ 609 0022 4354     		strb	r3, [r0, r1]
  474:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 538              		.loc 1 474 0 discriminator 2
-ARM GAS  /tmp/ccyBn0vl.s 			page 22
-
-
- 539 0024 0023     		movs	r3, #0
- 540 0026 8354     		strb	r3, [r0, r2]
+ 610              		.loc 1 474 3 is_stmt 1 discriminator 2 view .LVU140
+ 474:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 611              		.loc 1 474 3 discriminator 2 view .LVU141
+ 612 0024 0023     		movs	r3, #0
+ 613 0026 8354     		strb	r3, [r0, r2]
  476:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 541              		.loc 1 476 0 discriminator 2
- 542 0028 0020     		movs	r0, #0
- 543              	.LVL51:
- 544              	.L33:
+ 614              		.loc 1 476 3 discriminator 2 view .LVU142
+ 476:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 615              		.loc 1 476 10 is_stmt 0 discriminator 2 view .LVU143
+ 616 0028 0020     		movs	r0, #0
+ 617              	.LVL51:
+ 618              	.L33:
  477:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 545              		.loc 1 477 0
- 546              		@ sp needed
- 547 002a 30BD     		pop	{r4, r5, pc}
- 548              	.LVL52:
- 549              	.L34:
+ 619              		.loc 1 477 1 view .LVU144
+ 620              		@ sp needed
+ 621 002a 30BD     		pop	{r4, r5, pc}
+ 622              	.LVL52:
+ 623              	.L34:
  464:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 550              		.loc 1 464 0
- 551 002c 0220     		movs	r0, #2
- 552              	.LVL53:
- 553 002e FCE7     		b	.L33
- 554              		.cfi_endproc
- 555              	.LFE41:
- 557              		.section	.text.HAL_UARTEx_DisableStopMode,"ax",%progbits
- 558              		.align	1
- 559              		.global	HAL_UARTEx_DisableStopMode
- 560              		.syntax unified
- 561              		.code	16
- 562              		.thumb_func
- 563              		.fpu softvfp
- 565              	HAL_UARTEx_DisableStopMode:
- 566              	.LFB42:
+ 624              		.loc 1 464 3 view .LVU145
+ 625 002c 0220     		movs	r0, #2
+ 626              	.LVL53:
+ 464:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 627              		.loc 1 464 3 view .LVU146
+ 628 002e FCE7     		b	.L33
+ 629              		.cfi_endproc
+ 630              	.LFE41:
+ 632              		.section	.text.HAL_UARTEx_DisableStopMode,"ax",%progbits
+ 633              		.align	1
+ 634              		.global	HAL_UARTEx_DisableStopMode
+ 635              		.syntax unified
+ 636              		.code	16
+ARM GAS  /tmp/ccPRA22F.s 			page 25
+
+
+ 637              		.thumb_func
+ 638              		.fpu softvfp
+ 640              	HAL_UARTEx_DisableStopMode:
+ 641              	.LVL54:
+ 642              	.LFB42:
  485:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parameter */
- 567              		.loc 1 485 0
- 568              		.cfi_startproc
- 569              		@ args = 0, pretend = 0, frame = 0
- 570              		@ frame_needed = 0, uses_anonymous_args = 0
- 571              	.LVL54:
- 572 0000 30B5     		push	{r4, r5, lr}
- 573              	.LCFI6:
- 574              		.cfi_def_cfa_offset 12
- 575              		.cfi_offset 4, -12
- 576              		.cfi_offset 5, -8
- 577              		.cfi_offset 14, -4
+ 643              		.loc 1 485 1 is_stmt 1 view -0
+ 644              		.cfi_startproc
+ 645              		@ args = 0, pretend = 0, frame = 0
+ 646              		@ frame_needed = 0, uses_anonymous_args = 0
+ 485:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check parameter */
+ 647              		.loc 1 485 1 is_stmt 0 view .LVU148
+ 648 0000 30B5     		push	{r4, r5, lr}
+ 649              	.LCFI6:
+ 650              		.cfi_def_cfa_offset 12
+ 651              		.cfi_offset 4, -12
+ 652              		.cfi_offset 5, -8
+ 653              		.cfi_offset 14, -4
+ 487:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 654              		.loc 1 487 3 is_stmt 1 view .LVU149
  490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 578              		.loc 1 490 0
- 579 0002 6823     		movs	r3, #104
- 580 0004 C35C     		ldrb	r3, [r0, r3]
- 581 0006 012B     		cmp	r3, #1
- 582 0008 10D0     		beq	.L37
+ 655              		.loc 1 490 3 view .LVU150
  490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 583              		.loc 1 490 0 is_stmt 0 discriminator 2
- 584 000a 6822     		movs	r2, #104
- 585 000c 0123     		movs	r3, #1
- 586 000e 8354     		strb	r3, [r0, r2]
+ 656              		.loc 1 490 3 view .LVU151
+ 657 0002 6823     		movs	r3, #104
+ 658 0004 C35C     		ldrb	r3, [r0, r3]
+ 659 0006 012B     		cmp	r3, #1
+ 660 0008 10D0     		beq	.L37
+ 490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 661              		.loc 1 490 3 discriminator 2 view .LVU152
+ 662 000a 6822     		movs	r2, #104
+ 663 000c 0123     		movs	r3, #1
+ 664 000e 8354     		strb	r3, [r0, r2]
  492:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 587              		.loc 1 492 0 is_stmt 1 discriminator 2
- 588 0010 6921     		movs	r1, #105
- 589 0012 2333     		adds	r3, r3, #35
- 590 0014 4354     		strb	r3, [r0, r1]
-ARM GAS  /tmp/ccyBn0vl.s 			page 23
-
-
+ 665              		.loc 1 492 3 discriminator 2 view .LVU153
+ 492:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 666              		.loc 1 492 17 is_stmt 0 discriminator 2 view .LVU154
+ 667 0010 6921     		movs	r1, #105
+ 668 0012 2333     		adds	r3, r3, #35
+ 669 0014 4354     		strb	r3, [r0, r1]
  495:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 591              		.loc 1 495 0 discriminator 2
- 592 0016 0468     		ldr	r4, [r0]
- 593 0018 2368     		ldr	r3, [r4]
- 594 001a 0225     		movs	r5, #2
- 595 001c AB43     		bics	r3, r5
- 596 001e 2360     		str	r3, [r4]
+ 670              		.loc 1 495 3 is_stmt 1 discriminator 2 view .LVU155
+ 671 0016 0468     		ldr	r4, [r0]
+ 672 0018 2368     		ldr	r3, [r4]
+ 673 001a 0225     		movs	r5, #2
+ 674 001c AB43     		bics	r3, r5
+ 675 001e 2360     		str	r3, [r4]
  497:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 597              		.loc 1 497 0 discriminator 2
- 598 0020 2023     		movs	r3, #32
- 599 0022 4354     		strb	r3, [r0, r1]
+ 676              		.loc 1 497 3 discriminator 2 view .LVU156
+ 497:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 677              		.loc 1 497 17 is_stmt 0 discriminator 2 view .LVU157
+ 678 0020 2023     		movs	r3, #32
+ 679 0022 4354     		strb	r3, [r0, r1]
  500:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 600              		.loc 1 500 0 discriminator 2
- 601 0024 0023     		movs	r3, #0
- 602 0026 8354     		strb	r3, [r0, r2]
+ 680              		.loc 1 500 3 is_stmt 1 discriminator 2 view .LVU158
+ 500:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 681              		.loc 1 500 3 discriminator 2 view .LVU159
+ARM GAS  /tmp/ccPRA22F.s 			page 26
+
+
+ 682 0024 0023     		movs	r3, #0
+ 683 0026 8354     		strb	r3, [r0, r2]
  502:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 603              		.loc 1 502 0 discriminator 2
- 604 0028 0020     		movs	r0, #0
- 605              	.LVL55:
- 606              	.L36:
+ 684              		.loc 1 502 3 discriminator 2 view .LVU160
+ 502:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 685              		.loc 1 502 10 is_stmt 0 discriminator 2 view .LVU161
+ 686 0028 0020     		movs	r0, #0
+ 687              	.LVL55:
+ 688              	.L36:
  503:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F0
- 607              		.loc 1 503 0
- 608              		@ sp needed
- 609 002a 30BD     		pop	{r4, r5, pc}
- 610              	.LVL56:
- 611              	.L37:
+ 689              		.loc 1 503 1 view .LVU162
+ 690              		@ sp needed
+ 691 002a 30BD     		pop	{r4, r5, pc}
+ 692              	.LVL56:
+ 693              	.L37:
  490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 612              		.loc 1 490 0
- 613 002c 0220     		movs	r0, #2
- 614              	.LVL57:
- 615 002e FCE7     		b	.L36
- 616              		.cfi_endproc
- 617              	.LFE42:
- 619              		.section	.text.HAL_MultiProcessorEx_AddressLength_Set,"ax",%progbits
- 620              		.align	1
- 621              		.global	HAL_MultiProcessorEx_AddressLength_Set
- 622              		.syntax unified
- 623              		.code	16
- 624              		.thumb_func
- 625              		.fpu softvfp
- 627              	HAL_MultiProcessorEx_AddressLength_Set:
- 628              	.LFB43:
+ 694              		.loc 1 490 3 view .LVU163
+ 695 002c 0220     		movs	r0, #2
+ 696              	.LVL57:
+ 490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 697              		.loc 1 490 3 view .LVU164
+ 698 002e FCE7     		b	.L36
+ 699              		.cfi_endproc
+ 700              	.LFE42:
+ 702              		.section	.text.HAL_MultiProcessorEx_AddressLength_Set,"ax",%progbits
+ 703              		.align	1
+ 704              		.global	HAL_MultiProcessorEx_AddressLength_Set
+ 705              		.syntax unified
+ 706              		.code	16
+ 707              		.thumb_func
+ 708              		.fpu softvfp
+ 710              	HAL_MultiProcessorEx_AddressLength_Set:
+ 711              	.LVL58:
+ 712              	.LFB43:
  520:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
- 629              		.loc 1 520 0
- 630              		.cfi_startproc
- 631              		@ args = 0, pretend = 0, frame = 0
- 632              		@ frame_needed = 0, uses_anonymous_args = 0
- 633              	.LVL58:
- 634 0000 70B5     		push	{r4, r5, r6, lr}
- 635              	.LCFI7:
- 636              		.cfi_def_cfa_offset 16
- 637              		.cfi_offset 4, -16
- 638              		.cfi_offset 5, -12
- 639              		.cfi_offset 6, -8
- 640              		.cfi_offset 14, -4
+ 713              		.loc 1 520 1 is_stmt 1 view -0
+ 714              		.cfi_startproc
+ 715              		@ args = 0, pretend = 0, frame = 0
+ 716              		@ frame_needed = 0, uses_anonymous_args = 0
+ 520:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
+ 717              		.loc 1 520 1 is_stmt 0 view .LVU166
+ 718 0000 70B5     		push	{r4, r5, r6, lr}
+ 719              	.LCFI7:
+ 720              		.cfi_def_cfa_offset 16
+ 721              		.cfi_offset 4, -16
+ 722              		.cfi_offset 5, -12
+ 723              		.cfi_offset 6, -8
+ 724              		.cfi_offset 14, -4
  522:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
- 641              		.loc 1 522 0
-ARM GAS  /tmp/ccyBn0vl.s 			page 24
-
-
- 642 0002 0028     		cmp	r0, #0
- 643 0004 14D0     		beq	.L40
+ 725              		.loc 1 522 3 is_stmt 1 view .LVU167
+ 522:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
+ 726              		.loc 1 522 5 is_stmt 0 view .LVU168
+ 727 0002 0028     		cmp	r0, #0
+ 728 0004 14D0     		beq	.L40
+ 528:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 729              		.loc 1 528 3 is_stmt 1 view .LVU169
  530:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 644              		.loc 1 530 0
- 645 0006 6923     		movs	r3, #105
- 646 0008 2422     		movs	r2, #36
- 647 000a C254     		strb	r2, [r0, r3]
+ARM GAS  /tmp/ccPRA22F.s 			page 27
+
+
+ 730              		.loc 1 530 3 view .LVU170
+ 530:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 731              		.loc 1 530 17 is_stmt 0 view .LVU171
+ 732 0006 6923     		movs	r3, #105
+ 733 0008 2422     		movs	r2, #36
+ 734 000a C254     		strb	r2, [r0, r3]
  533:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 648              		.loc 1 533 0
- 649 000c 0368     		ldr	r3, [r0]
- 650 000e 1A68     		ldr	r2, [r3]
- 651 0010 0124     		movs	r4, #1
- 652 0012 A243     		bics	r2, r4
- 653 0014 1A60     		str	r2, [r3]
+ 735              		.loc 1 533 3 is_stmt 1 view .LVU172
+ 736 000c 0368     		ldr	r3, [r0]
+ 737 000e 1A68     		ldr	r2, [r3]
+ 738 0010 0124     		movs	r4, #1
+ 739 0012 A243     		bics	r2, r4
+ 740 0014 1A60     		str	r2, [r3]
  536:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 654              		.loc 1 536 0
- 655 0016 0268     		ldr	r2, [r0]
- 656 0018 5368     		ldr	r3, [r2, #4]
- 657 001a 1025     		movs	r5, #16
- 658 001c AB43     		bics	r3, r5
- 659 001e 1943     		orrs	r1, r3
- 660              	.LVL59:
- 661 0020 5160     		str	r1, [r2, #4]
+ 741              		.loc 1 536 3 view .LVU173
+ 742 0016 0268     		ldr	r2, [r0]
+ 743 0018 5368     		ldr	r3, [r2, #4]
+ 744 001a 1025     		movs	r5, #16
+ 745 001c AB43     		bics	r3, r5
+ 746 001e 0B43     		orrs	r3, r1
+ 747 0020 5360     		str	r3, [r2, #4]
  539:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 662              		.loc 1 539 0
- 663 0022 0268     		ldr	r2, [r0]
- 664 0024 1368     		ldr	r3, [r2]
- 665 0026 2343     		orrs	r3, r4
- 666 0028 1360     		str	r3, [r2]
+ 748              		.loc 1 539 3 view .LVU174
+ 749 0022 0268     		ldr	r2, [r0]
+ 750 0024 1368     		ldr	r3, [r2]
+ 751 0026 2343     		orrs	r3, r4
+ 752 0028 1360     		str	r3, [r2]
  542:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 667              		.loc 1 542 0
- 668 002a FFF7FEFF 		bl	UART_CheckIdleState
- 669              	.LVL60:
- 670              	.L39:
+ 753              		.loc 1 542 3 view .LVU175
+ 542:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 754              		.loc 1 542 11 is_stmt 0 view .LVU176
+ 755 002a FFF7FEFF 		bl	UART_CheckIdleState
+ 756              	.LVL59:
+ 757              	.L39:
  543:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 671              		.loc 1 543 0
- 672              		@ sp needed
- 673 002e 70BD     		pop	{r4, r5, r6, pc}
- 674              	.LVL61:
- 675              	.L40:
+ 758              		.loc 1 543 1 view .LVU177
+ 759              		@ sp needed
+ 760 002e 70BD     		pop	{r4, r5, r6, pc}
+ 761              	.LVL60:
+ 762              	.L40:
  524:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
- 676              		.loc 1 524 0
- 677 0030 0120     		movs	r0, #1
- 678              	.LVL62:
- 679 0032 FCE7     		b	.L39
- 680              		.cfi_endproc
- 681              	.LFE43:
- 683              		.section	.text.HAL_LIN_SendBreak,"ax",%progbits
- 684              		.align	1
- 685              		.global	HAL_LIN_SendBreak
- 686              		.syntax unified
- 687              		.code	16
- 688              		.thumb_func
- 689              		.fpu softvfp
- 691              	HAL_LIN_SendBreak:
- 692              	.LFB44:
+ 763              		.loc 1 524 12 view .LVU178
+ 764 0030 0120     		movs	r0, #1
+ 765              	.LVL61:
+ 524:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
+ 766              		.loc 1 524 12 view .LVU179
+ 767 0032 FCE7     		b	.L39
+ 768              		.cfi_endproc
+ 769              	.LFE43:
+ 771              		.section	.text.HAL_LIN_SendBreak,"ax",%progbits
+ 772              		.align	1
+ 773              		.global	HAL_LIN_SendBreak
+ 774              		.syntax unified
+ 775              		.code	16
+ 776              		.thumb_func
+ 777              		.fpu softvfp
+ 779              	HAL_LIN_SendBreak:
+ARM GAS  /tmp/ccPRA22F.s 			page 28
+
+
+ 780              	.LVL62:
+ 781              	.LFB44:
  553:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the parameters */
-ARM GAS  /tmp/ccyBn0vl.s 			page 25
-
-
- 693              		.loc 1 553 0
- 694              		.cfi_startproc
- 695              		@ args = 0, pretend = 0, frame = 0
- 696              		@ frame_needed = 0, uses_anonymous_args = 0
- 697              	.LVL63:
- 698 0000 30B5     		push	{r4, r5, lr}
- 699              	.LCFI8:
- 700              		.cfi_def_cfa_offset 12
- 701              		.cfi_offset 4, -12
- 702              		.cfi_offset 5, -8
- 703              		.cfi_offset 14, -4
+ 782              		.loc 1 553 1 is_stmt 1 view -0
+ 783              		.cfi_startproc
+ 784              		@ args = 0, pretend = 0, frame = 0
+ 785              		@ frame_needed = 0, uses_anonymous_args = 0
+ 553:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the parameters */
+ 786              		.loc 1 553 1 is_stmt 0 view .LVU181
+ 787 0000 30B5     		push	{r4, r5, lr}
+ 788              	.LCFI8:
+ 789              		.cfi_def_cfa_offset 12
+ 790              		.cfi_offset 4, -12
+ 791              		.cfi_offset 5, -8
+ 792              		.cfi_offset 14, -4
+ 555:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 793              		.loc 1 555 3 is_stmt 1 view .LVU182
  558:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 704              		.loc 1 558 0
- 705 0002 6823     		movs	r3, #104
- 706 0004 C35C     		ldrb	r3, [r0, r3]
- 707 0006 012B     		cmp	r3, #1
- 708 0008 10D0     		beq	.L43
+ 794              		.loc 1 558 3 view .LVU183
  558:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 709              		.loc 1 558 0 is_stmt 0 discriminator 2
- 710 000a 6822     		movs	r2, #104
- 711 000c 0123     		movs	r3, #1
- 712 000e 8354     		strb	r3, [r0, r2]
+ 795              		.loc 1 558 3 view .LVU184
+ 796 0002 6823     		movs	r3, #104
+ 797 0004 C35C     		ldrb	r3, [r0, r3]
+ 798 0006 012B     		cmp	r3, #1
+ 799 0008 10D0     		beq	.L43
+ 558:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 800              		.loc 1 558 3 discriminator 2 view .LVU185
+ 801 000a 6822     		movs	r2, #104
+ 802 000c 0123     		movs	r3, #1
+ 803 000e 8354     		strb	r3, [r0, r2]
  560:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 713              		.loc 1 560 0 is_stmt 1 discriminator 2
- 714 0010 6921     		movs	r1, #105
- 715 0012 2333     		adds	r3, r3, #35
- 716 0014 4354     		strb	r3, [r0, r1]
+ 804              		.loc 1 560 3 discriminator 2 view .LVU186
+ 560:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 805              		.loc 1 560 17 is_stmt 0 discriminator 2 view .LVU187
+ 806 0010 6921     		movs	r1, #105
+ 807 0012 2333     		adds	r3, r3, #35
+ 808 0014 4354     		strb	r3, [r0, r1]
  563:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 717              		.loc 1 563 0 discriminator 2
- 718 0016 0468     		ldr	r4, [r0]
- 719 0018 A369     		ldr	r3, [r4, #24]
- 720 001a 0225     		movs	r5, #2
- 721 001c 2B43     		orrs	r3, r5
- 722 001e A361     		str	r3, [r4, #24]
+ 809              		.loc 1 563 3 is_stmt 1 discriminator 2 view .LVU188
+ 563:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 810              		.loc 1 563 8 is_stmt 0 discriminator 2 view .LVU189
+ 811 0016 0468     		ldr	r4, [r0]
+ 563:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 812              		.loc 1 563 24 discriminator 2 view .LVU190
+ 813 0018 A369     		ldr	r3, [r4, #24]
+ 814 001a 0225     		movs	r5, #2
+ 815 001c 2B43     		orrs	r3, r5
+ 816 001e A361     		str	r3, [r4, #24]
  565:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 723              		.loc 1 565 0 discriminator 2
- 724 0020 2023     		movs	r3, #32
- 725 0022 4354     		strb	r3, [r0, r1]
+ 817              		.loc 1 565 3 is_stmt 1 discriminator 2 view .LVU191
+ 565:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 818              		.loc 1 565 17 is_stmt 0 discriminator 2 view .LVU192
+ 819 0020 2023     		movs	r3, #32
+ 820 0022 4354     		strb	r3, [r0, r1]
  568:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 726              		.loc 1 568 0 discriminator 2
- 727 0024 0023     		movs	r3, #0
- 728 0026 8354     		strb	r3, [r0, r2]
+ 821              		.loc 1 568 3 is_stmt 1 discriminator 2 view .LVU193
+ 568:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccPRA22F.s 			page 29
+
+
+ 822              		.loc 1 568 3 discriminator 2 view .LVU194
+ 823 0024 0023     		movs	r3, #0
+ 824 0026 8354     		strb	r3, [r0, r2]
  570:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
- 729              		.loc 1 570 0 discriminator 2
- 730 0028 0020     		movs	r0, #0
- 731              	.LVL64:
- 732              	.L42:
+ 825              		.loc 1 570 3 discriminator 2 view .LVU195
+ 570:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
+ 826              		.loc 1 570 10 is_stmt 0 discriminator 2 view .LVU196
+ 827 0028 0020     		movs	r0, #0
+ 828              	.LVL63:
+ 829              	.L42:
  571:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F0
- 733              		.loc 1 571 0
- 734              		@ sp needed
- 735 002a 30BD     		pop	{r4, r5, pc}
- 736              	.LVL65:
- 737              	.L43:
+ 830              		.loc 1 571 1 view .LVU197
+ 831              		@ sp needed
+ 832 002a 30BD     		pop	{r4, r5, pc}
+ 833              	.LVL64:
+ 834              	.L43:
  558:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
- 738              		.loc 1 558 0
- 739 002c 0220     		movs	r0, #2
- 740              	.LVL66:
-ARM GAS  /tmp/ccyBn0vl.s 			page 26
-
-
- 741 002e FCE7     		b	.L42
- 742              		.cfi_endproc
- 743              	.LFE44:
- 745              		.text
- 746              	.Letext0:
- 747              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 748              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 749              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
- 750              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
- 751              		.file 6 "/usr/arm-none-eabi/include/sys/lock.h"
- 752              		.file 7 "/usr/arm-none-eabi/include/sys/_types.h"
- 753              		.file 8 "/usr/lib/gcc/arm-none-eabi/7.3.1/include/stddef.h"
- 754              		.file 9 "/usr/arm-none-eabi/include/sys/reent.h"
- 755              		.file 10 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
- 756              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
- 757              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
- 758              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h"
- 759              		.file 14 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h"
- 760              		.file 15 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
-ARM GAS  /tmp/ccyBn0vl.s 			page 27
+ 835              		.loc 1 558 3 view .LVU198
+ 836 002c 0220     		movs	r0, #2
+ 837              	.LVL65:
+ 558:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
+ 838              		.loc 1 558 3 view .LVU199
+ 839 002e FCE7     		b	.L42
+ 840              		.cfi_endproc
+ 841              	.LFE44:
+ 843              		.text
+ 844              	.Letext0:
+ 845              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 846              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 847              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
+ 848              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
+ 849              		.file 6 "/usr/arm-none-eabi/include/sys/lock.h"
+ 850              		.file 7 "/usr/arm-none-eabi/include/sys/_types.h"
+ 851              		.file 8 "/usr/lib/gcc/arm-none-eabi/8.2.0/include/stddef.h"
+ 852              		.file 9 "/usr/arm-none-eabi/include/sys/reent.h"
+ 853              		.file 10 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
+ 854              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
+ 855              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
+ 856              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h"
+ 857              		.file 14 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h"
+ 858              		.file 15 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
+ARM GAS  /tmp/ccPRA22F.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_uart_ex.c
-     /tmp/ccyBn0vl.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
-     /tmp/ccyBn0vl.s:22     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
-     /tmp/ccyBn0vl.s:63     .text.HAL_RS485Ex_Init:0000000000000000 $t
-     /tmp/ccyBn0vl.s:70     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
-     /tmp/ccyBn0vl.s:195    .text.HAL_RS485Ex_Init:000000000000008c $d
-     /tmp/ccyBn0vl.s:201    .text.HAL_LIN_Init:0000000000000000 $t
-     /tmp/ccyBn0vl.s:208    .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
-     /tmp/ccyBn0vl.s:344    .text.HAL_LIN_Init:00000000000000a0 $d
-     /tmp/ccyBn0vl.s:349    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
-     /tmp/ccyBn0vl.s:356    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
-     /tmp/ccyBn0vl.s:371    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
-     /tmp/ccyBn0vl.s:378    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-     /tmp/ccyBn0vl.s:490    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000080 $d
-     /tmp/ccyBn0vl.s:496    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
-     /tmp/ccyBn0vl.s:503    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
-     /tmp/ccyBn0vl.s:558    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
-     /tmp/ccyBn0vl.s:565    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
-     /tmp/ccyBn0vl.s:620    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
-     /tmp/ccyBn0vl.s:627    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccyBn0vl.s:684    .text.HAL_LIN_SendBreak:0000000000000000 $t
-     /tmp/ccyBn0vl.s:691    .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
+     /tmp/ccPRA22F.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
+     /tmp/ccPRA22F.s:23     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
+     /tmp/ccPRA22F.s:67     .text.HAL_RS485Ex_Init:0000000000000000 $t
+     /tmp/ccPRA22F.s:74     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
+     /tmp/ccPRA22F.s:224    .text.HAL_RS485Ex_Init:000000000000008c $d
+     /tmp/ccPRA22F.s:230    .text.HAL_LIN_Init:0000000000000000 $t
+     /tmp/ccPRA22F.s:237    .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
+     /tmp/ccPRA22F.s:392    .text.HAL_LIN_Init:00000000000000a0 $d
+     /tmp/ccPRA22F.s:397    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
+     /tmp/ccPRA22F.s:404    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
+     /tmp/ccPRA22F.s:420    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
+     /tmp/ccPRA22F.s:427    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+     /tmp/ccPRA22F.s:557    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000080 $d
+     /tmp/ccPRA22F.s:563    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
+     /tmp/ccPRA22F.s:570    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
+     /tmp/ccPRA22F.s:633    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
+     /tmp/ccPRA22F.s:640    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
+     /tmp/ccPRA22F.s:703    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
+     /tmp/ccPRA22F.s:710    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/ccPRA22F.s:772    .text.HAL_LIN_SendBreak:0000000000000000 $t
+     /tmp/ccPRA22F.s:779    .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
 
 UNDEFINED SYMBOLS
 UART_SetConfig

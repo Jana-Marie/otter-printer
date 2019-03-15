@@ -5,7 +5,7 @@ build/system_stm32f0xx.o: Src/system_stm32f0xx.c \
  Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h \
  Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
- Inc/stm32f0xx_hal_conf.h Inc/main.h \
+ Inc/stm32f0xx_hal_conf.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h \
@@ -44,8 +44,6 @@ Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h:
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 
 Inc/stm32f0xx_hal_conf.h:
-
-Inc/main.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h:
 

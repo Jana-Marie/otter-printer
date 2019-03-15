@@ -1,6 +1,6 @@
-build/stm32f0xx_it.o: Src/stm32f0xx_it.c \
+build/stm32f0xx_it.o: Src/stm32f0xx_it.c Inc/main.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
- Inc/stm32f0xx_hal_conf.h Inc/main.h \
+ Inc/stm32f0xx_hal_conf.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h \
  Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h \
@@ -28,11 +28,11 @@ build/stm32f0xx_it.o: Src/stm32f0xx_it.c \
  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  Inc/stm32f0xx_it.h
 
+Inc/main.h:
+
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 
 Inc/stm32f0xx_hal_conf.h:
-
-Inc/main.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h:
 
