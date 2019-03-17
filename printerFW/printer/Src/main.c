@@ -3,7 +3,6 @@
 #include "usb_device.h"
 #include "usbd_cdc_if.h"
 
-extern I2C_HandleTypeDef hi2c1;
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim3;
@@ -19,7 +18,6 @@ int main(void)
 
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_I2C1_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
@@ -28,9 +26,6 @@ int main(void)
 
   HAL_TIM_Base_Start(&htim2);
   HAL_TIM_Base_Start(&htim3);
-
-  __HAL_TIM_ENABLE(&htim2);
-  __HAL_TIM_ENABLE(&htim3);
 
 
   HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 1);
@@ -41,6 +36,9 @@ int main(void)
   if (HAL_GPIO_ReadPin(GPIOB, Button_Pin)) {
     dfu_otter_bootloader();
   }
+  
+  HAL_TIM_OnePulse_Start(&htim2, TIM_CHANNEL_ALL);
+  HAL_TIM_OnePulse_Start(&htim3, TIM_CHANNEL_ALL);
 
   while (1)
   {
@@ -48,8 +46,8 @@ int main(void)
     HAL_GPIO_TogglePin(GPIOB, LED_STATUS_Pin);
     HAL_Delay(500);
 
-    HAL_TIM_OnePulse_Start(&htim2, TIM_CHANNEL_ALL);
-    HAL_TIM_OnePulse_Start(&htim3, TIM_CHANNEL_ALL); 
+    TIM2->CR1 = TIM2->CR1 | 1;
+    TIM3->CR1 = TIM3->CR1 | 1;
     
     memset(otter, sizeof(otter), ' ');
     sprintf(otter, "%d\n\r", HAL_GPIO_ReadPin(GPIOB, Button_Pin));

@@ -96,48 +96,48 @@ void Error_Handler(void);
 #define D2_GPIO_Port GPIOC
 #define D3_Pin GPIO_PIN_15
 #define D3_GPIO_Port GPIOC
+
 #define DCLCK_Pin GPIO_PIN_0
 #define DCLCK_GPIO_Port GPIOA
-#define S1_Pin GPIO_PIN_1
-#define S1_GPIO_Port GPIOA
+#define S5_Pin GPIO_PIN_1
+#define S5_GPIO_Port GPIOA
 #define S2_Pin GPIO_PIN_2
 #define S2_GPIO_Port GPIOA
 #define S3_Pin GPIO_PIN_3
 #define S3_GPIO_Port GPIOA
-#define Button_Pin GPIO_PIN_8
-#define Button_GPIO_Port GPIOB
 #define S4_Pin GPIO_PIN_6
 #define S4_GPIO_Port GPIOA
-#define S5_Pin GPIO_PIN_7
-#define S5_GPIO_Port GPIOA
+#define S1_Pin GPIO_PIN_7
+#define S1_GPIO_Port GPIOA
+#define ENCODER_B_Pin GPIO_PIN_8
+#define ENCODER_B_GPIO_Port GPIOA
+#define ENCODER_A_Pin GPIO_PIN_9
+#define ENCODER_A_GPIO_Port GPIOA
+
 #define F3_Pin GPIO_PIN_0
 #define F3_GPIO_Port GPIOB
 #define F5_Pin GPIO_PIN_1
 #define F5_GPIO_Port GPIOB
+#define CSYNC_Pin GPIO_PIN_9
+#define CSYNC_GPIO_Port GPIOB
+#define LED_POWER_Pin GPIO_PIN_12
+#define LED_POWER_GPIO_Port GPIOB
+#define LED_STATUS_Pin GPIO_PIN_13
+#define LED_STATUS_GPIO_Port GPIOB
+
+#define Button_Pin GPIO_PIN_8
+#define Button_GPIO_Port GPIOB
 #define INT_IN_Pin GPIO_PIN_2
 #define INT_IN_GPIO_Port GPIOB
+
 #define IN_TX_Pin GPIO_PIN_10
 #define IN_TX_GPIO_Port GPIOB
 #define IN_RX_Pin GPIO_PIN_11
 #define IN_RX_GPIO_Port GPIOB
 #define INDEX_Pin GPIO_PIN_15
 #define INDEX_GPIO_Port GPIOB
-#define ENCODER_B_Pin GPIO_PIN_8
-#define ENCODER_B_GPIO_Port GPIOA
-#define ENCODER_A_Pin GPIO_PIN_9
-#define ENCODER_A_GPIO_Port GPIOA
-#define LED_POWER_Pin GPIO_PIN_12
-#define LED_POWER_GPIO_Port GPIOB
-#define LED_STATUS_Pin GPIO_PIN_13
-#define LED_STATUS_GPIO_Port GPIOB
-#define OLED_SCL_Pin GPIO_PIN_6
-#define OLED_SCL_GPIO_Port GPIOB
-#define OLED_SDA_Pin GPIO_PIN_7
-#define OLED_SDA_GPIO_Port GPIOB
-#define Button_Down_Pin GPIO_PIN_8
-#define Button_Down_GPIO_Port GPIOB
-#define CSYNC_Pin GPIO_PIN_9
-#define CSYNC_GPIO_Port GPIOB
+
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
