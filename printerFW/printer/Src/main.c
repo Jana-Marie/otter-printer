@@ -26,6 +26,13 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USB_DEVICE_Init();
 
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_Base_Start(&htim3);
+
+  __HAL_TIM_ENABLE(&htim2);
+  __HAL_TIM_ENABLE(&htim3);
+
+
   HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 1);
 
   char otter[50];
@@ -37,8 +44,14 @@ int main(void)
 
   while (1)
   {
+
     HAL_GPIO_TogglePin(GPIOB, LED_STATUS_Pin);
     HAL_Delay(500);
+
+    HAL_TIM_OnePulse_Start(&htim2, TIM_CHANNEL_ALL);
+    HAL_TIM_OnePulse_Start(&htim3, TIM_CHANNEL_ALL); 
+    
+    memset(otter, sizeof(otter), ' ');
     sprintf(otter, "%d\n\r", HAL_GPIO_ReadPin(GPIOB, Button_Pin));
     CDC_Transmit_FS((uint8_t*)otter, sizeof(otter));
   }
