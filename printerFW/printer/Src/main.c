@@ -32,10 +32,13 @@ int main(void)
 
   char otter[50];
   memset(otter, sizeof(otter), ' ');
-  
+
   if (HAL_GPIO_ReadPin(GPIOB, Button_Pin)) {
     dfu_otter_bootloader();
   }
+
+  TIM2->CCER = 0x3333;
+  TIM3->CCER = 0x3333;
   
   HAL_TIM_OnePulse_Start(&htim2, TIM_CHANNEL_ALL);
   HAL_TIM_OnePulse_Start(&htim3, TIM_CHANNEL_ALL);
@@ -46,9 +49,9 @@ int main(void)
     HAL_GPIO_TogglePin(GPIOB, LED_STATUS_Pin);
     HAL_Delay(500);
 
-    TIM2->CR1 = TIM2->CR1 | 1;
-    TIM3->CR1 = TIM3->CR1 | 1;
-    
+    TIM2->CR1 = TIM2->CR1 | 0x01;
+    TIM3->CR1 = TIM3->CR1 | 0x01;
+
     memset(otter, sizeof(otter), ' ');
     sprintf(otter, "%d\n\r", HAL_GPIO_ReadPin(GPIOB, Button_Pin));
     CDC_Transmit_FS((uint8_t*)otter, sizeof(otter));

@@ -86,6 +86,10 @@ void MX_TIM2_Init(void)
   sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1);
+  HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2);
+  HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_3);
+  HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_4);
+
   HAL_TIM_OnePulse_Init(&htim2, TIM_OPMODE_SINGLE);
   HAL_TIM_MspPostInit(&htim2);
 
@@ -119,6 +123,9 @@ void MX_TIM3_Init(void)
   sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1);
+  HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2);
+  HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_3);
+  HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4);
   HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_SINGLE);
   HAL_TIM_MspPostInit(&htim3);
 }
@@ -162,20 +169,13 @@ void MX_GPIO_Init(void)
 
   HAL_GPIO_WritePin(GPIOA, LED_POWER_Pin|LED_STATUS_Pin, GPIO_PIN_RESET);
 
-  //HAL_GPIO_WritePin(CSYNC_GPIO_Port, CSYNC_Pin, GPIO_PIN_RESET);
-/*
+  HAL_GPIO_WritePin(CSYNC_GPIO_Port, CSYNC_Pin, GPIO_PIN_RESET);
+
   GPIO_InitStruct.Pin = D1_Pin|D2_Pin|D3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
- 
-  GPIO_InitStruct.Pin = S1_Pin|S2_Pin|S3_Pin|S4_Pin|S5_Pin|DCLCK_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-  */
 
   GPIO_InitStruct.Pin = LED_POWER_Pin|LED_STATUS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
