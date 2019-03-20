@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccCMJ5PP.s 			page 1
+ARM GAS  /tmp/ccYFxM84.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
   31:Src/stm32f0xx_hal_msp.c ****   * 5. Redistribution and use of this software other than as permitted under 
   32:Src/stm32f0xx_hal_msp.c ****   *    this license is void and will automatically terminate your rights under 
   33:Src/stm32f0xx_hal_msp.c ****   *    this license. 
-ARM GAS  /tmp/ccCMJ5PP.s 			page 2
+ARM GAS  /tmp/ccYFxM84.s 			page 2
 
 
   34:Src/stm32f0xx_hal_msp.c ****   *
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
   88:Src/stm32f0xx_hal_msp.c **** /* Private function prototypes -----------------------------------------------*/
   89:Src/stm32f0xx_hal_msp.c **** /* USER CODE BEGIN PFP */
   90:Src/stm32f0xx_hal_msp.c **** 
-ARM GAS  /tmp/ccCMJ5PP.s 			page 3
+ARM GAS  /tmp/ccYFxM84.s 			page 3
 
 
   91:Src/stm32f0xx_hal_msp.c **** /* USER CODE END PFP */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
   57              	.LBE3:
  114:Src/stm32f0xx_hal_msp.c **** 
  115:Src/stm32f0xx_hal_msp.c ****   /* System interrupt init*/
-ARM GAS  /tmp/ccCMJ5PP.s 			page 4
+ARM GAS  /tmp/ccYFxM84.s 			page 4
 
 
  116:Src/stm32f0xx_hal_msp.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
   91              		.cfi_def_cfa_offset 40
   92 0004 0400     		movs	r4, r0
  139:Src/stm32f0xx_hal_msp.c **** 
-ARM GAS  /tmp/ccCMJ5PP.s 			page 5
+ARM GAS  /tmp/ccYFxM84.s 			page 5
 
 
  140:Src/stm32f0xx_hal_msp.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  119 0024 0143     		orrs	r1, r0
  120 0026 9961     		str	r1, [r3, #24]
  121 0028 9A69     		ldr	r2, [r3, #24]
-ARM GAS  /tmp/ccCMJ5PP.s 			page 6
+ARM GAS  /tmp/ccYFxM84.s 			page 6
 
 
  122 002a 0240     		ands	r2, r0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  167:Src/stm32f0xx_hal_msp.c **** 
  168:Src/stm32f0xx_hal_msp.c **** /**
  169:Src/stm32f0xx_hal_msp.c **** * @brief TIM_Base MSP Initialization
-ARM GAS  /tmp/ccCMJ5PP.s 			page 7
+ARM GAS  /tmp/ccYFxM84.s 			page 7
 
 
  170:Src/stm32f0xx_hal_msp.c **** * This function configures the hardware resources used in this example
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  204:Src/stm32f0xx_hal_msp.c ****     hdma_tim2_ch4.Init.Direction = DMA_MEMORY_TO_PERIPH;
  205:Src/stm32f0xx_hal_msp.c ****     hdma_tim2_ch4.Init.PeriphInc = DMA_PINC_DISABLE;
  206:Src/stm32f0xx_hal_msp.c ****     hdma_tim2_ch4.Init.MemInc = DMA_MINC_ENABLE;
-ARM GAS  /tmp/ccCMJ5PP.s 			page 8
+ARM GAS  /tmp/ccYFxM84.s 			page 8
 
 
  207:Src/stm32f0xx_hal_msp.c ****     hdma_tim2_ch4.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  203 0018 10BD     		pop	{r4, pc}
  204              	.LVL9:
  205              	.L15:
-ARM GAS  /tmp/ccCMJ5PP.s 			page 9
+ARM GAS  /tmp/ccYFxM84.s 			page 9
 
 
  206              	.LBB6:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  200:Src/stm32f0xx_hal_msp.c **** 
  250              		.loc 1 200 0
  251 0056 264B     		ldr	r3, .L20+8
-ARM GAS  /tmp/ccCMJ5PP.s 			page 10
+ARM GAS  /tmp/ccYFxM84.s 			page 10
 
 
  252 0058 6362     		str	r3, [r4, #36]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  294              		.loc 1 220 0
  295 0094 1023     		movs	r3, #16
  296 0096 4360     		str	r3, [r0, #4]
-ARM GAS  /tmp/ccCMJ5PP.s 			page 11
+ARM GAS  /tmp/ccYFxM84.s 			page 11
 
 
  221:Src/stm32f0xx_hal_msp.c ****     hdma_tim2_ch3.Init.MemInc = DMA_MINC_ENABLE;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  340              	.LVL16:
  341 00d2 F2E7     		b	.L13
  342              	.LVL17:
-ARM GAS  /tmp/ccCMJ5PP.s 			page 12
+ARM GAS  /tmp/ccYFxM84.s 			page 12
 
 
  343              	.L16:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  395 0004 0400     		movs	r4, r0
  254:Src/stm32f0xx_hal_msp.c **** 
  255:Src/stm32f0xx_hal_msp.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
-ARM GAS  /tmp/ccCMJ5PP.s 			page 13
+ARM GAS  /tmp/ccYFxM84.s 			page 13
 
 
  396              		.loc 1 255 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  425 002a 0340     		ands	r3, r0
  426 002c 0093     		str	r3, [sp]
  427 002e 009B     		ldr	r3, [sp]
-ARM GAS  /tmp/ccCMJ5PP.s 			page 14
+ARM GAS  /tmp/ccYFxM84.s 			page 14
 
 
  428              	.LBE8:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  471              		.cfi_def_cfa_offset 8
  472              		.cfi_offset 4, -8
  473              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccCMJ5PP.s 			page 15
+ARM GAS  /tmp/ccYFxM84.s 			page 15
 
 
  289:Src/stm32f0xx_hal_msp.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  505 0024 002C0140 		.word	1073818624
  506 0028 00100240 		.word	1073876992
  507 002c FFF7FFFF 		.word	-2049
-ARM GAS  /tmp/ccCMJ5PP.s 			page 16
+ARM GAS  /tmp/ccYFxM84.s 			page 16
 
 
  508              		.cfi_endproc
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  336:Src/stm32f0xx_hal_msp.c ****   }
  337:Src/stm32f0xx_hal_msp.c ****   else if(htim_base->Instance==TIM3)
  538              		.loc 1 337 0
-ARM GAS  /tmp/ccCMJ5PP.s 			page 17
+ARM GAS  /tmp/ccYFxM84.s 			page 17
 
 
  539 000e 0C4A     		ldr	r2, .L37
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  576 003a 8B43     		bics	r3, r1
  577 003c D361     		str	r3, [r2, #28]
  578              		.loc 1 349 0
-ARM GAS  /tmp/ccCMJ5PP.s 			page 18
+ARM GAS  /tmp/ccYFxM84.s 			page 18
 
 
  579 003e E9E7     		b	.L32
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  623 0016 01D0     		beq	.L43
  624              	.L39:
  362:Src/stm32f0xx_hal_msp.c ****   {
-ARM GAS  /tmp/ccCMJ5PP.s 			page 19
+ARM GAS  /tmp/ccYFxM84.s 			page 19
 
 
  363:Src/stm32f0xx_hal_msp.c ****   /* USER CODE BEGIN USART3_MspInit 0 */
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  417:Src/stm32f0xx_hal_msp.c ****   }
  418:Src/stm32f0xx_hal_msp.c **** 
  419:Src/stm32f0xx_hal_msp.c **** }
-ARM GAS  /tmp/ccCMJ5PP.s 			page 20
+ARM GAS  /tmp/ccYFxM84.s 			page 20
 
 
  625              		.loc 1 419 0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  672              	.LVL43:
  383:Src/stm32f0xx_hal_msp.c ****     hdma_usart3_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
  673              		.loc 1 383 0
-ARM GAS  /tmp/ccCMJ5PP.s 			page 21
+ARM GAS  /tmp/ccYFxM84.s 			page 21
 
 
  674 0058 1B48     		ldr	r0, .L46+12
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  715              		.loc 1 402 0
  716 0090 8022     		movs	r2, #128
  717 0092 C260     		str	r2, [r0, #12]
-ARM GAS  /tmp/ccCMJ5PP.s 			page 22
+ARM GAS  /tmp/ccYFxM84.s 			page 22
 
 
  403:Src/stm32f0xx_hal_msp.c ****     hdma_usart3_tx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  765              		.global	HAL_UART_MspDeInit
  766              		.syntax unified
  767              		.code	16
-ARM GAS  /tmp/ccCMJ5PP.s 			page 23
+ARM GAS  /tmp/ccYFxM84.s 			page 23
 
 
  768              		.thumb_func
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  452:Src/stm32f0xx_hal_msp.c **** 
  453:Src/stm32f0xx_hal_msp.c **** }
  791              		.loc 1 453 0
-ARM GAS  /tmp/ccCMJ5PP.s 			page 24
+ARM GAS  /tmp/ccYFxM84.s 			page 24
 
 
  792              		@ sp needed
@@ -1438,39 +1438,39 @@ ARM GAS  /tmp/ccCMJ5PP.s 			page 1
  843              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h"
  844              		.file 14 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h"
  845              		.file 15 "Inc/main.h"
-ARM GAS  /tmp/ccCMJ5PP.s 			page 25
+ARM GAS  /tmp/ccYFxM84.s 			page 25
 
 
  846              		.file 16 "<built-in>"
-ARM GAS  /tmp/ccCMJ5PP.s 			page 26
+ARM GAS  /tmp/ccYFxM84.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_msp.c
-     /tmp/ccCMJ5PP.s:16     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/ccCMJ5PP.s:65     .text.HAL_MspInit:000000000000002c $d
-     /tmp/ccCMJ5PP.s:70     .text.HAL_TIM_Encoder_MspInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:77     .text.HAL_TIM_Encoder_MspInit:0000000000000000 HAL_TIM_Encoder_MspInit
-     /tmp/ccCMJ5PP.s:158    .text.HAL_TIM_Encoder_MspInit:000000000000005c $d
-     /tmp/ccCMJ5PP.s:164    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:171    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
-     /tmp/ccCMJ5PP.s:361    .text.HAL_TIM_Base_MspInit:00000000000000e8 $d
-     /tmp/ccCMJ5PP.s:373    .text.HAL_TIM_MspPostInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:380    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
-     /tmp/ccCMJ5PP.s:448    .text.HAL_TIM_MspPostInit:0000000000000048 $d
-     /tmp/ccCMJ5PP.s:455    .text.HAL_TIM_Encoder_MspDeInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:462    .text.HAL_TIM_Encoder_MspDeInit:0000000000000000 HAL_TIM_Encoder_MspDeInit
-     /tmp/ccCMJ5PP.s:505    .text.HAL_TIM_Encoder_MspDeInit:0000000000000024 $d
-     /tmp/ccCMJ5PP.s:512    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:519    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
-     /tmp/ccCMJ5PP.s:583    .text.HAL_TIM_Base_MspDeInit:0000000000000040 $d
-     /tmp/ccCMJ5PP.s:589    .text.HAL_UART_MspInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:596    .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
-     /tmp/ccCMJ5PP.s:753    .text.HAL_UART_MspInit:00000000000000bc $d
-     /tmp/ccCMJ5PP.s:764    .text.HAL_UART_MspDeInit:0000000000000000 $t
-     /tmp/ccCMJ5PP.s:771    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
-     /tmp/ccCMJ5PP.s:823    .text.HAL_UART_MspDeInit:0000000000000030 $d
+     /tmp/ccYFxM84.s:16     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/ccYFxM84.s:65     .text.HAL_MspInit:000000000000002c $d
+     /tmp/ccYFxM84.s:70     .text.HAL_TIM_Encoder_MspInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:77     .text.HAL_TIM_Encoder_MspInit:0000000000000000 HAL_TIM_Encoder_MspInit
+     /tmp/ccYFxM84.s:158    .text.HAL_TIM_Encoder_MspInit:000000000000005c $d
+     /tmp/ccYFxM84.s:164    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:171    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+     /tmp/ccYFxM84.s:361    .text.HAL_TIM_Base_MspInit:00000000000000e8 $d
+     /tmp/ccYFxM84.s:373    .text.HAL_TIM_MspPostInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:380    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
+     /tmp/ccYFxM84.s:448    .text.HAL_TIM_MspPostInit:0000000000000048 $d
+     /tmp/ccYFxM84.s:455    .text.HAL_TIM_Encoder_MspDeInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:462    .text.HAL_TIM_Encoder_MspDeInit:0000000000000000 HAL_TIM_Encoder_MspDeInit
+     /tmp/ccYFxM84.s:505    .text.HAL_TIM_Encoder_MspDeInit:0000000000000024 $d
+     /tmp/ccYFxM84.s:512    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:519    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+     /tmp/ccYFxM84.s:583    .text.HAL_TIM_Base_MspDeInit:0000000000000040 $d
+     /tmp/ccYFxM84.s:589    .text.HAL_UART_MspInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:596    .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
+     /tmp/ccYFxM84.s:753    .text.HAL_UART_MspInit:00000000000000bc $d
+     /tmp/ccYFxM84.s:764    .text.HAL_UART_MspDeInit:0000000000000000 $t
+     /tmp/ccYFxM84.s:771    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
+     /tmp/ccYFxM84.s:823    .text.HAL_UART_MspDeInit:0000000000000030 $d
 
 UNDEFINED SYMBOLS
 memset

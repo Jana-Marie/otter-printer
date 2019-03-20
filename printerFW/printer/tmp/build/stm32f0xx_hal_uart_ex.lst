@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwquSIZ.s 			page 1
+ARM GAS  /tmp/ccmJ6Y46.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      this list of conditions and the following disclaimer.
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
   34:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      this list of conditions and the following disclaimer in the documentation
-ARM GAS  /tmp/ccwquSIZ.s 			page 2
+ARM GAS  /tmp/ccmJ6Y46.s 			page 2
 
 
   35:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *      and/or other materials provided with the distribution.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** /** @defgroup UARTEx_Exported_Functions_Group1 Extended Initialization and de-initialization functi
   91:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @brief    Extended Initialization and Configuration Functions
-ARM GAS  /tmp/ccwquSIZ.s 			page 3
+ARM GAS  /tmp/ccmJ6Y46.s 			page 3
 
 
   92:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  146:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |  M1 bit |  M0 bit |  PCE bit  |             UART frame                |
  147:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |---------|---------|-----------|---------------------------------------|
  148:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |    0    |    0    |     0     |    | SB |    8 bit data   | STB |     |
-ARM GAS  /tmp/ccwquSIZ.s 			page 4
+ARM GAS  /tmp/ccmJ6Y46.s 			page 4
 
 
  149:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       |---------|---------|-----------|---------------------------------------|
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if(huart->gState == HAL_UART_STATE_RESET)
  204:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  205:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     /* Allocate lock resource and initialize it */
-ARM GAS  /tmp/ccwquSIZ.s 			page 5
+ARM GAS  /tmp/ccmJ6Y46.s 			page 5
 
 
  206:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     huart->Lock = HAL_UNLOCKED;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  260:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if(huart == NULL)
  261:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  262:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     return HAL_ERROR;
-ARM GAS  /tmp/ccwquSIZ.s 			page 6
+ARM GAS  /tmp/ccmJ6Y46.s 			page 6
 
 
  263:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  317:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  318:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Enable the Peripheral */
  319:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_UART_ENABLE(huart);
-ARM GAS  /tmp/ccwquSIZ.s 			page 7
+ARM GAS  /tmp/ccmJ6Y46.s 			page 7
 
 
  320:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  374:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****                       ##### Peripheral Control functions #####
  375:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****  ===============================================================================
  376:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     [..]
-ARM GAS  /tmp/ccwquSIZ.s 			page 8
+ARM GAS  /tmp/ccmJ6Y46.s 			page 8
 
 
  377:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     This subsection provides extended functions allowing to control the UART.         
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  431:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Init tickstart for timeout managment*/
  432:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   tickstart = HAL_GetTick();
  433:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccwquSIZ.s 			page 9
+ARM GAS  /tmp/ccmJ6Y46.s 			page 9
 
 
  434:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Wait until REACK flag is set */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  488:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  489:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Process Locked */
  490:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
-ARM GAS  /tmp/ccwquSIZ.s 			page 10
+ARM GAS  /tmp/ccmJ6Y46.s 			page 10
 
 
  491:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  545:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  546:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #if !defined(STM32F030x6) && !defined(STM32F030x8)&& !defined(STM32F070xB)&& !defined(STM32F070x6)&
  547:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** /**
-ARM GAS  /tmp/ccwquSIZ.s 			page 11
+ARM GAS  /tmp/ccmJ6Y46.s 			page 11
 
 
  548:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @brief  Transmit break characters.
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
   32              	.LCFI0:
   33              		.cfi_def_cfa_offset 8
   34 0002 0091     		str	r1, [sp]
-ARM GAS  /tmp/ccwquSIZ.s 			page 12
+ARM GAS  /tmp/ccmJ6Y46.s 			page 12
 
 
   35 0004 0192     		str	r2, [sp, #4]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
   80              		.cfi_offset 3, -24
   81              		.cfi_offset 4, -20
   82              		.cfi_offset 5, -16
-ARM GAS  /tmp/ccwquSIZ.s 			page 13
+ARM GAS  /tmp/ccmJ6Y46.s 			page 13
 
 
   83              		.cfi_offset 6, -12
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  232:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  130              		.loc 1 232 0
  131 0042 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccwquSIZ.s 			page 14
+ARM GAS  /tmp/ccmJ6Y46.s 			page 14
 
 
  132 0044 9368     		ldr	r3, [r2, #8]
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  178              	.LVL15:
  179 007c CBE7     		b	.L4
  180              	.L8:
-ARM GAS  /tmp/ccwquSIZ.s 			page 15
+ARM GAS  /tmp/ccmJ6Y46.s 			page 15
 
 
  225:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  232 0012 41D0     		beq	.L16
  276:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  233              		.loc 1 276 0
-ARM GAS  /tmp/ccwquSIZ.s 			page 16
+ARM GAS  /tmp/ccmJ6Y46.s 			page 16
 
 
  234 0014 8368     		ldr	r3, [r0, #8]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  280 005a 8023     		movs	r3, #128
  281 005c DB01     		lsls	r3, r3, #7
  282 005e 0B43     		orrs	r3, r1
-ARM GAS  /tmp/ccwquSIZ.s 			page 17
+ARM GAS  /tmp/ccmJ6Y46.s 			page 17
 
 
  283 0060 5360     		str	r3, [r2, #4]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  329              	.LVL30:
  330              	.L16:
  273:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccwquSIZ.s 			page 18
+ARM GAS  /tmp/ccmJ6Y46.s 			page 18
 
 
  331              		.loc 1 273 0
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  385 0000 10B5     		push	{r4, lr}
  386              	.LCFI3:
  387              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccwquSIZ.s 			page 19
+ARM GAS  /tmp/ccmJ6Y46.s 			page 19
 
 
  388              		.cfi_offset 4, -8
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  434              		.loc 1 432 0
  435 0042 FFF7FEFF 		bl	HAL_GetTick
  436              	.LVL38:
-ARM GAS  /tmp/ccwquSIZ.s 			page 20
+ARM GAS  /tmp/ccmJ6Y46.s 			page 20
 
 
  437 0046 0300     		movs	r3, r0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  484 007a 0220     		movs	r0, #2
  485              	.LVL49:
  486 007c FBE7     		b	.L24
-ARM GAS  /tmp/ccwquSIZ.s 			page 21
+ARM GAS  /tmp/ccmJ6Y46.s 			page 21
 
 
  487              	.L31:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  537 0022 4354     		strb	r3, [r0, r1]
  474:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  538              		.loc 1 474 0 discriminator 2
-ARM GAS  /tmp/ccwquSIZ.s 			page 22
+ARM GAS  /tmp/ccmJ6Y46.s 			page 22
 
 
  539 0024 0023     		movs	r3, #0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  588 0010 6921     		movs	r1, #105
  589 0012 2333     		adds	r3, r3, #35
  590 0014 4354     		strb	r3, [r0, r1]
-ARM GAS  /tmp/ccwquSIZ.s 			page 23
+ARM GAS  /tmp/ccmJ6Y46.s 			page 23
 
 
  495:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  640              		.cfi_offset 14, -4
  522:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  641              		.loc 1 522 0
-ARM GAS  /tmp/ccwquSIZ.s 			page 24
+ARM GAS  /tmp/ccmJ6Y46.s 			page 24
 
 
  642 0002 0028     		cmp	r0, #0
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  691              	HAL_LIN_SendBreak:
  692              	.LFB44:
  553:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check the parameters */
-ARM GAS  /tmp/ccwquSIZ.s 			page 25
+ARM GAS  /tmp/ccmJ6Y46.s 			page 25
 
 
  693              		.loc 1 553 0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  738              		.loc 1 558 0
  739 002c 0220     		movs	r0, #2
  740              	.LVL66:
-ARM GAS  /tmp/ccwquSIZ.s 			page 26
+ARM GAS  /tmp/ccmJ6Y46.s 			page 26
 
 
  741 002e FCE7     		b	.L42
@@ -1520,32 +1520,32 @@ ARM GAS  /tmp/ccwquSIZ.s 			page 1
  758              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h"
  759              		.file 14 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h"
  760              		.file 15 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
-ARM GAS  /tmp/ccwquSIZ.s 			page 27
+ARM GAS  /tmp/ccmJ6Y46.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_uart_ex.c
-     /tmp/ccwquSIZ.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
-     /tmp/ccwquSIZ.s:22     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
-     /tmp/ccwquSIZ.s:63     .text.HAL_RS485Ex_Init:0000000000000000 $t
-     /tmp/ccwquSIZ.s:70     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
-     /tmp/ccwquSIZ.s:195    .text.HAL_RS485Ex_Init:000000000000008c $d
-     /tmp/ccwquSIZ.s:201    .text.HAL_LIN_Init:0000000000000000 $t
-     /tmp/ccwquSIZ.s:208    .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
-     /tmp/ccwquSIZ.s:344    .text.HAL_LIN_Init:00000000000000a0 $d
-     /tmp/ccwquSIZ.s:349    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
-     /tmp/ccwquSIZ.s:356    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
-     /tmp/ccwquSIZ.s:371    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
-     /tmp/ccwquSIZ.s:378    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-     /tmp/ccwquSIZ.s:490    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000080 $d
-     /tmp/ccwquSIZ.s:496    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
-     /tmp/ccwquSIZ.s:503    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
-     /tmp/ccwquSIZ.s:558    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
-     /tmp/ccwquSIZ.s:565    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
-     /tmp/ccwquSIZ.s:620    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
-     /tmp/ccwquSIZ.s:627    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccwquSIZ.s:684    .text.HAL_LIN_SendBreak:0000000000000000 $t
-     /tmp/ccwquSIZ.s:691    .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
+     /tmp/ccmJ6Y46.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:22     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
+     /tmp/ccmJ6Y46.s:63     .text.HAL_RS485Ex_Init:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:70     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
+     /tmp/ccmJ6Y46.s:195    .text.HAL_RS485Ex_Init:000000000000008c $d
+     /tmp/ccmJ6Y46.s:201    .text.HAL_LIN_Init:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:208    .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
+     /tmp/ccmJ6Y46.s:344    .text.HAL_LIN_Init:00000000000000a0 $d
+     /tmp/ccmJ6Y46.s:349    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:356    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
+     /tmp/ccmJ6Y46.s:371    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:378    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+     /tmp/ccmJ6Y46.s:490    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000080 $d
+     /tmp/ccmJ6Y46.s:496    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:503    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
+     /tmp/ccmJ6Y46.s:558    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:565    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
+     /tmp/ccmJ6Y46.s:620    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:627    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/ccmJ6Y46.s:684    .text.HAL_LIN_SendBreak:0000000000000000 $t
+     /tmp/ccmJ6Y46.s:691    .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
 
 UNDEFINED SYMBOLS
 UART_SetConfig
