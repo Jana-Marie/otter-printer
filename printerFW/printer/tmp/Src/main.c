@@ -74,14 +74,14 @@ int main(void)
 
   memset(my_data_buf, 0xFF, data_len);
   for (uint16_t i = 0; i < data_len - 1; i += 8) {
-    my_data_buf[i + 0] = 0x0003;
-    my_data_buf[i + 1] = 0xFF80;
-    my_data_buf[i + 2] = 0x0001;
-    my_data_buf[i + 3] = 0xFF04;
-    my_data_buf[i + 4] = 0x0001;
-    my_data_buf[i + 5] = 0xFF08;
-    my_data_buf[i + 6] = 0x0001;
-    my_data_buf[i + 7] = 0xFF40;
+    my_data_buf[i + 0] = 0xFF83;
+    my_data_buf[i + 1] = 0xFF00;
+    my_data_buf[i + 2] = 0x0005;
+    my_data_buf[i + 3] = 0xFF00;
+    my_data_buf[i + 4] = 0x0009;
+    my_data_buf[i + 5] = 0x0000;
+    my_data_buf[i + 6] = 0xFF41;
+    my_data_buf[i + 7] = 0x0000;
   }
 
   memset(my_data_buf, 0x00, data_len);
