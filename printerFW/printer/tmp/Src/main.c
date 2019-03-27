@@ -13,7 +13,7 @@ DMA_HandleTypeDef hdma_usart3_rx;
 DMA_HandleTypeDef hdma_usart3_tx;
 DMA_HandleTypeDef hdma_tim2_uev;
 
-uint16_t PER = 300;
+uint16_t PER = 30;
 
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
@@ -31,19 +31,23 @@ void dfu_otter_bootloader(void)
   NVIC_SystemReset();
 }
 
-#define data_len 112
+#define data_len 200
 uint16_t my_data_buf[data_len];
 
-uint16_t my_data_buf_fire[8];
+uint8_t my_data_buf_fire[data_len];
 
 void dataTransmittedHandler0(DMA_HandleTypeDef *hdma) {
   HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 0);
   HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_1);
 }
+
 void dataTransmittedHandler1(DMA_HandleTypeDef *hdma) {
   HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 0);
   HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_3);
+  HAL_GPIO_WritePin(GPIOC, F5_Pin, 0);
+  HAL_GPIO_WritePin(GPIOC, F3_Pin, 0);
 }
+
 void dataTransmittedHandler2(DMA_HandleTypeDef *hdma) {
   HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_4);
 }
@@ -62,7 +66,7 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USB_DEVICE_Init();
 
-  if (HAL_GPIO_ReadPin(GPIOB, BUTTON_Pin)) {
+  if(HAL_GPIO_ReadPin(GPIOB, BUTTON_Pin)) {
     dfu_otter_bootloader();
   }
 
@@ -70,26 +74,27 @@ int main(void)
 
   memset(my_data_buf, 0xFF, data_len);
   for (uint16_t i = 0; i < data_len - 1; i += 8) {
-    my_data_buf[i]      = 0xFF01;
-    my_data_buf[i + 1]  = 0xFF80;
-    my_data_buf[i + 2]  = 0xFF01;
-    my_data_buf[i + 3]  = 0xFF04;
-    my_data_buf[i + 4]  = 0xFF01;
-    my_data_buf[i + 5]  = 0xFF08;
-    my_data_buf[i + 6]  = 0xFF01;
-    my_data_buf[i + 7]  = 0xFF40;
+    my_data_buf[i + 0] = 0x0003;
+    my_data_buf[i + 1] = 0xFF80;
+    my_data_buf[i + 2] = 0x0001;
+    my_data_buf[i + 3] = 0xFF04;
+    my_data_buf[i + 4] = 0x0001;
+    my_data_buf[i + 5] = 0xFF08;
+    my_data_buf[i + 6] = 0x0001;
+    my_data_buf[i + 7] = 0xFF40;
   }
 
-  memset(my_data_buf, 0x00, 8);
-  my_data_buf_fire[0] = 0x0002;
-  my_data_buf_fire[1] = 0x0002;
-  my_data_buf_fire[2] = 0x0000;
-  my_data_buf_fire[3] = 0x0000;
-  my_data_buf_fire[4] = 0x0001;
-  my_data_buf_fire[5] = 0x0001;
-  my_data_buf_fire[6] = 0x0000;
-  my_data_buf_fire[7] = 0x0000;
-
+  memset(my_data_buf, 0x00, data_len);
+  for (uint16_t i = 0; i < data_len - 1; i += 8) {
+    my_data_buf_fire[i + 0] = 0x02;//02
+    my_data_buf_fire[i + 1] = 0x00;
+    my_data_buf_fire[i + 2] = 0x00;
+    my_data_buf_fire[i + 3] = 0x00;
+    my_data_buf_fire[i + 4] = 0x01;//01
+    my_data_buf_fire[i + 5] = 0x00;
+    my_data_buf_fire[i + 6] = 0x00;
+    my_data_buf_fire[i + 7] = 0x00;
+  }
 
   htim2.hdma[TIM_DMA_ID_CC1]->XferCpltCallback = dataTransmittedHandler0;
   __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
@@ -100,14 +105,13 @@ int main(void)
   htim2.hdma[TIM_DMA_ID_CC4]->XferCpltCallback = dataTransmittedHandler2;
   __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC4);
 
-  startDMA();
-
   while (1)
   {
-    HAL_Delay(500);
-    HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 1);
     HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 1);
-    startDMA();
+    if(HAL_GPIO_ReadPin(GPIOB, BUTTON_Pin)) {
+      HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 1);
+      startDMA();
+    }
   }
 }
 void startDMA() {
@@ -125,14 +129,14 @@ void startDMA() {
 
 
   HAL_DMA_Start_IT(htim2.hdma[TIM_DMA_ID_CC1], (uint32_t)my_data_buf, (uint32_t)&GPIOA->ODR, data_len);
-  HAL_DMA_Start_IT(htim2.hdma[TIM_DMA_ID_CC3], (uint32_t)my_data_buf_fire, (uint32_t)&GPIOB->ODR, 8);
+  HAL_DMA_Start_IT(htim2.hdma[TIM_DMA_ID_CC3], (uint32_t)my_data_buf_fire, (uint32_t)&GPIOB->ODR, data_len);
   HAL_DMA_Start_IT(htim2.hdma[TIM_DMA_ID_CC4], (uint32_t)my_data_buf, (uint32_t)&GPIOC->ODR, data_len);
 
   TIM2->CNT = 0u;
 
-  if (HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-  if (HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
-  if (HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
 }
 
 void SystemClock_Config(void)
@@ -146,7 +150,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct);
+  HAL_RCC_OscConfig(&RCC_OscInitStruct);
 
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
                                 | RCC_CLOCKTYPE_PCLK1;
@@ -154,12 +158,12 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1);
+  HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1);
 
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
 
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit);
+  HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit);
 
 }
 
@@ -228,7 +232,7 @@ static void MX_TIM2_Init(void)
  
   sConfigOC4.OCMode = TIM_OCMODE_PWM1;
   sConfigOC4.Pulse = (PER / 3) * 2;
-  sConfigOC4.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC4.OCPolarity = TIM_OCPOLARITY_LOW;
   sConfigOC4.OCFastMode = TIM_OCFAST_DISABLE;
  HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC4, TIM_CHANNEL_4);
 
