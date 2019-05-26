@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccCoCmhs.s 			page 1
+ARM GAS  /tmp/ccuklJcP.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
   31:Src/usbd_conf.c ****   *    this license is void and will automatically terminate your rights under 
   32:Src/usbd_conf.c ****   *    this license. 
   33:Src/usbd_conf.c ****   *
-ARM GAS  /tmp/ccCoCmhs.s 			page 2
+ARM GAS  /tmp/ccuklJcP.s 			page 2
 
 
   34:Src/usbd_conf.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
   88:Src/usbd_conf.c **** extern void SystemClock_Config(void);
   89:Src/usbd_conf.c **** 
   90:Src/usbd_conf.c **** /*******************************************************************************
-ARM GAS  /tmp/ccCoCmhs.s 			page 3
+ARM GAS  /tmp/ccuklJcP.s 			page 3
 
 
   91:Src/usbd_conf.c ****                        LL Driver Callbacks (PCD -> USB Device Library)
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  145:Src/usbd_conf.c ****   * @param  hpcd: PCD handle
  146:Src/usbd_conf.c ****   * @param  epnum: Endpoint number
  147:Src/usbd_conf.c ****   * @retval None
-ARM GAS  /tmp/ccCoCmhs.s 			page 4
+ARM GAS  /tmp/ccuklJcP.s 			page 4
 
 
  148:Src/usbd_conf.c ****   */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  202:Src/usbd_conf.c ****   * @brief  Suspend callback.
  203:Src/usbd_conf.c ****   * When Low power mode is enabled the debug cannot be used (IAR, Keil doesn't support it)
  204:Src/usbd_conf.c ****   * @param  hpcd: PCD handle
-ARM GAS  /tmp/ccCoCmhs.s 			page 5
+ARM GAS  /tmp/ccuklJcP.s 			page 5
 
 
  205:Src/usbd_conf.c ****   * @retval None
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  259:Src/usbd_conf.c ****   USBD_LL_IsoINIncomplete((USBD_HandleTypeDef*)hpcd->pData, epnum);
  260:Src/usbd_conf.c **** }
  261:Src/usbd_conf.c **** 
-ARM GAS  /tmp/ccCoCmhs.s 			page 6
+ARM GAS  /tmp/ccuklJcP.s 			page 6
 
 
  262:Src/usbd_conf.c **** /**
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  316:Src/usbd_conf.c ****   return USBD_OK;
  317:Src/usbd_conf.c **** }
  318:Src/usbd_conf.c **** 
-ARM GAS  /tmp/ccCoCmhs.s 			page 7
+ARM GAS  /tmp/ccuklJcP.s 			page 7
 
 
  319:Src/usbd_conf.c **** /**
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  373:Src/usbd_conf.c ****     case HAL_TIMEOUT :
  374:Src/usbd_conf.c ****       usb_status = USBD_FAIL;
  375:Src/usbd_conf.c ****     break;
-ARM GAS  /tmp/ccCoCmhs.s 			page 8
+ARM GAS  /tmp/ccuklJcP.s 			page 8
 
 
  376:Src/usbd_conf.c ****     default :
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  430:Src/usbd_conf.c ****   switch (hal_status) {
  431:Src/usbd_conf.c ****     case HAL_OK :
  432:Src/usbd_conf.c ****       usb_status = USBD_OK;
-ARM GAS  /tmp/ccCoCmhs.s 			page 9
+ARM GAS  /tmp/ccuklJcP.s 			page 9
 
 
  433:Src/usbd_conf.c ****     break;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  487:Src/usbd_conf.c ****   * @retval USBD status
  488:Src/usbd_conf.c ****   */
  489:Src/usbd_conf.c **** USBD_StatusTypeDef USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr)
-ARM GAS  /tmp/ccCoCmhs.s 			page 10
+ARM GAS  /tmp/ccuklJcP.s 			page 10
 
 
  490:Src/usbd_conf.c **** {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  544:Src/usbd_conf.c ****     break;
  545:Src/usbd_conf.c ****   }
  546:Src/usbd_conf.c ****   return usb_status;  
-ARM GAS  /tmp/ccCoCmhs.s 			page 11
+ARM GAS  /tmp/ccuklJcP.s 			page 11
 
 
  547:Src/usbd_conf.c **** }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  601:Src/usbd_conf.c **** 
  602:Src/usbd_conf.c **** /**
  603:Src/usbd_conf.c ****   * @brief  Assigns a USB address to the device.
-ARM GAS  /tmp/ccCoCmhs.s 			page 12
+ARM GAS  /tmp/ccuklJcP.s 			page 12
 
 
  604:Src/usbd_conf.c ****   * @param  pdev: Device handle
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  658:Src/usbd_conf.c ****       usb_status = USBD_BUSY;
  659:Src/usbd_conf.c ****     break;
  660:Src/usbd_conf.c ****     case HAL_TIMEOUT :
-ARM GAS  /tmp/ccCoCmhs.s 			page 13
+ARM GAS  /tmp/ccuklJcP.s 			page 13
 
 
  661:Src/usbd_conf.c ****       usb_status = USBD_FAIL;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  715:Src/usbd_conf.c **** 
  716:Src/usbd_conf.c **** /**
  717:Src/usbd_conf.c ****   * @brief  Delays routine for the USB device library.
-ARM GAS  /tmp/ccCoCmhs.s 			page 14
+ARM GAS  /tmp/ccuklJcP.s 			page 14
 
 
  718:Src/usbd_conf.c ****   * @param  Delay: Delay in ms
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
   41              		.cfi_endproc
   42              	.LFE67:
   44              		.section	.text.HAL_PCD_MspInit,"ax",%progbits
-ARM GAS  /tmp/ccCoCmhs.s 			page 15
+ARM GAS  /tmp/ccuklJcP.s 			page 15
 
 
   45              		.align	1
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
   90              		.loc 1 103 5 is_stmt 0 view .LVU12
   91 0016 0004     		lsls	r0, r0, #16
   92 0018 0143     		orrs	r1, r0
-ARM GAS  /tmp/ccCoCmhs.s 			page 16
+ARM GAS  /tmp/ccuklJcP.s 			page 16
 
 
   93 001a D161     		str	r1, [r2, #28]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  116:Src/usbd_conf.c ****   {
  142              		.loc 1 116 3 is_stmt 1 view .LVU20
  116:Src/usbd_conf.c ****   {
-ARM GAS  /tmp/ccCoCmhs.s 			page 17
+ARM GAS  /tmp/ccuklJcP.s 			page 17
 
 
  143              		.loc 1 116 15 is_stmt 0 view .LVU21
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  192              		@ args = 0, pretend = 0, frame = 0
  193              		@ frame_needed = 0, uses_anonymous_args = 0
  139:Src/usbd_conf.c ****   USBD_LL_SetupStage((USBD_HandleTypeDef*)hpcd->pData, (uint8_t *)hpcd->Setup);
-ARM GAS  /tmp/ccCoCmhs.s 			page 18
+ARM GAS  /tmp/ccuklJcP.s 			page 18
 
 
  194              		.loc 1 139 1 is_stmt 0 view .LVU29
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  242              		.cfi_offset 14, -4
  243 0002 0300     		movs	r3, r0
  151:Src/usbd_conf.c **** }
-ARM GAS  /tmp/ccCoCmhs.s 			page 19
+ARM GAS  /tmp/ccuklJcP.s 			page 19
 
 
  244              		.loc 1 151 3 is_stmt 1 view .LVU38
@@ -1092,8 +1092,8 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  250              		.loc 1 151 3 view .LVU40
  251 000a CA00     		lsls	r2, r1, #3
  252 000c 521A     		subs	r2, r2, r1
- 253 000e 9400     		lsls	r4, r2, #2
- 254 0010 1B19     		adds	r3, r3, r4
+ 253 000e 9200     		lsls	r2, r2, #2
+ 254 0010 9B18     		adds	r3, r3, r2
  255              	.LVL19:
  151:Src/usbd_conf.c **** }
  256              		.loc 1 151 3 view .LVU41
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  292 0004 8722     		movs	r2, #135
  293 0006 9200     		lsls	r2, r2, #2
  294 0008 8058     		ldr	r0, [r0, r2]
-ARM GAS  /tmp/ccCoCmhs.s 			page 20
+ARM GAS  /tmp/ccuklJcP.s 			page 20
 
 
  295              	.LVL22:
@@ -1146,8 +1146,8 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  296              		.loc 1 162 3 view .LVU47
  297 000a CA00     		lsls	r2, r1, #3
  298 000c 521A     		subs	r2, r2, r1
- 299 000e 9400     		lsls	r4, r2, #2
- 300 0010 1B19     		adds	r3, r3, r4
+ 299 000e 9200     		lsls	r2, r2, #2
+ 300 0010 9B18     		adds	r3, r3, r2
  301              	.LVL23:
  162:Src/usbd_conf.c **** }
  302              		.loc 1 162 3 view .LVU48
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  342              		.loc 1 173 1 view .LVU55
  343              		@ sp needed
  344 000c 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccCoCmhs.s 			page 21
+ARM GAS  /tmp/ccuklJcP.s 			page 21
 
 
  345              		.cfi_endproc
@@ -1227,7 +1227,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  368              		.cfi_offset 5, -12
  369              		.cfi_offset 6, -8
  370              		.cfi_offset 14, -4
- 371 0002 0500     		movs	r5, r0
+ 371 0002 0400     		movs	r4, r0
  182:Src/usbd_conf.c **** 
  372              		.loc 1 182 3 is_stmt 1 view .LVU58
  373              	.LVL29:
@@ -1237,12 +1237,12 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  375              		.loc 1 195 3 view .LVU60
  195:Src/usbd_conf.c ****   
  376              		.loc 1 195 45 is_stmt 0 view .LVU61
- 377 0004 8724     		movs	r4, #135
- 378 0006 A400     		lsls	r4, r4, #2
+ 377 0004 8725     		movs	r5, #135
+ 378 0006 AD00     		lsls	r5, r5, #2
  195:Src/usbd_conf.c ****   
  379              		.loc 1 195 3 view .LVU62
  380 0008 0121     		movs	r1, #1
- 381 000a 0059     		ldr	r0, [r0, r4]
+ 381 000a 4059     		ldr	r0, [r0, r5]
  382              	.LVL30:
  195:Src/usbd_conf.c ****   
  383              		.loc 1 195 3 view .LVU63
@@ -1252,13 +1252,13 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  386              		.loc 1 198 3 is_stmt 1 view .LVU64
  198:Src/usbd_conf.c **** }
  387              		.loc 1 198 42 is_stmt 0 view .LVU65
- 388 0010 2859     		ldr	r0, [r5, r4]
+ 388 0010 6059     		ldr	r0, [r4, r5]
  198:Src/usbd_conf.c **** }
  389              		.loc 1 198 3 view .LVU66
  390 0012 FFF7FEFF 		bl	USBD_LL_Reset
  391              	.LVL32:
  199:Src/usbd_conf.c **** 
-ARM GAS  /tmp/ccCoCmhs.s 			page 22
+ARM GAS  /tmp/ccuklJcP.s 			page 22
 
 
  392              		.loc 1 199 1 view .LVU67
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  216:Src/usbd_conf.c ****   }
  438              		.loc 1 216 14 is_stmt 0 view .LVU78
  439 0014 024A     		ldr	r2, .L19
-ARM GAS  /tmp/ccCoCmhs.s 			page 23
+ARM GAS  /tmp/ccuklJcP.s 			page 23
 
 
  440 0016 1369     		ldr	r3, [r2, #16]
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  488 000a 8723     		movs	r3, #135
  489 000c 9B00     		lsls	r3, r3, #2
  490 000e E058     		ldr	r0, [r4, r3]
-ARM GAS  /tmp/ccCoCmhs.s 			page 24
+ARM GAS  /tmp/ccuklJcP.s 			page 24
 
 
  237:Src/usbd_conf.c **** }
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  538              		.cfi_def_cfa_offset 8
  539              		.cfi_offset 4, -8
  540              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccCoCmhs.s 			page 25
+ARM GAS  /tmp/ccuklJcP.s 			page 25
 
 
  248:Src/usbd_conf.c **** }
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  587              		@ sp needed
  588 000c 10BD     		pop	{r4, pc}
  589              		.cfi_endproc
-ARM GAS  /tmp/ccCoCmhs.s 			page 26
+ARM GAS  /tmp/ccuklJcP.s 			page 26
 
 
  590              	.LFE47:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  641              		@ args = 0, pretend = 0, frame = 0
  642              		@ frame_needed = 0, uses_anonymous_args = 0
  278:Src/usbd_conf.c ****   USBD_LL_DevDisconnected((USBD_HandleTypeDef*)hpcd->pData);
-ARM GAS  /tmp/ccCoCmhs.s 			page 27
+ARM GAS  /tmp/ccuklJcP.s 			page 27
 
 
  643              		.loc 1 278 1 is_stmt 0 view .LVU113
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  691              	.LVL57:
  295:Src/usbd_conf.c ****   pdev->pData = &hpcd_USB_FS;
  692              		.loc 1 295 21 view .LVU122
-ARM GAS  /tmp/ccCoCmhs.s 			page 28
+ARM GAS  /tmp/ccuklJcP.s 			page 28
 
 
  693 0006 8723     		movs	r3, #135
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  728              		.loc 1 306 3 is_stmt 1 view .LVU141
  306:Src/usbd_conf.c ****   {
  729              		.loc 1 306 7 is_stmt 0 view .LVU142
-ARM GAS  /tmp/ccCoCmhs.s 			page 29
+ARM GAS  /tmp/ccuklJcP.s 			page 29
 
 
  730 0028 FFF7FEFF 		bl	HAL_PCD_Init
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  774 006a 5B00     		lsls	r3, r3, #1
  775 006c 0022     		movs	r2, #0
  776 006e 8221     		movs	r1, #130
-ARM GAS  /tmp/ccCoCmhs.s 			page 30
+ARM GAS  /tmp/ccuklJcP.s 			page 30
 
 
  777 0070 FFF7FEFF 		bl	HAL_PCDEx_PMAConfig
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  824              		.loc 1 329 3 view .LVU161
  329:Src/usbd_conf.c **** 
  825              		.loc 1 329 35 is_stmt 0 view .LVU162
-ARM GAS  /tmp/ccCoCmhs.s 			page 31
+ARM GAS  /tmp/ccuklJcP.s 			page 31
 
 
  826 0002 8823     		movs	r3, #136
@@ -1811,1116 +1811,1094 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  832              	.LVL70:
  331:Src/usbd_conf.c ****     case HAL_OK :
  833              		.loc 1 331 3 is_stmt 1 view .LVU164
- 834 000c 0128     		cmp	r0, #1
- 835 000e 06D0     		beq	.L37
- 836 0010 43B2     		sxtb	r3, r0
- 837 0012 002B     		cmp	r3, #0
- 838 0014 02D0     		beq	.L36
- 839 0016 0228     		cmp	r0, #2
- 840 0018 03D0     		beq	.L38
- 342:Src/usbd_conf.c ****     break;
- 841              		.loc 1 342 18 is_stmt 0 view .LVU165
- 842 001a 0220     		movs	r0, #2
- 843              	.LVL71:
- 844              	.L36:
+ 834 000c 0228     		cmp	r0, #2
+ 835 000e 04D0     		beq	.L37
+ 836 0010 05D8     		bhi	.L38
+ 837 0012 0028     		cmp	r0, #0
+ 838 0014 00D0     		beq	.L36
+ 336:Src/usbd_conf.c ****     break;
+ 839              		.loc 1 336 18 is_stmt 0 view .LVU165
+ 840 0016 0220     		movs	r0, #2
+ 841              	.LVL71:
+ 842              	.L36:
  348:Src/usbd_conf.c **** }
- 845              		.loc 1 348 3 is_stmt 1 view .LVU166
+ 843              		.loc 1 348 3 is_stmt 1 view .LVU166
  349:Src/usbd_conf.c **** 
- 846              		.loc 1 349 1 is_stmt 0 view .LVU167
- 847              		@ sp needed
- 848 001c 10BD     		pop	{r4, pc}
- 849              	.LVL72:
- 850              	.L37:
- 336:Src/usbd_conf.c ****     break;
- 851              		.loc 1 336 18 view .LVU168
- 852 001e 0220     		movs	r0, #2
- 853              	.LVL73:
- 336:Src/usbd_conf.c ****     break;
- 854              		.loc 1 336 18 view .LVU169
- 855 0020 FCE7     		b	.L36
- 856              	.LVL74:
- 857              	.L38:
+ 844              		.loc 1 349 1 is_stmt 0 view .LVU167
+ 845              		@ sp needed
+ 846 0018 10BD     		pop	{r4, pc}
+ 847              	.LVL72:
+ 848              	.L37:
  339:Src/usbd_conf.c ****     break;
- 858              		.loc 1 339 18 view .LVU170
- 859 0022 0120     		movs	r0, #1
- 860              	.LVL75:
+ 849              		.loc 1 339 18 view .LVU168
+ 850 001a 0120     		movs	r0, #1
+ 851              	.LVL73:
  339:Src/usbd_conf.c ****     break;
- 861              		.loc 1 339 18 view .LVU171
- 862 0024 FAE7     		b	.L36
- 863              		.cfi_endproc
- 864              	.LFE51:
- 866              		.section	.text.USBD_LL_Start,"ax",%progbits
- 867              		.align	1
- 868              		.global	USBD_LL_Start
- 869              		.syntax unified
- 870              		.code	16
- 871              		.thumb_func
- 872              		.fpu softvfp
- 874              	USBD_LL_Start:
- 875              	.LVL76:
-ARM GAS  /tmp/ccCoCmhs.s 			page 32
+ 852              		.loc 1 339 18 view .LVU169
+ 853 001c FCE7     		b	.L36
+ 854              	.LVL74:
+ 855              	.L38:
+ 342:Src/usbd_conf.c ****     break;
+ 856              		.loc 1 342 18 view .LVU170
+ 857 001e 0220     		movs	r0, #2
+ 858              	.LVL75:
+ 342:Src/usbd_conf.c ****     break;
+ 859              		.loc 1 342 18 view .LVU171
+ 860 0020 FAE7     		b	.L36
+ 861              		.cfi_endproc
+ 862              	.LFE51:
+ 864              		.section	.text.USBD_LL_Start,"ax",%progbits
+ 865              		.align	1
+ 866              		.global	USBD_LL_Start
+ 867              		.syntax unified
+ 868              		.code	16
+ 869              		.thumb_func
+ 870              		.fpu softvfp
+ 872              	USBD_LL_Start:
+ 873              	.LVL76:
+ 874              	.LFB52:
+ 357:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
+ARM GAS  /tmp/ccuklJcP.s 			page 32
 
 
- 876              	.LFB52:
+ 875              		.loc 1 357 1 is_stmt 1 view -0
+ 876              		.cfi_startproc
+ 877              		@ args = 0, pretend = 0, frame = 0
+ 878              		@ frame_needed = 0, uses_anonymous_args = 0
  357:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 877              		.loc 1 357 1 is_stmt 1 view -0
- 878              		.cfi_startproc
- 879              		@ args = 0, pretend = 0, frame = 0
- 880              		@ frame_needed = 0, uses_anonymous_args = 0
- 357:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 881              		.loc 1 357 1 is_stmt 0 view .LVU173
- 882 0000 10B5     		push	{r4, lr}
- 883              	.LCFI17:
- 884              		.cfi_def_cfa_offset 8
- 885              		.cfi_offset 4, -8
- 886              		.cfi_offset 14, -4
+ 879              		.loc 1 357 1 is_stmt 0 view .LVU173
+ 880 0000 10B5     		push	{r4, lr}
+ 881              	.LCFI17:
+ 882              		.cfi_def_cfa_offset 8
+ 883              		.cfi_offset 4, -8
+ 884              		.cfi_offset 14, -4
  358:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 887              		.loc 1 358 3 is_stmt 1 view .LVU174
- 888              	.LVL77:
+ 885              		.loc 1 358 3 is_stmt 1 view .LVU174
+ 886              	.LVL77:
  359:Src/usbd_conf.c ****  
- 889              		.loc 1 359 3 view .LVU175
+ 887              		.loc 1 359 3 view .LVU175
  361:Src/usbd_conf.c ****      
- 890              		.loc 1 361 3 view .LVU176
+ 888              		.loc 1 361 3 view .LVU176
  361:Src/usbd_conf.c ****      
- 891              		.loc 1 361 34 is_stmt 0 view .LVU177
- 892 0002 8823     		movs	r3, #136
- 893 0004 9B00     		lsls	r3, r3, #2
- 894 0006 C058     		ldr	r0, [r0, r3]
- 895              	.LVL78:
+ 889              		.loc 1 361 34 is_stmt 0 view .LVU177
+ 890 0002 8823     		movs	r3, #136
+ 891 0004 9B00     		lsls	r3, r3, #2
+ 892 0006 C058     		ldr	r0, [r0, r3]
+ 893              	.LVL78:
  361:Src/usbd_conf.c ****      
- 896              		.loc 1 361 16 view .LVU178
- 897 0008 FFF7FEFF 		bl	HAL_PCD_Start
- 898              	.LVL79:
+ 894              		.loc 1 361 16 view .LVU178
+ 895 0008 FFF7FEFF 		bl	HAL_PCD_Start
+ 896              	.LVL79:
  363:Src/usbd_conf.c ****     case HAL_OK :
- 899              		.loc 1 363 3 is_stmt 1 view .LVU179
- 900 000c 0128     		cmp	r0, #1
- 901 000e 06D0     		beq	.L41
- 902 0010 43B2     		sxtb	r3, r0
- 903 0012 002B     		cmp	r3, #0
- 904 0014 02D0     		beq	.L40
- 905 0016 0228     		cmp	r0, #2
- 906 0018 03D0     		beq	.L42
- 374:Src/usbd_conf.c ****     break;
- 907              		.loc 1 374 18 is_stmt 0 view .LVU180
- 908 001a 0220     		movs	r0, #2
- 909              	.LVL80:
- 910              	.L40:
+ 897              		.loc 1 363 3 is_stmt 1 view .LVU179
+ 898 000c 0228     		cmp	r0, #2
+ 899 000e 04D0     		beq	.L42
+ 900 0010 05D8     		bhi	.L43
+ 901 0012 0028     		cmp	r0, #0
+ 902 0014 00D0     		beq	.L41
+ 368:Src/usbd_conf.c ****     break;
+ 903              		.loc 1 368 18 is_stmt 0 view .LVU180
+ 904 0016 0220     		movs	r0, #2
+ 905              	.LVL80:
+ 906              	.L41:
  380:Src/usbd_conf.c **** }
- 911              		.loc 1 380 3 is_stmt 1 view .LVU181
+ 907              		.loc 1 380 3 is_stmt 1 view .LVU181
  381:Src/usbd_conf.c **** 
- 912              		.loc 1 381 1 is_stmt 0 view .LVU182
- 913              		@ sp needed
- 914 001c 10BD     		pop	{r4, pc}
- 915              	.LVL81:
- 916              	.L41:
- 368:Src/usbd_conf.c ****     break;
- 917              		.loc 1 368 18 view .LVU183
- 918 001e 0220     		movs	r0, #2
- 919              	.LVL82:
- 368:Src/usbd_conf.c ****     break;
-ARM GAS  /tmp/ccCoCmhs.s 			page 33
+ 908              		.loc 1 381 1 is_stmt 0 view .LVU182
+ 909              		@ sp needed
+ 910 0018 10BD     		pop	{r4, pc}
+ 911              	.LVL81:
+ 912              	.L42:
+ 371:Src/usbd_conf.c ****     break;
+ 913              		.loc 1 371 18 view .LVU183
+ 914 001a 0120     		movs	r0, #1
+ 915              	.LVL82:
+ 371:Src/usbd_conf.c ****     break;
+ 916              		.loc 1 371 18 view .LVU184
+ 917 001c FCE7     		b	.L41
+ 918              	.LVL83:
+ 919              	.L43:
+ARM GAS  /tmp/ccuklJcP.s 			page 33
 
 
- 920              		.loc 1 368 18 view .LVU184
- 921 0020 FCE7     		b	.L40
- 922              	.LVL83:
- 923              	.L42:
- 371:Src/usbd_conf.c ****     break;
- 924              		.loc 1 371 18 view .LVU185
- 925 0022 0120     		movs	r0, #1
- 926              	.LVL84:
- 371:Src/usbd_conf.c ****     break;
- 927              		.loc 1 371 18 view .LVU186
- 928 0024 FAE7     		b	.L40
- 929              		.cfi_endproc
- 930              	.LFE52:
- 932              		.section	.text.USBD_LL_Stop,"ax",%progbits
- 933              		.align	1
- 934              		.global	USBD_LL_Stop
- 935              		.syntax unified
- 936              		.code	16
- 937              		.thumb_func
- 938              		.fpu softvfp
- 940              	USBD_LL_Stop:
- 941              	.LVL85:
- 942              	.LFB53:
+ 374:Src/usbd_conf.c ****     break;
+ 920              		.loc 1 374 18 view .LVU185
+ 921 001e 0220     		movs	r0, #2
+ 922              	.LVL84:
+ 374:Src/usbd_conf.c ****     break;
+ 923              		.loc 1 374 18 view .LVU186
+ 924 0020 FAE7     		b	.L41
+ 925              		.cfi_endproc
+ 926              	.LFE52:
+ 928              		.section	.text.USBD_LL_Stop,"ax",%progbits
+ 929              		.align	1
+ 930              		.global	USBD_LL_Stop
+ 931              		.syntax unified
+ 932              		.code	16
+ 933              		.thumb_func
+ 934              		.fpu softvfp
+ 936              	USBD_LL_Stop:
+ 937              	.LVL85:
+ 938              	.LFB53:
  389:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 943              		.loc 1 389 1 is_stmt 1 view -0
- 944              		.cfi_startproc
- 945              		@ args = 0, pretend = 0, frame = 0
- 946              		@ frame_needed = 0, uses_anonymous_args = 0
+ 939              		.loc 1 389 1 is_stmt 1 view -0
+ 940              		.cfi_startproc
+ 941              		@ args = 0, pretend = 0, frame = 0
+ 942              		@ frame_needed = 0, uses_anonymous_args = 0
  389:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 947              		.loc 1 389 1 is_stmt 0 view .LVU188
- 948 0000 10B5     		push	{r4, lr}
- 949              	.LCFI18:
- 950              		.cfi_def_cfa_offset 8
- 951              		.cfi_offset 4, -8
- 952              		.cfi_offset 14, -4
+ 943              		.loc 1 389 1 is_stmt 0 view .LVU188
+ 944 0000 10B5     		push	{r4, lr}
+ 945              	.LCFI18:
+ 946              		.cfi_def_cfa_offset 8
+ 947              		.cfi_offset 4, -8
+ 948              		.cfi_offset 14, -4
  390:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 953              		.loc 1 390 3 is_stmt 1 view .LVU189
- 954              	.LVL86:
+ 949              		.loc 1 390 3 is_stmt 1 view .LVU189
+ 950              	.LVL86:
  391:Src/usbd_conf.c **** 
- 955              		.loc 1 391 3 view .LVU190
+ 951              		.loc 1 391 3 view .LVU190
  393:Src/usbd_conf.c **** 
- 956              		.loc 1 393 3 view .LVU191
+ 952              		.loc 1 393 3 view .LVU191
  393:Src/usbd_conf.c **** 
- 957              		.loc 1 393 33 is_stmt 0 view .LVU192
- 958 0002 8823     		movs	r3, #136
- 959 0004 9B00     		lsls	r3, r3, #2
- 960 0006 C058     		ldr	r0, [r0, r3]
- 961              	.LVL87:
+ 953              		.loc 1 393 33 is_stmt 0 view .LVU192
+ 954 0002 8823     		movs	r3, #136
+ 955 0004 9B00     		lsls	r3, r3, #2
+ 956 0006 C058     		ldr	r0, [r0, r3]
+ 957              	.LVL87:
  393:Src/usbd_conf.c **** 
- 962              		.loc 1 393 16 view .LVU193
- 963 0008 FFF7FEFF 		bl	HAL_PCD_Stop
- 964              	.LVL88:
+ 958              		.loc 1 393 16 view .LVU193
+ 959 0008 FFF7FEFF 		bl	HAL_PCD_Stop
+ 960              	.LVL88:
  395:Src/usbd_conf.c ****     case HAL_OK :
- 965              		.loc 1 395 3 is_stmt 1 view .LVU194
- 966 000c 0128     		cmp	r0, #1
- 967 000e 06D0     		beq	.L45
- 968 0010 43B2     		sxtb	r3, r0
-ARM GAS  /tmp/ccCoCmhs.s 			page 34
+ 961              		.loc 1 395 3 is_stmt 1 view .LVU194
+ 962 000c 0228     		cmp	r0, #2
+ 963 000e 04D0     		beq	.L47
+ 964 0010 05D8     		bhi	.L48
+ 965 0012 0028     		cmp	r0, #0
+ 966 0014 00D0     		beq	.L46
+ 400:Src/usbd_conf.c ****     break;
+ 967              		.loc 1 400 18 is_stmt 0 view .LVU195
+ARM GAS  /tmp/ccuklJcP.s 			page 34
 
 
- 969 0012 002B     		cmp	r3, #0
- 970 0014 02D0     		beq	.L44
- 971 0016 0228     		cmp	r0, #2
- 972 0018 03D0     		beq	.L46
- 406:Src/usbd_conf.c ****     break;
- 973              		.loc 1 406 18 is_stmt 0 view .LVU195
- 974 001a 0220     		movs	r0, #2
- 975              	.LVL89:
- 976              	.L44:
+ 968 0016 0220     		movs	r0, #2
+ 969              	.LVL89:
+ 970              	.L46:
  412:Src/usbd_conf.c **** }
- 977              		.loc 1 412 3 is_stmt 1 view .LVU196
+ 971              		.loc 1 412 3 is_stmt 1 view .LVU196
  413:Src/usbd_conf.c **** 
- 978              		.loc 1 413 1 is_stmt 0 view .LVU197
- 979              		@ sp needed
- 980 001c 10BD     		pop	{r4, pc}
- 981              	.LVL90:
- 982              	.L45:
- 400:Src/usbd_conf.c ****     break;
- 983              		.loc 1 400 18 view .LVU198
- 984 001e 0220     		movs	r0, #2
- 985              	.LVL91:
- 400:Src/usbd_conf.c ****     break;
- 986              		.loc 1 400 18 view .LVU199
- 987 0020 FCE7     		b	.L44
- 988              	.LVL92:
- 989              	.L46:
+ 972              		.loc 1 413 1 is_stmt 0 view .LVU197
+ 973              		@ sp needed
+ 974 0018 10BD     		pop	{r4, pc}
+ 975              	.LVL90:
+ 976              	.L47:
  403:Src/usbd_conf.c ****     break;
- 990              		.loc 1 403 18 view .LVU200
- 991 0022 0120     		movs	r0, #1
- 992              	.LVL93:
+ 977              		.loc 1 403 18 view .LVU198
+ 978 001a 0120     		movs	r0, #1
+ 979              	.LVL91:
  403:Src/usbd_conf.c ****     break;
- 993              		.loc 1 403 18 view .LVU201
- 994 0024 FAE7     		b	.L44
- 995              		.cfi_endproc
- 996              	.LFE53:
- 998              		.section	.text.USBD_LL_OpenEP,"ax",%progbits
- 999              		.align	1
- 1000              		.global	USBD_LL_OpenEP
- 1001              		.syntax unified
- 1002              		.code	16
- 1003              		.thumb_func
- 1004              		.fpu softvfp
- 1006              	USBD_LL_OpenEP:
- 1007              	.LVL94:
- 1008              	.LFB54:
+ 980              		.loc 1 403 18 view .LVU199
+ 981 001c FCE7     		b	.L46
+ 982              	.LVL92:
+ 983              	.L48:
+ 406:Src/usbd_conf.c ****     break;
+ 984              		.loc 1 406 18 view .LVU200
+ 985 001e 0220     		movs	r0, #2
+ 986              	.LVL93:
+ 406:Src/usbd_conf.c ****     break;
+ 987              		.loc 1 406 18 view .LVU201
+ 988 0020 FAE7     		b	.L46
+ 989              		.cfi_endproc
+ 990              	.LFE53:
+ 992              		.section	.text.USBD_LL_OpenEP,"ax",%progbits
+ 993              		.align	1
+ 994              		.global	USBD_LL_OpenEP
+ 995              		.syntax unified
+ 996              		.code	16
+ 997              		.thumb_func
+ 998              		.fpu softvfp
+ 1000              	USBD_LL_OpenEP:
+ 1001              	.LVL94:
+ 1002              	.LFB54:
  424:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1009              		.loc 1 424 1 is_stmt 1 view -0
- 1010              		.cfi_startproc
- 1011              		@ args = 0, pretend = 0, frame = 0
- 1012              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1003              		.loc 1 424 1 is_stmt 1 view -0
+ 1004              		.cfi_startproc
+ 1005              		@ args = 0, pretend = 0, frame = 0
+ 1006              		@ frame_needed = 0, uses_anonymous_args = 0
  424:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1013              		.loc 1 424 1 is_stmt 0 view .LVU203
- 1014 0000 10B5     		push	{r4, lr}
- 1015              	.LCFI19:
- 1016              		.cfi_def_cfa_offset 8
- 1017              		.cfi_offset 4, -8
- 1018              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccCoCmhs.s 			page 35
-
-
- 1019 0002 1400     		movs	r4, r2
- 1020 0004 1A00     		movs	r2, r3
- 1021              	.LVL95:
+ 1007              		.loc 1 424 1 is_stmt 0 view .LVU203
+ 1008 0000 10B5     		push	{r4, lr}
+ 1009              	.LCFI19:
+ 1010              		.cfi_def_cfa_offset 8
+ 1011              		.cfi_offset 4, -8
+ 1012              		.cfi_offset 14, -4
+ 1013 0002 1400     		movs	r4, r2
+ 1014 0004 1A00     		movs	r2, r3
+ 1015              	.LVL95:
  425:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1022              		.loc 1 425 3 is_stmt 1 view .LVU204
+ 1016              		.loc 1 425 3 is_stmt 1 view .LVU204
  426:Src/usbd_conf.c **** 
- 1023              		.loc 1 426 3 view .LVU205
+ARM GAS  /tmp/ccuklJcP.s 			page 35
+
+
+ 1017              		.loc 1 426 3 view .LVU205
  428:Src/usbd_conf.c **** 
- 1024              		.loc 1 428 3 view .LVU206
+ 1018              		.loc 1 428 3 view .LVU206
  428:Src/usbd_conf.c **** 
- 1025              		.loc 1 428 36 is_stmt 0 view .LVU207
- 1026 0006 8823     		movs	r3, #136
- 1027              	.LVL96:
+ 1019              		.loc 1 428 36 is_stmt 0 view .LVU207
+ 1020 0006 8823     		movs	r3, #136
+ 1021              	.LVL96:
  428:Src/usbd_conf.c **** 
- 1028              		.loc 1 428 36 view .LVU208
- 1029 0008 9B00     		lsls	r3, r3, #2
- 1030 000a C058     		ldr	r0, [r0, r3]
- 1031              	.LVL97:
+ 1022              		.loc 1 428 36 view .LVU208
+ 1023 0008 9B00     		lsls	r3, r3, #2
+ 1024 000a C058     		ldr	r0, [r0, r3]
+ 1025              	.LVL97:
  428:Src/usbd_conf.c **** 
- 1032              		.loc 1 428 16 view .LVU209
- 1033 000c 2300     		movs	r3, r4
- 1034 000e FFF7FEFF 		bl	HAL_PCD_EP_Open
- 1035              	.LVL98:
+ 1026              		.loc 1 428 16 view .LVU209
+ 1027 000c 2300     		movs	r3, r4
+ 1028 000e FFF7FEFF 		bl	HAL_PCD_EP_Open
+ 1029              	.LVL98:
  430:Src/usbd_conf.c ****     case HAL_OK :
- 1036              		.loc 1 430 3 is_stmt 1 view .LVU210
- 1037 0012 0128     		cmp	r0, #1
- 1038 0014 06D0     		beq	.L49
- 1039 0016 43B2     		sxtb	r3, r0
- 1040 0018 002B     		cmp	r3, #0
- 1041 001a 02D0     		beq	.L48
- 1042 001c 0228     		cmp	r0, #2
- 1043 001e 03D0     		beq	.L50
- 441:Src/usbd_conf.c ****     break;
- 1044              		.loc 1 441 18 is_stmt 0 view .LVU211
- 1045 0020 0220     		movs	r0, #2
- 1046              	.LVL99:
- 1047              	.L48:
+ 1030              		.loc 1 430 3 is_stmt 1 view .LVU210
+ 1031 0012 0228     		cmp	r0, #2
+ 1032 0014 04D0     		beq	.L52
+ 1033 0016 05D8     		bhi	.L53
+ 1034 0018 0028     		cmp	r0, #0
+ 1035 001a 00D0     		beq	.L51
+ 435:Src/usbd_conf.c ****     break;
+ 1036              		.loc 1 435 18 is_stmt 0 view .LVU211
+ 1037 001c 0220     		movs	r0, #2
+ 1038              	.LVL99:
+ 1039              	.L51:
  447:Src/usbd_conf.c **** }
- 1048              		.loc 1 447 3 is_stmt 1 view .LVU212
+ 1040              		.loc 1 447 3 is_stmt 1 view .LVU212
  448:Src/usbd_conf.c **** 
- 1049              		.loc 1 448 1 is_stmt 0 view .LVU213
- 1050              		@ sp needed
- 1051 0022 10BD     		pop	{r4, pc}
- 1052              	.LVL100:
- 1053              	.L49:
- 435:Src/usbd_conf.c ****     break;
- 1054              		.loc 1 435 18 view .LVU214
- 1055 0024 0220     		movs	r0, #2
- 1056              	.LVL101:
- 435:Src/usbd_conf.c ****     break;
- 1057              		.loc 1 435 18 view .LVU215
- 1058 0026 FCE7     		b	.L48
- 1059              	.LVL102:
- 1060              	.L50:
+ 1041              		.loc 1 448 1 is_stmt 0 view .LVU213
+ 1042              		@ sp needed
+ 1043 001e 10BD     		pop	{r4, pc}
+ 1044              	.LVL100:
+ 1045              	.L52:
  438:Src/usbd_conf.c ****     break;
- 1061              		.loc 1 438 18 view .LVU216
- 1062 0028 0120     		movs	r0, #1
-ARM GAS  /tmp/ccCoCmhs.s 			page 36
+ 1046              		.loc 1 438 18 view .LVU214
+ 1047 0020 0120     		movs	r0, #1
+ 1048              	.LVL101:
+ 438:Src/usbd_conf.c ****     break;
+ 1049              		.loc 1 438 18 view .LVU215
+ 1050 0022 FCE7     		b	.L51
+ 1051              	.LVL102:
+ 1052              	.L53:
+ 441:Src/usbd_conf.c ****     break;
+ 1053              		.loc 1 441 18 view .LVU216
+ 1054 0024 0220     		movs	r0, #2
+ 1055              	.LVL103:
+ 441:Src/usbd_conf.c ****     break;
+ 1056              		.loc 1 441 18 view .LVU217
+ 1057 0026 FAE7     		b	.L51
+ 1058              		.cfi_endproc
+ 1059              	.LFE54:
+ 1061              		.section	.text.USBD_LL_CloseEP,"ax",%progbits
+ 1062              		.align	1
+ARM GAS  /tmp/ccuklJcP.s 			page 36
 
 
- 1063              	.LVL103:
- 438:Src/usbd_conf.c ****     break;
- 1064              		.loc 1 438 18 view .LVU217
- 1065 002a FAE7     		b	.L48
- 1066              		.cfi_endproc
- 1067              	.LFE54:
- 1069              		.section	.text.USBD_LL_CloseEP,"ax",%progbits
- 1070              		.align	1
- 1071              		.global	USBD_LL_CloseEP
- 1072              		.syntax unified
- 1073              		.code	16
- 1074              		.thumb_func
- 1075              		.fpu softvfp
- 1077              	USBD_LL_CloseEP:
- 1078              	.LVL104:
- 1079              	.LFB55:
+ 1063              		.global	USBD_LL_CloseEP
+ 1064              		.syntax unified
+ 1065              		.code	16
+ 1066              		.thumb_func
+ 1067              		.fpu softvfp
+ 1069              	USBD_LL_CloseEP:
+ 1070              	.LVL104:
+ 1071              	.LFB55:
  457:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1080              		.loc 1 457 1 is_stmt 1 view -0
- 1081              		.cfi_startproc
- 1082              		@ args = 0, pretend = 0, frame = 0
- 1083              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1072              		.loc 1 457 1 is_stmt 1 view -0
+ 1073              		.cfi_startproc
+ 1074              		@ args = 0, pretend = 0, frame = 0
+ 1075              		@ frame_needed = 0, uses_anonymous_args = 0
  457:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1084              		.loc 1 457 1 is_stmt 0 view .LVU219
- 1085 0000 10B5     		push	{r4, lr}
- 1086              	.LCFI20:
- 1087              		.cfi_def_cfa_offset 8
- 1088              		.cfi_offset 4, -8
- 1089              		.cfi_offset 14, -4
+ 1076              		.loc 1 457 1 is_stmt 0 view .LVU219
+ 1077 0000 10B5     		push	{r4, lr}
+ 1078              	.LCFI20:
+ 1079              		.cfi_def_cfa_offset 8
+ 1080              		.cfi_offset 4, -8
+ 1081              		.cfi_offset 14, -4
  458:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1090              		.loc 1 458 3 is_stmt 1 view .LVU220
- 1091              	.LVL105:
+ 1082              		.loc 1 458 3 is_stmt 1 view .LVU220
+ 1083              	.LVL105:
  459:Src/usbd_conf.c ****   
- 1092              		.loc 1 459 3 view .LVU221
+ 1084              		.loc 1 459 3 view .LVU221
  461:Src/usbd_conf.c ****       
- 1093              		.loc 1 461 3 view .LVU222
+ 1085              		.loc 1 461 3 view .LVU222
  461:Src/usbd_conf.c ****       
- 1094              		.loc 1 461 37 is_stmt 0 view .LVU223
- 1095 0002 8823     		movs	r3, #136
- 1096 0004 9B00     		lsls	r3, r3, #2
- 1097 0006 C058     		ldr	r0, [r0, r3]
- 1098              	.LVL106:
+ 1086              		.loc 1 461 37 is_stmt 0 view .LVU223
+ 1087 0002 8823     		movs	r3, #136
+ 1088 0004 9B00     		lsls	r3, r3, #2
+ 1089 0006 C058     		ldr	r0, [r0, r3]
+ 1090              	.LVL106:
  461:Src/usbd_conf.c ****       
- 1099              		.loc 1 461 16 view .LVU224
- 1100 0008 FFF7FEFF 		bl	HAL_PCD_EP_Close
- 1101              	.LVL107:
+ 1091              		.loc 1 461 16 view .LVU224
+ 1092 0008 FFF7FEFF 		bl	HAL_PCD_EP_Close
+ 1093              	.LVL107:
  463:Src/usbd_conf.c ****     case HAL_OK :
- 1102              		.loc 1 463 3 is_stmt 1 view .LVU225
- 1103 000c 0128     		cmp	r0, #1
- 1104 000e 06D0     		beq	.L53
- 1105 0010 43B2     		sxtb	r3, r0
- 1106 0012 002B     		cmp	r3, #0
- 1107 0014 02D0     		beq	.L52
- 1108 0016 0228     		cmp	r0, #2
- 1109 0018 03D0     		beq	.L54
- 474:Src/usbd_conf.c ****     break;
- 1110              		.loc 1 474 18 is_stmt 0 view .LVU226
- 1111 001a 0220     		movs	r0, #2
-ARM GAS  /tmp/ccCoCmhs.s 			page 37
-
-
- 1112              	.LVL108:
- 1113              	.L52:
+ 1094              		.loc 1 463 3 is_stmt 1 view .LVU225
+ 1095 000c 0228     		cmp	r0, #2
+ 1096 000e 04D0     		beq	.L57
+ 1097 0010 05D8     		bhi	.L58
+ 1098 0012 0028     		cmp	r0, #0
+ 1099 0014 00D0     		beq	.L56
+ 468:Src/usbd_conf.c ****     break;
+ 1100              		.loc 1 468 18 is_stmt 0 view .LVU226
+ 1101 0016 0220     		movs	r0, #2
+ 1102              	.LVL108:
+ 1103              	.L56:
  480:Src/usbd_conf.c **** }
- 1114              		.loc 1 480 3 is_stmt 1 view .LVU227
+ 1104              		.loc 1 480 3 is_stmt 1 view .LVU227
  481:Src/usbd_conf.c **** 
- 1115              		.loc 1 481 1 is_stmt 0 view .LVU228
- 1116              		@ sp needed
- 1117 001c 10BD     		pop	{r4, pc}
- 1118              	.LVL109:
- 1119              	.L53:
- 468:Src/usbd_conf.c ****     break;
- 1120              		.loc 1 468 18 view .LVU229
- 1121 001e 0220     		movs	r0, #2
- 1122              	.LVL110:
- 468:Src/usbd_conf.c ****     break;
- 1123              		.loc 1 468 18 view .LVU230
- 1124 0020 FCE7     		b	.L52
- 1125              	.LVL111:
- 1126              	.L54:
+ 1105              		.loc 1 481 1 is_stmt 0 view .LVU228
+ 1106              		@ sp needed
+ 1107 0018 10BD     		pop	{r4, pc}
+ 1108              	.LVL109:
+ 1109              	.L57:
+ARM GAS  /tmp/ccuklJcP.s 			page 37
+
+
  471:Src/usbd_conf.c ****     break;
- 1127              		.loc 1 471 18 view .LVU231
- 1128 0022 0120     		movs	r0, #1
- 1129              	.LVL112:
+ 1110              		.loc 1 471 18 view .LVU229
+ 1111 001a 0120     		movs	r0, #1
+ 1112              	.LVL110:
  471:Src/usbd_conf.c ****     break;
- 1130              		.loc 1 471 18 view .LVU232
- 1131 0024 FAE7     		b	.L52
- 1132              		.cfi_endproc
- 1133              	.LFE55:
- 1135              		.section	.text.USBD_LL_FlushEP,"ax",%progbits
- 1136              		.align	1
- 1137              		.global	USBD_LL_FlushEP
- 1138              		.syntax unified
- 1139              		.code	16
- 1140              		.thumb_func
- 1141              		.fpu softvfp
- 1143              	USBD_LL_FlushEP:
- 1144              	.LVL113:
- 1145              	.LFB56:
+ 1113              		.loc 1 471 18 view .LVU230
+ 1114 001c FCE7     		b	.L56
+ 1115              	.LVL111:
+ 1116              	.L58:
+ 474:Src/usbd_conf.c ****     break;
+ 1117              		.loc 1 474 18 view .LVU231
+ 1118 001e 0220     		movs	r0, #2
+ 1119              	.LVL112:
+ 474:Src/usbd_conf.c ****     break;
+ 1120              		.loc 1 474 18 view .LVU232
+ 1121 0020 FAE7     		b	.L56
+ 1122              		.cfi_endproc
+ 1123              	.LFE55:
+ 1125              		.section	.text.USBD_LL_FlushEP,"ax",%progbits
+ 1126              		.align	1
+ 1127              		.global	USBD_LL_FlushEP
+ 1128              		.syntax unified
+ 1129              		.code	16
+ 1130              		.thumb_func
+ 1131              		.fpu softvfp
+ 1133              	USBD_LL_FlushEP:
+ 1134              	.LVL113:
+ 1135              	.LFB56:
  490:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1146              		.loc 1 490 1 is_stmt 1 view -0
- 1147              		.cfi_startproc
- 1148              		@ args = 0, pretend = 0, frame = 0
- 1149              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1136              		.loc 1 490 1 is_stmt 1 view -0
+ 1137              		.cfi_startproc
+ 1138              		@ args = 0, pretend = 0, frame = 0
+ 1139              		@ frame_needed = 0, uses_anonymous_args = 0
  490:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1150              		.loc 1 490 1 is_stmt 0 view .LVU234
- 1151 0000 10B5     		push	{r4, lr}
- 1152              	.LCFI21:
- 1153              		.cfi_def_cfa_offset 8
- 1154              		.cfi_offset 4, -8
- 1155              		.cfi_offset 14, -4
+ 1140              		.loc 1 490 1 is_stmt 0 view .LVU234
+ 1141 0000 10B5     		push	{r4, lr}
+ 1142              	.LCFI21:
+ 1143              		.cfi_def_cfa_offset 8
+ 1144              		.cfi_offset 4, -8
+ 1145              		.cfi_offset 14, -4
  491:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1156              		.loc 1 491 3 is_stmt 1 view .LVU235
- 1157              	.LVL114:
+ 1146              		.loc 1 491 3 is_stmt 1 view .LVU235
+ 1147              	.LVL114:
  492:Src/usbd_conf.c ****   
- 1158              		.loc 1 492 3 view .LVU236
+ 1148              		.loc 1 492 3 view .LVU236
  494:Src/usbd_conf.c ****       
- 1159              		.loc 1 494 3 view .LVU237
-ARM GAS  /tmp/ccCoCmhs.s 			page 38
+ 1149              		.loc 1 494 3 view .LVU237
+ 494:Src/usbd_conf.c ****       
+ 1150              		.loc 1 494 37 is_stmt 0 view .LVU238
+ 1151 0002 8823     		movs	r3, #136
+ 1152 0004 9B00     		lsls	r3, r3, #2
+ 1153 0006 C058     		ldr	r0, [r0, r3]
+ 1154              	.LVL115:
+ 494:Src/usbd_conf.c ****       
+ 1155              		.loc 1 494 16 view .LVU239
+ 1156 0008 FFF7FEFF 		bl	HAL_PCD_EP_Flush
+ 1157              	.LVL116:
+ARM GAS  /tmp/ccuklJcP.s 			page 38
 
 
- 494:Src/usbd_conf.c ****       
- 1160              		.loc 1 494 37 is_stmt 0 view .LVU238
- 1161 0002 8823     		movs	r3, #136
- 1162 0004 9B00     		lsls	r3, r3, #2
- 1163 0006 C058     		ldr	r0, [r0, r3]
- 1164              	.LVL115:
- 494:Src/usbd_conf.c ****       
- 1165              		.loc 1 494 16 view .LVU239
- 1166 0008 FFF7FEFF 		bl	HAL_PCD_EP_Flush
- 1167              	.LVL116:
  496:Src/usbd_conf.c ****     case HAL_OK :
- 1168              		.loc 1 496 3 is_stmt 1 view .LVU240
- 1169 000c 0128     		cmp	r0, #1
- 1170 000e 06D0     		beq	.L57
- 1171 0010 43B2     		sxtb	r3, r0
- 1172 0012 002B     		cmp	r3, #0
- 1173 0014 02D0     		beq	.L56
- 1174 0016 0228     		cmp	r0, #2
- 1175 0018 03D0     		beq	.L58
- 507:Src/usbd_conf.c ****     break;
- 1176              		.loc 1 507 18 is_stmt 0 view .LVU241
- 1177 001a 0220     		movs	r0, #2
- 1178              	.LVL117:
- 1179              	.L56:
+ 1158              		.loc 1 496 3 is_stmt 1 view .LVU240
+ 1159 000c 0228     		cmp	r0, #2
+ 1160 000e 04D0     		beq	.L62
+ 1161 0010 05D8     		bhi	.L63
+ 1162 0012 0028     		cmp	r0, #0
+ 1163 0014 00D0     		beq	.L61
+ 501:Src/usbd_conf.c ****     break;
+ 1164              		.loc 1 501 18 is_stmt 0 view .LVU241
+ 1165 0016 0220     		movs	r0, #2
+ 1166              	.LVL117:
+ 1167              	.L61:
  513:Src/usbd_conf.c **** }
- 1180              		.loc 1 513 3 is_stmt 1 view .LVU242
+ 1168              		.loc 1 513 3 is_stmt 1 view .LVU242
  514:Src/usbd_conf.c **** 
- 1181              		.loc 1 514 1 is_stmt 0 view .LVU243
- 1182              		@ sp needed
- 1183 001c 10BD     		pop	{r4, pc}
- 1184              	.LVL118:
- 1185              	.L57:
- 501:Src/usbd_conf.c ****     break;
- 1186              		.loc 1 501 18 view .LVU244
- 1187 001e 0220     		movs	r0, #2
- 1188              	.LVL119:
- 501:Src/usbd_conf.c ****     break;
- 1189              		.loc 1 501 18 view .LVU245
- 1190 0020 FCE7     		b	.L56
- 1191              	.LVL120:
- 1192              	.L58:
+ 1169              		.loc 1 514 1 is_stmt 0 view .LVU243
+ 1170              		@ sp needed
+ 1171 0018 10BD     		pop	{r4, pc}
+ 1172              	.LVL118:
+ 1173              	.L62:
  504:Src/usbd_conf.c ****     break;
- 1193              		.loc 1 504 18 view .LVU246
- 1194 0022 0120     		movs	r0, #1
- 1195              	.LVL121:
+ 1174              		.loc 1 504 18 view .LVU244
+ 1175 001a 0120     		movs	r0, #1
+ 1176              	.LVL119:
  504:Src/usbd_conf.c ****     break;
- 1196              		.loc 1 504 18 view .LVU247
- 1197 0024 FAE7     		b	.L56
- 1198              		.cfi_endproc
- 1199              	.LFE56:
- 1201              		.section	.text.USBD_LL_StallEP,"ax",%progbits
- 1202              		.align	1
- 1203              		.global	USBD_LL_StallEP
- 1204              		.syntax unified
- 1205              		.code	16
- 1206              		.thumb_func
- 1207              		.fpu softvfp
-ARM GAS  /tmp/ccCoCmhs.s 			page 39
+ 1177              		.loc 1 504 18 view .LVU245
+ 1178 001c FCE7     		b	.L61
+ 1179              	.LVL120:
+ 1180              	.L63:
+ 507:Src/usbd_conf.c ****     break;
+ 1181              		.loc 1 507 18 view .LVU246
+ 1182 001e 0220     		movs	r0, #2
+ 1183              	.LVL121:
+ 507:Src/usbd_conf.c ****     break;
+ 1184              		.loc 1 507 18 view .LVU247
+ 1185 0020 FAE7     		b	.L61
+ 1186              		.cfi_endproc
+ 1187              	.LFE56:
+ 1189              		.section	.text.USBD_LL_StallEP,"ax",%progbits
+ 1190              		.align	1
+ 1191              		.global	USBD_LL_StallEP
+ 1192              		.syntax unified
+ 1193              		.code	16
+ 1194              		.thumb_func
+ 1195              		.fpu softvfp
+ 1197              	USBD_LL_StallEP:
+ 1198              	.LVL122:
+ 1199              	.LFB57:
+ 523:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
+ 1200              		.loc 1 523 1 is_stmt 1 view -0
+ 1201              		.cfi_startproc
+ 1202              		@ args = 0, pretend = 0, frame = 0
+ 1203              		@ frame_needed = 0, uses_anonymous_args = 0
+ 523:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
+ 1204              		.loc 1 523 1 is_stmt 0 view .LVU249
+ 1205 0000 10B5     		push	{r4, lr}
+ 1206              	.LCFI22:
+ARM GAS  /tmp/ccuklJcP.s 			page 39
 
 
- 1209              	USBD_LL_StallEP:
- 1210              	.LVL122:
- 1211              	.LFB57:
- 523:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1212              		.loc 1 523 1 is_stmt 1 view -0
- 1213              		.cfi_startproc
- 1214              		@ args = 0, pretend = 0, frame = 0
- 1215              		@ frame_needed = 0, uses_anonymous_args = 0
- 523:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1216              		.loc 1 523 1 is_stmt 0 view .LVU249
- 1217 0000 10B5     		push	{r4, lr}
- 1218              	.LCFI22:
- 1219              		.cfi_def_cfa_offset 8
- 1220              		.cfi_offset 4, -8
- 1221              		.cfi_offset 14, -4
+ 1207              		.cfi_def_cfa_offset 8
+ 1208              		.cfi_offset 4, -8
+ 1209              		.cfi_offset 14, -4
  524:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1222              		.loc 1 524 3 is_stmt 1 view .LVU250
- 1223              	.LVL123:
+ 1210              		.loc 1 524 3 is_stmt 1 view .LVU250
+ 1211              	.LVL123:
  525:Src/usbd_conf.c ****   
- 1224              		.loc 1 525 3 view .LVU251
+ 1212              		.loc 1 525 3 view .LVU251
  527:Src/usbd_conf.c **** 
- 1225              		.loc 1 527 3 view .LVU252
+ 1213              		.loc 1 527 3 view .LVU252
  527:Src/usbd_conf.c **** 
- 1226              		.loc 1 527 40 is_stmt 0 view .LVU253
- 1227 0002 8823     		movs	r3, #136
- 1228 0004 9B00     		lsls	r3, r3, #2
- 1229 0006 C058     		ldr	r0, [r0, r3]
- 1230              	.LVL124:
+ 1214              		.loc 1 527 40 is_stmt 0 view .LVU253
+ 1215 0002 8823     		movs	r3, #136
+ 1216 0004 9B00     		lsls	r3, r3, #2
+ 1217 0006 C058     		ldr	r0, [r0, r3]
+ 1218              	.LVL124:
  527:Src/usbd_conf.c **** 
- 1231              		.loc 1 527 16 view .LVU254
- 1232 0008 FFF7FEFF 		bl	HAL_PCD_EP_SetStall
- 1233              	.LVL125:
+ 1219              		.loc 1 527 16 view .LVU254
+ 1220 0008 FFF7FEFF 		bl	HAL_PCD_EP_SetStall
+ 1221              	.LVL125:
  529:Src/usbd_conf.c ****     case HAL_OK :
- 1234              		.loc 1 529 3 is_stmt 1 view .LVU255
- 1235 000c 0128     		cmp	r0, #1
- 1236 000e 06D0     		beq	.L61
- 1237 0010 43B2     		sxtb	r3, r0
- 1238 0012 002B     		cmp	r3, #0
- 1239 0014 02D0     		beq	.L60
- 1240 0016 0228     		cmp	r0, #2
- 1241 0018 03D0     		beq	.L62
- 540:Src/usbd_conf.c ****     break;
- 1242              		.loc 1 540 18 is_stmt 0 view .LVU256
- 1243 001a 0220     		movs	r0, #2
- 1244              	.LVL126:
- 1245              	.L60:
+ 1222              		.loc 1 529 3 is_stmt 1 view .LVU255
+ 1223 000c 0228     		cmp	r0, #2
+ 1224 000e 04D0     		beq	.L67
+ 1225 0010 05D8     		bhi	.L68
+ 1226 0012 0028     		cmp	r0, #0
+ 1227 0014 00D0     		beq	.L66
+ 534:Src/usbd_conf.c ****     break;
+ 1228              		.loc 1 534 18 is_stmt 0 view .LVU256
+ 1229 0016 0220     		movs	r0, #2
+ 1230              	.LVL126:
+ 1231              	.L66:
  546:Src/usbd_conf.c **** }
- 1246              		.loc 1 546 3 is_stmt 1 view .LVU257
+ 1232              		.loc 1 546 3 is_stmt 1 view .LVU257
  547:Src/usbd_conf.c **** 
- 1247              		.loc 1 547 1 is_stmt 0 view .LVU258
- 1248              		@ sp needed
- 1249 001c 10BD     		pop	{r4, pc}
- 1250              	.LVL127:
- 1251              	.L61:
- 534:Src/usbd_conf.c ****     break;
- 1252              		.loc 1 534 18 view .LVU259
- 1253 001e 0220     		movs	r0, #2
-ARM GAS  /tmp/ccCoCmhs.s 			page 40
+ 1233              		.loc 1 547 1 is_stmt 0 view .LVU258
+ 1234              		@ sp needed
+ 1235 0018 10BD     		pop	{r4, pc}
+ 1236              	.LVL127:
+ 1237              	.L67:
+ 537:Src/usbd_conf.c ****     break;
+ 1238              		.loc 1 537 18 view .LVU259
+ 1239 001a 0120     		movs	r0, #1
+ 1240              	.LVL128:
+ 537:Src/usbd_conf.c ****     break;
+ 1241              		.loc 1 537 18 view .LVU260
+ 1242 001c FCE7     		b	.L66
+ 1243              	.LVL129:
+ 1244              	.L68:
+ 540:Src/usbd_conf.c ****     break;
+ 1245              		.loc 1 540 18 view .LVU261
+ 1246 001e 0220     		movs	r0, #2
+ 1247              	.LVL130:
+ 540:Src/usbd_conf.c ****     break;
+ 1248              		.loc 1 540 18 view .LVU262
+ 1249 0020 FAE7     		b	.L66
+ 1250              		.cfi_endproc
+ARM GAS  /tmp/ccuklJcP.s 			page 40
 
 
- 1254              	.LVL128:
- 534:Src/usbd_conf.c ****     break;
- 1255              		.loc 1 534 18 view .LVU260
- 1256 0020 FCE7     		b	.L60
- 1257              	.LVL129:
- 1258              	.L62:
- 537:Src/usbd_conf.c ****     break;
- 1259              		.loc 1 537 18 view .LVU261
- 1260 0022 0120     		movs	r0, #1
- 1261              	.LVL130:
- 537:Src/usbd_conf.c ****     break;
- 1262              		.loc 1 537 18 view .LVU262
- 1263 0024 FAE7     		b	.L60
- 1264              		.cfi_endproc
- 1265              	.LFE57:
- 1267              		.section	.text.USBD_LL_ClearStallEP,"ax",%progbits
- 1268              		.align	1
- 1269              		.global	USBD_LL_ClearStallEP
- 1270              		.syntax unified
- 1271              		.code	16
- 1272              		.thumb_func
- 1273              		.fpu softvfp
- 1275              	USBD_LL_ClearStallEP:
- 1276              	.LVL131:
- 1277              	.LFB58:
+ 1251              	.LFE57:
+ 1253              		.section	.text.USBD_LL_ClearStallEP,"ax",%progbits
+ 1254              		.align	1
+ 1255              		.global	USBD_LL_ClearStallEP
+ 1256              		.syntax unified
+ 1257              		.code	16
+ 1258              		.thumb_func
+ 1259              		.fpu softvfp
+ 1261              	USBD_LL_ClearStallEP:
+ 1262              	.LVL131:
+ 1263              	.LFB58:
  556:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1278              		.loc 1 556 1 is_stmt 1 view -0
- 1279              		.cfi_startproc
- 1280              		@ args = 0, pretend = 0, frame = 0
- 1281              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1264              		.loc 1 556 1 is_stmt 1 view -0
+ 1265              		.cfi_startproc
+ 1266              		@ args = 0, pretend = 0, frame = 0
+ 1267              		@ frame_needed = 0, uses_anonymous_args = 0
  556:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1282              		.loc 1 556 1 is_stmt 0 view .LVU264
- 1283 0000 10B5     		push	{r4, lr}
- 1284              	.LCFI23:
- 1285              		.cfi_def_cfa_offset 8
- 1286              		.cfi_offset 4, -8
- 1287              		.cfi_offset 14, -4
+ 1268              		.loc 1 556 1 is_stmt 0 view .LVU264
+ 1269 0000 10B5     		push	{r4, lr}
+ 1270              	.LCFI23:
+ 1271              		.cfi_def_cfa_offset 8
+ 1272              		.cfi_offset 4, -8
+ 1273              		.cfi_offset 14, -4
  557:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1288              		.loc 1 557 3 is_stmt 1 view .LVU265
- 1289              	.LVL132:
+ 1274              		.loc 1 557 3 is_stmt 1 view .LVU265
+ 1275              	.LVL132:
  558:Src/usbd_conf.c ****   
- 1290              		.loc 1 558 3 view .LVU266
+ 1276              		.loc 1 558 3 view .LVU266
  560:Src/usbd_conf.c ****      
- 1291              		.loc 1 560 3 view .LVU267
+ 1277              		.loc 1 560 3 view .LVU267
  560:Src/usbd_conf.c ****      
- 1292              		.loc 1 560 40 is_stmt 0 view .LVU268
- 1293 0002 8823     		movs	r3, #136
- 1294 0004 9B00     		lsls	r3, r3, #2
- 1295 0006 C058     		ldr	r0, [r0, r3]
- 1296              	.LVL133:
+ 1278              		.loc 1 560 40 is_stmt 0 view .LVU268
+ 1279 0002 8823     		movs	r3, #136
+ 1280 0004 9B00     		lsls	r3, r3, #2
+ 1281 0006 C058     		ldr	r0, [r0, r3]
+ 1282              	.LVL133:
  560:Src/usbd_conf.c ****      
- 1297              		.loc 1 560 16 view .LVU269
- 1298 0008 FFF7FEFF 		bl	HAL_PCD_EP_ClrStall
- 1299              	.LVL134:
+ 1283              		.loc 1 560 16 view .LVU269
+ 1284 0008 FFF7FEFF 		bl	HAL_PCD_EP_ClrStall
+ 1285              	.LVL134:
  562:Src/usbd_conf.c ****     case HAL_OK :
- 1300              		.loc 1 562 3 is_stmt 1 view .LVU270
- 1301 000c 0128     		cmp	r0, #1
-ARM GAS  /tmp/ccCoCmhs.s 			page 41
-
-
- 1302 000e 06D0     		beq	.L65
- 1303 0010 43B2     		sxtb	r3, r0
- 1304 0012 002B     		cmp	r3, #0
- 1305 0014 02D0     		beq	.L64
- 1306 0016 0228     		cmp	r0, #2
- 1307 0018 03D0     		beq	.L66
- 573:Src/usbd_conf.c ****     break;
- 1308              		.loc 1 573 18 is_stmt 0 view .LVU271
- 1309 001a 0220     		movs	r0, #2
- 1310              	.LVL135:
- 1311              	.L64:
+ 1286              		.loc 1 562 3 is_stmt 1 view .LVU270
+ 1287 000c 0228     		cmp	r0, #2
+ 1288 000e 04D0     		beq	.L72
+ 1289 0010 05D8     		bhi	.L73
+ 1290 0012 0028     		cmp	r0, #0
+ 1291 0014 00D0     		beq	.L71
+ 567:Src/usbd_conf.c ****     break;
+ 1292              		.loc 1 567 18 is_stmt 0 view .LVU271
+ 1293 0016 0220     		movs	r0, #2
+ 1294              	.LVL135:
+ 1295              	.L71:
  579:Src/usbd_conf.c **** }
- 1312              		.loc 1 579 3 is_stmt 1 view .LVU272
+ 1296              		.loc 1 579 3 is_stmt 1 view .LVU272
  580:Src/usbd_conf.c **** 
- 1313              		.loc 1 580 1 is_stmt 0 view .LVU273
- 1314              		@ sp needed
- 1315 001c 10BD     		pop	{r4, pc}
- 1316              	.LVL136:
- 1317              	.L65:
- 567:Src/usbd_conf.c ****     break;
- 1318              		.loc 1 567 18 view .LVU274
- 1319 001e 0220     		movs	r0, #2
- 1320              	.LVL137:
- 567:Src/usbd_conf.c ****     break;
- 1321              		.loc 1 567 18 view .LVU275
- 1322 0020 FCE7     		b	.L64
- 1323              	.LVL138:
- 1324              	.L66:
+ 1297              		.loc 1 580 1 is_stmt 0 view .LVU273
+ 1298              		@ sp needed
+ARM GAS  /tmp/ccuklJcP.s 			page 41
+
+
+ 1299 0018 10BD     		pop	{r4, pc}
+ 1300              	.LVL136:
+ 1301              	.L72:
  570:Src/usbd_conf.c ****     break;
- 1325              		.loc 1 570 18 view .LVU276
- 1326 0022 0120     		movs	r0, #1
- 1327              	.LVL139:
+ 1302              		.loc 1 570 18 view .LVU274
+ 1303 001a 0120     		movs	r0, #1
+ 1304              	.LVL137:
  570:Src/usbd_conf.c ****     break;
- 1328              		.loc 1 570 18 view .LVU277
- 1329 0024 FAE7     		b	.L64
- 1330              		.cfi_endproc
- 1331              	.LFE58:
- 1333              		.section	.text.USBD_LL_IsStallEP,"ax",%progbits
- 1334              		.align	1
- 1335              		.global	USBD_LL_IsStallEP
- 1336              		.syntax unified
- 1337              		.code	16
- 1338              		.thumb_func
- 1339              		.fpu softvfp
- 1341              	USBD_LL_IsStallEP:
- 1342              	.LVL140:
- 1343              	.LFB59:
+ 1305              		.loc 1 570 18 view .LVU275
+ 1306 001c FCE7     		b	.L71
+ 1307              	.LVL138:
+ 1308              	.L73:
+ 573:Src/usbd_conf.c ****     break;
+ 1309              		.loc 1 573 18 view .LVU276
+ 1310 001e 0220     		movs	r0, #2
+ 1311              	.LVL139:
+ 573:Src/usbd_conf.c ****     break;
+ 1312              		.loc 1 573 18 view .LVU277
+ 1313 0020 FAE7     		b	.L71
+ 1314              		.cfi_endproc
+ 1315              	.LFE58:
+ 1317              		.section	.text.USBD_LL_IsStallEP,"ax",%progbits
+ 1318              		.align	1
+ 1319              		.global	USBD_LL_IsStallEP
+ 1320              		.syntax unified
+ 1321              		.code	16
+ 1322              		.thumb_func
+ 1323              		.fpu softvfp
+ 1325              	USBD_LL_IsStallEP:
+ 1326              	.LVL140:
+ 1327              	.LFB59:
  589:Src/usbd_conf.c ****   PCD_HandleTypeDef *hpcd = (PCD_HandleTypeDef*) pdev->pData;
- 1344              		.loc 1 589 1 is_stmt 1 view -0
- 1345              		.cfi_startproc
- 1346              		@ args = 0, pretend = 0, frame = 0
- 1347              		@ frame_needed = 0, uses_anonymous_args = 0
- 1348              		@ link register save eliminated.
+ 1328              		.loc 1 589 1 is_stmt 1 view -0
+ 1329              		.cfi_startproc
+ 1330              		@ args = 0, pretend = 0, frame = 0
+ 1331              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1332              		@ link register save eliminated.
  590:Src/usbd_conf.c ****   
- 1349              		.loc 1 590 3 view .LVU279
+ 1333              		.loc 1 590 3 view .LVU279
  590:Src/usbd_conf.c ****   
- 1350              		.loc 1 590 22 is_stmt 0 view .LVU280
-ARM GAS  /tmp/ccCoCmhs.s 			page 42
+ 1334              		.loc 1 590 22 is_stmt 0 view .LVU280
+ 1335 0000 8823     		movs	r3, #136
+ 1336 0002 9B00     		lsls	r3, r3, #2
+ 1337 0004 C358     		ldr	r3, [r0, r3]
+ 1338              	.LVL141:
+ 592:Src/usbd_conf.c ****   {
+ 1339              		.loc 1 592 3 is_stmt 1 view .LVU281
+ 592:Src/usbd_conf.c ****   {
+ 1340              		.loc 1 592 23 is_stmt 0 view .LVU282
+ 1341 0006 4AB2     		sxtb	r2, r1
+ 592:Src/usbd_conf.c ****   {
+ 1342              		.loc 1 592 5 view .LVU283
+ 1343 0008 002A     		cmp	r2, #0
+ 1344 000a 09DB     		blt	.L78
+ 598:Src/usbd_conf.c ****   }
+ 1345              		.loc 1 598 5 is_stmt 1 view .LVU284
+ 598:Src/usbd_conf.c ****   }
+ARM GAS  /tmp/ccuklJcP.s 			page 42
 
 
- 1351 0000 8823     		movs	r3, #136
- 1352 0002 9B00     		lsls	r3, r3, #2
- 1353 0004 C358     		ldr	r3, [r0, r3]
- 1354              	.LVL141:
- 592:Src/usbd_conf.c ****   {
- 1355              		.loc 1 592 3 is_stmt 1 view .LVU281
- 592:Src/usbd_conf.c ****   {
- 1356              		.loc 1 592 23 is_stmt 0 view .LVU282
- 1357 0006 4AB2     		sxtb	r2, r1
- 592:Src/usbd_conf.c ****   {
- 1358              		.loc 1 592 5 view .LVU283
- 1359 0008 002A     		cmp	r2, #0
- 1360 000a 09DB     		blt	.L70
+ 1346              		.loc 1 598 33 is_stmt 0 view .LVU285
+ 1347 000c 7F22     		movs	r2, #127
+ 1348 000e 1140     		ands	r1, r2
+ 1349              	.LVL142:
  598:Src/usbd_conf.c ****   }
- 1361              		.loc 1 598 5 is_stmt 1 view .LVU284
+ 1350              		.loc 1 598 40 view .LVU286
+ 1351 0010 CA00     		lsls	r2, r1, #3
+ 1352 0012 511A     		subs	r1, r2, r1
+ 1353 0014 8900     		lsls	r1, r1, #2
+ 1354 0016 5B18     		adds	r3, r3, r1
+ 1355              	.LVL143:
  598:Src/usbd_conf.c ****   }
- 1362              		.loc 1 598 33 is_stmt 0 view .LVU285
- 1363 000c 7F22     		movs	r2, #127
- 1364 000e 1140     		ands	r1, r2
- 1365              	.LVL142:
- 598:Src/usbd_conf.c ****   }
- 1366              		.loc 1 598 40 view .LVU286
- 1367 0010 CA00     		lsls	r2, r1, #3
- 1368 0012 511A     		subs	r1, r2, r1
- 1369 0014 8A00     		lsls	r2, r1, #2
- 1370 0016 9B18     		adds	r3, r3, r2
- 1371              	.LVL143:
- 598:Src/usbd_conf.c ****   }
- 1372              		.loc 1 598 40 view .LVU287
- 1373 0018 0B33     		adds	r3, r3, #11
- 1374 001a FF33     		adds	r3, r3, #255
- 1375 001c 1878     		ldrb	r0, [r3]
- 1376              	.LVL144:
- 1377              	.L69:
+ 1356              		.loc 1 598 40 view .LVU287
+ 1357 0018 0B33     		adds	r3, r3, #11
+ 1358 001a FF33     		adds	r3, r3, #255
+ 1359 001c 1878     		ldrb	r0, [r3]
+ 1360              	.LVL144:
+ 1361              	.L77:
  600:Src/usbd_conf.c **** 
- 1378              		.loc 1 600 1 view .LVU288
- 1379              		@ sp needed
- 1380 001e 7047     		bx	lr
- 1381              	.LVL145:
- 1382              	.L70:
+ 1362              		.loc 1 600 1 view .LVU288
+ 1363              		@ sp needed
+ 1364 001e 7047     		bx	lr
+ 1365              	.LVL145:
+ 1366              	.L78:
  594:Src/usbd_conf.c ****   }
- 1383              		.loc 1 594 5 is_stmt 1 view .LVU289
+ 1367              		.loc 1 594 5 is_stmt 1 view .LVU289
  594:Src/usbd_conf.c ****   }
- 1384              		.loc 1 594 32 is_stmt 0 view .LVU290
- 1385 0020 7F22     		movs	r2, #127
- 1386 0022 1140     		ands	r1, r2
- 1387              	.LVL146:
+ 1368              		.loc 1 594 32 is_stmt 0 view .LVU290
+ 1369 0020 7F22     		movs	r2, #127
+ 1370 0022 1140     		ands	r1, r2
+ 1371              	.LVL146:
  594:Src/usbd_conf.c ****   }
- 1388              		.loc 1 594 39 view .LVU291
- 1389 0024 CA00     		lsls	r2, r1, #3
- 1390 0026 511A     		subs	r1, r2, r1
- 1391 0028 8A00     		lsls	r2, r1, #2
- 1392 002a 9B18     		adds	r3, r3, r2
- 1393              	.LVL147:
+ 1372              		.loc 1 594 39 view .LVU291
+ 1373 0024 CA00     		lsls	r2, r1, #3
+ 1374 0026 511A     		subs	r1, r2, r1
+ 1375 0028 8900     		lsls	r1, r1, #2
+ 1376 002a 5B18     		adds	r3, r3, r1
+ 1377              	.LVL147:
  594:Src/usbd_conf.c ****   }
- 1394              		.loc 1 594 39 view .LVU292
- 1395 002c 2A33     		adds	r3, r3, #42
-ARM GAS  /tmp/ccCoCmhs.s 			page 43
+ 1378              		.loc 1 594 39 view .LVU292
+ 1379 002c 2A33     		adds	r3, r3, #42
+ 1380 002e 1878     		ldrb	r0, [r3]
+ 1381              	.LVL148:
+ 594:Src/usbd_conf.c ****   }
+ 1382              		.loc 1 594 39 view .LVU293
+ 1383 0030 F5E7     		b	.L77
+ 1384              		.cfi_endproc
+ 1385              	.LFE59:
+ 1387              		.section	.text.USBD_LL_SetUSBAddress,"ax",%progbits
+ 1388              		.align	1
+ 1389              		.global	USBD_LL_SetUSBAddress
+ 1390              		.syntax unified
+ 1391              		.code	16
+ 1392              		.thumb_func
+ 1393              		.fpu softvfp
+ 1395              	USBD_LL_SetUSBAddress:
+ 1396              	.LVL149:
+ARM GAS  /tmp/ccuklJcP.s 			page 43
 
 
- 1396 002e 1878     		ldrb	r0, [r3]
- 1397              	.LVL148:
- 594:Src/usbd_conf.c ****   }
- 1398              		.loc 1 594 39 view .LVU293
- 1399 0030 F5E7     		b	.L69
- 1400              		.cfi_endproc
- 1401              	.LFE59:
- 1403              		.section	.text.USBD_LL_SetUSBAddress,"ax",%progbits
- 1404              		.align	1
- 1405              		.global	USBD_LL_SetUSBAddress
- 1406              		.syntax unified
- 1407              		.code	16
- 1408              		.thumb_func
- 1409              		.fpu softvfp
- 1411              	USBD_LL_SetUSBAddress:
- 1412              	.LVL149:
- 1413              	.LFB60:
+ 1397              	.LFB60:
  609:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1414              		.loc 1 609 1 is_stmt 1 view -0
- 1415              		.cfi_startproc
- 1416              		@ args = 0, pretend = 0, frame = 0
- 1417              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1398              		.loc 1 609 1 is_stmt 1 view -0
+ 1399              		.cfi_startproc
+ 1400              		@ args = 0, pretend = 0, frame = 0
+ 1401              		@ frame_needed = 0, uses_anonymous_args = 0
  609:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1418              		.loc 1 609 1 is_stmt 0 view .LVU295
- 1419 0000 10B5     		push	{r4, lr}
- 1420              	.LCFI24:
- 1421              		.cfi_def_cfa_offset 8
- 1422              		.cfi_offset 4, -8
- 1423              		.cfi_offset 14, -4
+ 1402              		.loc 1 609 1 is_stmt 0 view .LVU295
+ 1403 0000 10B5     		push	{r4, lr}
+ 1404              	.LCFI24:
+ 1405              		.cfi_def_cfa_offset 8
+ 1406              		.cfi_offset 4, -8
+ 1407              		.cfi_offset 14, -4
  610:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1424              		.loc 1 610 3 is_stmt 1 view .LVU296
- 1425              	.LVL150:
+ 1408              		.loc 1 610 3 is_stmt 1 view .LVU296
+ 1409              	.LVL150:
  611:Src/usbd_conf.c ****   
- 1426              		.loc 1 611 3 view .LVU297
+ 1410              		.loc 1 611 3 view .LVU297
  613:Src/usbd_conf.c ****      
- 1427              		.loc 1 613 3 view .LVU298
+ 1411              		.loc 1 613 3 view .LVU298
  613:Src/usbd_conf.c ****      
- 1428              		.loc 1 613 39 is_stmt 0 view .LVU299
- 1429 0002 8823     		movs	r3, #136
- 1430 0004 9B00     		lsls	r3, r3, #2
- 1431 0006 C058     		ldr	r0, [r0, r3]
- 1432              	.LVL151:
+ 1412              		.loc 1 613 39 is_stmt 0 view .LVU299
+ 1413 0002 8823     		movs	r3, #136
+ 1414 0004 9B00     		lsls	r3, r3, #2
+ 1415 0006 C058     		ldr	r0, [r0, r3]
+ 1416              	.LVL151:
  613:Src/usbd_conf.c ****      
- 1433              		.loc 1 613 16 view .LVU300
- 1434 0008 FFF7FEFF 		bl	HAL_PCD_SetAddress
- 1435              	.LVL152:
+ 1417              		.loc 1 613 16 view .LVU300
+ 1418 0008 FFF7FEFF 		bl	HAL_PCD_SetAddress
+ 1419              	.LVL152:
  615:Src/usbd_conf.c ****     case HAL_OK :
- 1436              		.loc 1 615 3 is_stmt 1 view .LVU301
- 1437 000c 0128     		cmp	r0, #1
- 1438 000e 06D0     		beq	.L73
- 1439 0010 43B2     		sxtb	r3, r0
- 1440 0012 002B     		cmp	r3, #0
- 1441 0014 02D0     		beq	.L72
- 1442 0016 0228     		cmp	r0, #2
- 1443 0018 03D0     		beq	.L74
- 626:Src/usbd_conf.c ****     break;
- 1444              		.loc 1 626 18 is_stmt 0 view .LVU302
-ARM GAS  /tmp/ccCoCmhs.s 			page 44
-
-
- 1445 001a 0220     		movs	r0, #2
- 1446              	.LVL153:
- 1447              	.L72:
+ 1420              		.loc 1 615 3 is_stmt 1 view .LVU301
+ 1421 000c 0228     		cmp	r0, #2
+ 1422 000e 04D0     		beq	.L81
+ 1423 0010 05D8     		bhi	.L82
+ 1424 0012 0028     		cmp	r0, #0
+ 1425 0014 00D0     		beq	.L80
+ 620:Src/usbd_conf.c ****     break;
+ 1426              		.loc 1 620 18 is_stmt 0 view .LVU302
+ 1427 0016 0220     		movs	r0, #2
+ 1428              	.LVL153:
+ 1429              	.L80:
  632:Src/usbd_conf.c **** }
- 1448              		.loc 1 632 3 is_stmt 1 view .LVU303
+ 1430              		.loc 1 632 3 is_stmt 1 view .LVU303
  633:Src/usbd_conf.c **** 
- 1449              		.loc 1 633 1 is_stmt 0 view .LVU304
- 1450              		@ sp needed
- 1451 001c 10BD     		pop	{r4, pc}
- 1452              	.LVL154:
- 1453              	.L73:
- 620:Src/usbd_conf.c ****     break;
- 1454              		.loc 1 620 18 view .LVU305
- 1455 001e 0220     		movs	r0, #2
- 1456              	.LVL155:
- 620:Src/usbd_conf.c ****     break;
- 1457              		.loc 1 620 18 view .LVU306
- 1458 0020 FCE7     		b	.L72
- 1459              	.LVL156:
- 1460              	.L74:
+ 1431              		.loc 1 633 1 is_stmt 0 view .LVU304
+ 1432              		@ sp needed
+ 1433 0018 10BD     		pop	{r4, pc}
+ 1434              	.LVL154:
+ 1435              	.L81:
  623:Src/usbd_conf.c ****     break;
- 1461              		.loc 1 623 18 view .LVU307
- 1462 0022 0120     		movs	r0, #1
- 1463              	.LVL157:
+ 1436              		.loc 1 623 18 view .LVU305
+ 1437 001a 0120     		movs	r0, #1
+ 1438              	.LVL155:
  623:Src/usbd_conf.c ****     break;
- 1464              		.loc 1 623 18 view .LVU308
- 1465 0024 FAE7     		b	.L72
- 1466              		.cfi_endproc
- 1467              	.LFE60:
- 1469              		.section	.text.USBD_LL_Transmit,"ax",%progbits
- 1470              		.align	1
- 1471              		.global	USBD_LL_Transmit
- 1472              		.syntax unified
- 1473              		.code	16
- 1474              		.thumb_func
- 1475              		.fpu softvfp
- 1477              	USBD_LL_Transmit:
- 1478              	.LVL158:
- 1479              	.LFB61:
+ 1439              		.loc 1 623 18 view .LVU306
+ 1440 001c FCE7     		b	.L80
+ARM GAS  /tmp/ccuklJcP.s 			page 44
+
+
+ 1441              	.LVL156:
+ 1442              	.L82:
+ 626:Src/usbd_conf.c ****     break;
+ 1443              		.loc 1 626 18 view .LVU307
+ 1444 001e 0220     		movs	r0, #2
+ 1445              	.LVL157:
+ 626:Src/usbd_conf.c ****     break;
+ 1446              		.loc 1 626 18 view .LVU308
+ 1447 0020 FAE7     		b	.L80
+ 1448              		.cfi_endproc
+ 1449              	.LFE60:
+ 1451              		.section	.text.USBD_LL_Transmit,"ax",%progbits
+ 1452              		.align	1
+ 1453              		.global	USBD_LL_Transmit
+ 1454              		.syntax unified
+ 1455              		.code	16
+ 1456              		.thumb_func
+ 1457              		.fpu softvfp
+ 1459              	USBD_LL_Transmit:
+ 1460              	.LVL158:
+ 1461              	.LFB61:
  644:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1480              		.loc 1 644 1 is_stmt 1 view -0
- 1481              		.cfi_startproc
- 1482              		@ args = 0, pretend = 0, frame = 0
- 1483              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1462              		.loc 1 644 1 is_stmt 1 view -0
+ 1463              		.cfi_startproc
+ 1464              		@ args = 0, pretend = 0, frame = 0
+ 1465              		@ frame_needed = 0, uses_anonymous_args = 0
  644:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1484              		.loc 1 644 1 is_stmt 0 view .LVU310
- 1485 0000 10B5     		push	{r4, lr}
- 1486              	.LCFI25:
- 1487              		.cfi_def_cfa_offset 8
- 1488              		.cfi_offset 4, -8
- 1489              		.cfi_offset 14, -4
+ 1466              		.loc 1 644 1 is_stmt 0 view .LVU310
+ 1467 0000 10B5     		push	{r4, lr}
+ 1468              	.LCFI25:
+ 1469              		.cfi_def_cfa_offset 8
+ 1470              		.cfi_offset 4, -8
+ 1471              		.cfi_offset 14, -4
  645:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1490              		.loc 1 645 3 is_stmt 1 view .LVU311
- 1491              	.LVL159:
+ 1472              		.loc 1 645 3 is_stmt 1 view .LVU311
+ 1473              	.LVL159:
  646:Src/usbd_conf.c **** 
- 1492              		.loc 1 646 3 view .LVU312
+ 1474              		.loc 1 646 3 view .LVU312
  648:Src/usbd_conf.c ****      
-ARM GAS  /tmp/ccCoCmhs.s 			page 45
-
-
- 1493              		.loc 1 648 3 view .LVU313
+ 1475              		.loc 1 648 3 view .LVU313
  648:Src/usbd_conf.c ****      
- 1494              		.loc 1 648 40 is_stmt 0 view .LVU314
- 1495 0002 8824     		movs	r4, #136
- 1496 0004 A400     		lsls	r4, r4, #2
- 1497 0006 0059     		ldr	r0, [r0, r4]
- 1498              	.LVL160:
+ 1476              		.loc 1 648 40 is_stmt 0 view .LVU314
+ 1477 0002 8824     		movs	r4, #136
+ 1478 0004 A400     		lsls	r4, r4, #2
+ 1479 0006 0059     		ldr	r0, [r0, r4]
+ 1480              	.LVL160:
  648:Src/usbd_conf.c ****      
- 1499              		.loc 1 648 16 view .LVU315
- 1500 0008 FFF7FEFF 		bl	HAL_PCD_EP_Transmit
- 1501              	.LVL161:
+ 1481              		.loc 1 648 16 view .LVU315
+ 1482 0008 FFF7FEFF 		bl	HAL_PCD_EP_Transmit
+ 1483              	.LVL161:
  650:Src/usbd_conf.c ****     case HAL_OK :
- 1502              		.loc 1 650 3 is_stmt 1 view .LVU316
- 1503 000c 0128     		cmp	r0, #1
- 1504 000e 06D0     		beq	.L77
- 1505 0010 43B2     		sxtb	r3, r0
- 1506 0012 002B     		cmp	r3, #0
- 1507 0014 02D0     		beq	.L76
- 1508 0016 0228     		cmp	r0, #2
- 1509 0018 03D0     		beq	.L78
- 661:Src/usbd_conf.c ****     break;
- 1510              		.loc 1 661 18 is_stmt 0 view .LVU317
- 1511 001a 0220     		movs	r0, #2
- 1512              	.LVL162:
- 1513              	.L76:
+ 1484              		.loc 1 650 3 is_stmt 1 view .LVU316
+ 1485 000c 0228     		cmp	r0, #2
+ 1486 000e 04D0     		beq	.L86
+ 1487 0010 05D8     		bhi	.L87
+ 1488 0012 0028     		cmp	r0, #0
+ 1489 0014 00D0     		beq	.L85
+ARM GAS  /tmp/ccuklJcP.s 			page 45
+
+
+ 655:Src/usbd_conf.c ****     break;
+ 1490              		.loc 1 655 18 is_stmt 0 view .LVU317
+ 1491 0016 0220     		movs	r0, #2
+ 1492              	.LVL162:
+ 1493              	.L85:
  667:Src/usbd_conf.c **** }
- 1514              		.loc 1 667 3 is_stmt 1 view .LVU318
+ 1494              		.loc 1 667 3 is_stmt 1 view .LVU318
  668:Src/usbd_conf.c **** 
- 1515              		.loc 1 668 1 is_stmt 0 view .LVU319
- 1516              		@ sp needed
- 1517 001c 10BD     		pop	{r4, pc}
- 1518              	.LVL163:
- 1519              	.L77:
- 655:Src/usbd_conf.c ****     break;
- 1520              		.loc 1 655 18 view .LVU320
- 1521 001e 0220     		movs	r0, #2
- 1522              	.LVL164:
- 655:Src/usbd_conf.c ****     break;
- 1523              		.loc 1 655 18 view .LVU321
- 1524 0020 FCE7     		b	.L76
- 1525              	.LVL165:
- 1526              	.L78:
+ 1495              		.loc 1 668 1 is_stmt 0 view .LVU319
+ 1496              		@ sp needed
+ 1497 0018 10BD     		pop	{r4, pc}
+ 1498              	.LVL163:
+ 1499              	.L86:
  658:Src/usbd_conf.c ****     break;
- 1527              		.loc 1 658 18 view .LVU322
- 1528 0022 0120     		movs	r0, #1
- 1529              	.LVL166:
+ 1500              		.loc 1 658 18 view .LVU320
+ 1501 001a 0120     		movs	r0, #1
+ 1502              	.LVL164:
  658:Src/usbd_conf.c ****     break;
- 1530              		.loc 1 658 18 view .LVU323
- 1531 0024 FAE7     		b	.L76
- 1532              		.cfi_endproc
- 1533              	.LFE61:
- 1535              		.section	.text.USBD_LL_PrepareReceive,"ax",%progbits
- 1536              		.align	1
- 1537              		.global	USBD_LL_PrepareReceive
- 1538              		.syntax unified
- 1539              		.code	16
- 1540              		.thumb_func
-ARM GAS  /tmp/ccCoCmhs.s 			page 46
-
-
- 1541              		.fpu softvfp
- 1543              	USBD_LL_PrepareReceive:
- 1544              	.LVL167:
- 1545              	.LFB62:
+ 1503              		.loc 1 658 18 view .LVU321
+ 1504 001c FCE7     		b	.L85
+ 1505              	.LVL165:
+ 1506              	.L87:
+ 661:Src/usbd_conf.c ****     break;
+ 1507              		.loc 1 661 18 view .LVU322
+ 1508 001e 0220     		movs	r0, #2
+ 1509              	.LVL166:
+ 661:Src/usbd_conf.c ****     break;
+ 1510              		.loc 1 661 18 view .LVU323
+ 1511 0020 FAE7     		b	.L85
+ 1512              		.cfi_endproc
+ 1513              	.LFE61:
+ 1515              		.section	.text.USBD_LL_PrepareReceive,"ax",%progbits
+ 1516              		.align	1
+ 1517              		.global	USBD_LL_PrepareReceive
+ 1518              		.syntax unified
+ 1519              		.code	16
+ 1520              		.thumb_func
+ 1521              		.fpu softvfp
+ 1523              	USBD_LL_PrepareReceive:
+ 1524              	.LVL167:
+ 1525              	.LFB62:
  679:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1546              		.loc 1 679 1 is_stmt 1 view -0
- 1547              		.cfi_startproc
- 1548              		@ args = 0, pretend = 0, frame = 0
- 1549              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1526              		.loc 1 679 1 is_stmt 1 view -0
+ 1527              		.cfi_startproc
+ 1528              		@ args = 0, pretend = 0, frame = 0
+ 1529              		@ frame_needed = 0, uses_anonymous_args = 0
  679:Src/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
- 1550              		.loc 1 679 1 is_stmt 0 view .LVU325
- 1551 0000 10B5     		push	{r4, lr}
- 1552              	.LCFI26:
- 1553              		.cfi_def_cfa_offset 8
- 1554              		.cfi_offset 4, -8
- 1555              		.cfi_offset 14, -4
+ 1530              		.loc 1 679 1 is_stmt 0 view .LVU325
+ 1531 0000 10B5     		push	{r4, lr}
+ 1532              	.LCFI26:
+ 1533              		.cfi_def_cfa_offset 8
+ 1534              		.cfi_offset 4, -8
+ 1535              		.cfi_offset 14, -4
  680:Src/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
- 1556              		.loc 1 680 3 is_stmt 1 view .LVU326
- 1557              	.LVL168:
+ 1536              		.loc 1 680 3 is_stmt 1 view .LVU326
+ 1537              	.LVL168:
  681:Src/usbd_conf.c **** 
- 1558              		.loc 1 681 3 view .LVU327
+ARM GAS  /tmp/ccuklJcP.s 			page 46
+
+
+ 1538              		.loc 1 681 3 view .LVU327
  683:Src/usbd_conf.c ****      
- 1559              		.loc 1 683 3 view .LVU328
+ 1539              		.loc 1 683 3 view .LVU328
  683:Src/usbd_conf.c ****      
- 1560              		.loc 1 683 39 is_stmt 0 view .LVU329
- 1561 0002 8824     		movs	r4, #136
- 1562 0004 A400     		lsls	r4, r4, #2
- 1563 0006 0059     		ldr	r0, [r0, r4]
- 1564              	.LVL169:
+ 1540              		.loc 1 683 39 is_stmt 0 view .LVU329
+ 1541 0002 8824     		movs	r4, #136
+ 1542 0004 A400     		lsls	r4, r4, #2
+ 1543 0006 0059     		ldr	r0, [r0, r4]
+ 1544              	.LVL169:
  683:Src/usbd_conf.c ****      
- 1565              		.loc 1 683 16 view .LVU330
- 1566 0008 FFF7FEFF 		bl	HAL_PCD_EP_Receive
- 1567              	.LVL170:
+ 1545              		.loc 1 683 16 view .LVU330
+ 1546 0008 FFF7FEFF 		bl	HAL_PCD_EP_Receive
+ 1547              	.LVL170:
  685:Src/usbd_conf.c ****     case HAL_OK :
- 1568              		.loc 1 685 3 is_stmt 1 view .LVU331
- 1569 000c 0128     		cmp	r0, #1
- 1570 000e 06D0     		beq	.L81
- 1571 0010 43B2     		sxtb	r3, r0
- 1572 0012 002B     		cmp	r3, #0
- 1573 0014 02D0     		beq	.L80
- 1574 0016 0228     		cmp	r0, #2
- 1575 0018 03D0     		beq	.L82
- 696:Src/usbd_conf.c ****     break;
- 1576              		.loc 1 696 18 is_stmt 0 view .LVU332
- 1577 001a 0220     		movs	r0, #2
- 1578              	.LVL171:
- 1579              	.L80:
+ 1548              		.loc 1 685 3 is_stmt 1 view .LVU331
+ 1549 000c 0228     		cmp	r0, #2
+ 1550 000e 04D0     		beq	.L91
+ 1551 0010 05D8     		bhi	.L92
+ 1552 0012 0028     		cmp	r0, #0
+ 1553 0014 00D0     		beq	.L90
+ 690:Src/usbd_conf.c ****     break;
+ 1554              		.loc 1 690 18 is_stmt 0 view .LVU332
+ 1555 0016 0220     		movs	r0, #2
+ 1556              	.LVL171:
+ 1557              	.L90:
  702:Src/usbd_conf.c **** }
- 1580              		.loc 1 702 3 is_stmt 1 view .LVU333
+ 1558              		.loc 1 702 3 is_stmt 1 view .LVU333
  703:Src/usbd_conf.c **** 
- 1581              		.loc 1 703 1 is_stmt 0 view .LVU334
- 1582              		@ sp needed
- 1583 001c 10BD     		pop	{r4, pc}
- 1584              	.LVL172:
- 1585              	.L81:
- 690:Src/usbd_conf.c ****     break;
- 1586              		.loc 1 690 18 view .LVU335
-ARM GAS  /tmp/ccCoCmhs.s 			page 47
+ 1559              		.loc 1 703 1 is_stmt 0 view .LVU334
+ 1560              		@ sp needed
+ 1561 0018 10BD     		pop	{r4, pc}
+ 1562              	.LVL172:
+ 1563              	.L91:
+ 693:Src/usbd_conf.c ****     break;
+ 1564              		.loc 1 693 18 view .LVU335
+ 1565 001a 0120     		movs	r0, #1
+ 1566              	.LVL173:
+ 693:Src/usbd_conf.c ****     break;
+ 1567              		.loc 1 693 18 view .LVU336
+ 1568 001c FCE7     		b	.L90
+ 1569              	.LVL174:
+ 1570              	.L92:
+ 696:Src/usbd_conf.c ****     break;
+ 1571              		.loc 1 696 18 view .LVU337
+ 1572 001e 0220     		movs	r0, #2
+ 1573              	.LVL175:
+ 696:Src/usbd_conf.c ****     break;
+ 1574              		.loc 1 696 18 view .LVU338
+ 1575 0020 FAE7     		b	.L90
+ 1576              		.cfi_endproc
+ 1577              	.LFE62:
+ 1579              		.section	.text.USBD_LL_GetRxDataSize,"ax",%progbits
+ 1580              		.align	1
+ 1581              		.global	USBD_LL_GetRxDataSize
+ 1582              		.syntax unified
+ 1583              		.code	16
+ 1584              		.thumb_func
+ARM GAS  /tmp/ccuklJcP.s 			page 47
 
 
- 1587 001e 0220     		movs	r0, #2
- 1588              	.LVL173:
- 690:Src/usbd_conf.c ****     break;
- 1589              		.loc 1 690 18 view .LVU336
- 1590 0020 FCE7     		b	.L80
- 1591              	.LVL174:
- 1592              	.L82:
- 693:Src/usbd_conf.c ****     break;
- 1593              		.loc 1 693 18 view .LVU337
- 1594 0022 0120     		movs	r0, #1
- 1595              	.LVL175:
- 693:Src/usbd_conf.c ****     break;
- 1596              		.loc 1 693 18 view .LVU338
- 1597 0024 FAE7     		b	.L80
- 1598              		.cfi_endproc
- 1599              	.LFE62:
- 1601              		.section	.text.USBD_LL_GetRxDataSize,"ax",%progbits
- 1602              		.align	1
- 1603              		.global	USBD_LL_GetRxDataSize
- 1604              		.syntax unified
- 1605              		.code	16
- 1606              		.thumb_func
- 1607              		.fpu softvfp
- 1609              	USBD_LL_GetRxDataSize:
- 1610              	.LVL176:
- 1611              	.LFB63:
+ 1585              		.fpu softvfp
+ 1587              	USBD_LL_GetRxDataSize:
+ 1588              	.LVL176:
+ 1589              	.LFB63:
  712:Src/usbd_conf.c ****   return HAL_PCD_EP_GetRxCount((PCD_HandleTypeDef*) pdev->pData, ep_addr);
- 1612              		.loc 1 712 1 is_stmt 1 view -0
- 1613              		.cfi_startproc
- 1614              		@ args = 0, pretend = 0, frame = 0
- 1615              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1590              		.loc 1 712 1 is_stmt 1 view -0
+ 1591              		.cfi_startproc
+ 1592              		@ args = 0, pretend = 0, frame = 0
+ 1593              		@ frame_needed = 0, uses_anonymous_args = 0
  712:Src/usbd_conf.c ****   return HAL_PCD_EP_GetRxCount((PCD_HandleTypeDef*) pdev->pData, ep_addr);
- 1616              		.loc 1 712 1 is_stmt 0 view .LVU340
- 1617 0000 10B5     		push	{r4, lr}
- 1618              	.LCFI27:
- 1619              		.cfi_def_cfa_offset 8
- 1620              		.cfi_offset 4, -8
- 1621              		.cfi_offset 14, -4
+ 1594              		.loc 1 712 1 is_stmt 0 view .LVU340
+ 1595 0000 10B5     		push	{r4, lr}
+ 1596              	.LCFI27:
+ 1597              		.cfi_def_cfa_offset 8
+ 1598              		.cfi_offset 4, -8
+ 1599              		.cfi_offset 14, -4
  713:Src/usbd_conf.c **** }
- 1622              		.loc 1 713 3 is_stmt 1 view .LVU341
+ 1600              		.loc 1 713 3 is_stmt 1 view .LVU341
  713:Src/usbd_conf.c **** }
- 1623              		.loc 1 713 57 is_stmt 0 view .LVU342
- 1624 0002 8823     		movs	r3, #136
- 1625 0004 9B00     		lsls	r3, r3, #2
- 1626 0006 C058     		ldr	r0, [r0, r3]
- 1627              	.LVL177:
+ 1601              		.loc 1 713 57 is_stmt 0 view .LVU342
+ 1602 0002 8823     		movs	r3, #136
+ 1603 0004 9B00     		lsls	r3, r3, #2
+ 1604 0006 C058     		ldr	r0, [r0, r3]
+ 1605              	.LVL177:
  713:Src/usbd_conf.c **** }
- 1628              		.loc 1 713 10 view .LVU343
- 1629 0008 FFF7FEFF 		bl	HAL_PCD_EP_GetRxCount
- 1630              	.LVL178:
+ 1606              		.loc 1 713 10 view .LVU343
+ 1607 0008 FFF7FEFF 		bl	HAL_PCD_EP_GetRxCount
+ 1608              	.LVL178:
  714:Src/usbd_conf.c **** 
- 1631              		.loc 1 714 1 view .LVU344
- 1632              		@ sp needed
- 1633 000c 10BD     		pop	{r4, pc}
- 1634              		.cfi_endproc
- 1635              	.LFE63:
- 1637              		.section	.text.USBD_LL_Delay,"ax",%progbits
-ARM GAS  /tmp/ccCoCmhs.s 			page 48
-
-
- 1638              		.align	1
- 1639              		.global	USBD_LL_Delay
- 1640              		.syntax unified
- 1641              		.code	16
- 1642              		.thumb_func
- 1643              		.fpu softvfp
- 1645              	USBD_LL_Delay:
- 1646              	.LVL179:
- 1647              	.LFB64:
+ 1609              		.loc 1 714 1 view .LVU344
+ 1610              		@ sp needed
+ 1611 000c 10BD     		pop	{r4, pc}
+ 1612              		.cfi_endproc
+ 1613              	.LFE63:
+ 1615              		.section	.text.USBD_LL_Delay,"ax",%progbits
+ 1616              		.align	1
+ 1617              		.global	USBD_LL_Delay
+ 1618              		.syntax unified
+ 1619              		.code	16
+ 1620              		.thumb_func
+ 1621              		.fpu softvfp
+ 1623              	USBD_LL_Delay:
+ 1624              	.LVL179:
+ 1625              	.LFB64:
  722:Src/usbd_conf.c ****   HAL_Delay(Delay);
- 1648              		.loc 1 722 1 is_stmt 1 view -0
- 1649              		.cfi_startproc
- 1650              		@ args = 0, pretend = 0, frame = 0
- 1651              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1626              		.loc 1 722 1 is_stmt 1 view -0
+ 1627              		.cfi_startproc
+ 1628              		@ args = 0, pretend = 0, frame = 0
+ 1629              		@ frame_needed = 0, uses_anonymous_args = 0
  722:Src/usbd_conf.c ****   HAL_Delay(Delay);
- 1652              		.loc 1 722 1 is_stmt 0 view .LVU346
- 1653 0000 10B5     		push	{r4, lr}
- 1654              	.LCFI28:
- 1655              		.cfi_def_cfa_offset 8
- 1656              		.cfi_offset 4, -8
- 1657              		.cfi_offset 14, -4
+ 1630              		.loc 1 722 1 is_stmt 0 view .LVU346
+ 1631 0000 10B5     		push	{r4, lr}
+ 1632              	.LCFI28:
+ 1633              		.cfi_def_cfa_offset 8
+ 1634              		.cfi_offset 4, -8
+ 1635              		.cfi_offset 14, -4
  723:Src/usbd_conf.c **** }
- 1658              		.loc 1 723 3 is_stmt 1 view .LVU347
- 1659 0002 FFF7FEFF 		bl	HAL_Delay
- 1660              	.LVL180:
+ARM GAS  /tmp/ccuklJcP.s 			page 48
+
+
+ 1636              		.loc 1 723 3 is_stmt 1 view .LVU347
+ 1637 0002 FFF7FEFF 		bl	HAL_Delay
+ 1638              	.LVL180:
  724:Src/usbd_conf.c **** 
- 1661              		.loc 1 724 1 is_stmt 0 view .LVU348
- 1662              		@ sp needed
- 1663 0006 10BD     		pop	{r4, pc}
- 1664              		.cfi_endproc
- 1665              	.LFE64:
- 1667              		.section	.text.USBD_static_malloc,"ax",%progbits
- 1668              		.align	1
- 1669              		.global	USBD_static_malloc
- 1670              		.syntax unified
- 1671              		.code	16
- 1672              		.thumb_func
- 1673              		.fpu softvfp
- 1675              	USBD_static_malloc:
- 1676              	.LVL181:
- 1677              	.LFB65:
+ 1639              		.loc 1 724 1 is_stmt 0 view .LVU348
+ 1640              		@ sp needed
+ 1641 0006 10BD     		pop	{r4, pc}
+ 1642              		.cfi_endproc
+ 1643              	.LFE64:
+ 1645              		.section	.text.USBD_static_malloc,"ax",%progbits
+ 1646              		.align	1
+ 1647              		.global	USBD_static_malloc
+ 1648              		.syntax unified
+ 1649              		.code	16
+ 1650              		.thumb_func
+ 1651              		.fpu softvfp
+ 1653              	USBD_static_malloc:
+ 1654              	.LVL181:
+ 1655              	.LFB65:
  732:Src/usbd_conf.c ****   static uint32_t mem[(sizeof(USBD_CDC_HandleTypeDef)/4)+1];/* On 32-bit boundary */
- 1678              		.loc 1 732 1 is_stmt 1 view -0
- 1679              		.cfi_startproc
- 1680              		@ args = 0, pretend = 0, frame = 0
- 1681              		@ frame_needed = 0, uses_anonymous_args = 0
- 1682              		@ link register save eliminated.
+ 1656              		.loc 1 732 1 is_stmt 1 view -0
+ 1657              		.cfi_startproc
+ 1658              		@ args = 0, pretend = 0, frame = 0
+ 1659              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1660              		@ link register save eliminated.
  733:Src/usbd_conf.c ****   return mem;
- 1683              		.loc 1 733 3 view .LVU350
+ 1661              		.loc 1 733 3 view .LVU350
  734:Src/usbd_conf.c **** }
- 1684              		.loc 1 734 3 view .LVU351
+ 1662              		.loc 1 734 3 view .LVU351
  735:Src/usbd_conf.c **** 
- 1685              		.loc 1 735 1 is_stmt 0 view .LVU352
- 1686 0000 0048     		ldr	r0, .L86
- 1687              	.LVL182:
+ 1663              		.loc 1 735 1 is_stmt 0 view .LVU352
+ 1664 0000 0048     		ldr	r0, .L97
+ 1665              	.LVL182:
  735:Src/usbd_conf.c **** 
- 1688              		.loc 1 735 1 view .LVU353
-ARM GAS  /tmp/ccCoCmhs.s 			page 49
+ 1666              		.loc 1 735 1 view .LVU353
+ 1667              		@ sp needed
+ 1668 0002 7047     		bx	lr
+ 1669              	.L98:
+ 1670              		.align	2
+ 1671              	.L97:
+ 1672 0004 00000000 		.word	mem.8377
+ 1673              		.cfi_endproc
+ 1674              	.LFE65:
+ 1676              		.section	.text.USBD_static_free,"ax",%progbits
+ 1677              		.align	1
+ 1678              		.global	USBD_static_free
+ 1679              		.syntax unified
+ 1680              		.code	16
+ 1681              		.thumb_func
+ 1682              		.fpu softvfp
+ 1684              	USBD_static_free:
+ 1685              	.LVL183:
+ 1686              	.LFB66:
+ 743:Src/usbd_conf.c **** 
+ 1687              		.loc 1 743 1 is_stmt 1 view -0
+ 1688              		.cfi_startproc
+ 1689              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /tmp/ccuklJcP.s 			page 49
 
 
- 1689              		@ sp needed
- 1690 0002 7047     		bx	lr
- 1691              	.L87:
- 1692              		.align	2
- 1693              	.L86:
- 1694 0004 00000000 		.word	mem.8188
+ 1690              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1691              		@ link register save eliminated.
+ 745:Src/usbd_conf.c **** 
+ 1692              		.loc 1 745 1 view .LVU355
+ 1693              		@ sp needed
+ 1694 0000 7047     		bx	lr
  1695              		.cfi_endproc
- 1696              	.LFE65:
- 1698              		.section	.text.USBD_static_free,"ax",%progbits
+ 1696              	.LFE66:
+ 1698              		.section	.text.HAL_PCDEx_SetConnectionState,"ax",%progbits
  1699              		.align	1
- 1700              		.global	USBD_static_free
+ 1700              		.global	HAL_PCDEx_SetConnectionState
  1701              		.syntax unified
  1702              		.code	16
  1703              		.thumb_func
  1704              		.fpu softvfp
- 1706              	USBD_static_free:
- 1707              	.LVL183:
- 1708              	.LFB66:
- 743:Src/usbd_conf.c **** 
- 1709              		.loc 1 743 1 is_stmt 1 view -0
- 1710              		.cfi_startproc
- 1711              		@ args = 0, pretend = 0, frame = 0
- 1712              		@ frame_needed = 0, uses_anonymous_args = 0
- 1713              		@ link register save eliminated.
- 745:Src/usbd_conf.c **** 
- 1714              		.loc 1 745 1 view .LVU355
- 1715              		@ sp needed
- 1716 0000 7047     		bx	lr
- 1717              		.cfi_endproc
- 1718              	.LFE66:
- 1720              		.section	.text.HAL_PCDEx_SetConnectionState,"ax",%progbits
- 1721              		.align	1
- 1722              		.global	HAL_PCDEx_SetConnectionState
- 1723              		.syntax unified
- 1724              		.code	16
- 1725              		.thumb_func
- 1726              		.fpu softvfp
- 1728              	HAL_PCDEx_SetConnectionState:
- 1729              	.LVL184:
- 1730              	.LFB68:
+ 1706              	HAL_PCDEx_SetConnectionState:
+ 1707              	.LVL184:
+ 1708              	.LFB68:
  757:Src/usbd_conf.c **** /* USER CODE END 5 */
  758:Src/usbd_conf.c **** 
  759:Src/usbd_conf.c **** /**
@@ -2931,17 +2909,14 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  764:Src/usbd_conf.c ****   */
  765:Src/usbd_conf.c **** void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
  766:Src/usbd_conf.c **** {
- 1731              		.loc 1 766 1 view -0
- 1732              		.cfi_startproc
- 1733              		@ args = 0, pretend = 0, frame = 0
- 1734              		@ frame_needed = 0, uses_anonymous_args = 0
- 1735              		@ link register save eliminated.
+ 1709              		.loc 1 766 1 view -0
+ 1710              		.cfi_startproc
+ 1711              		@ args = 0, pretend = 0, frame = 0
+ 1712              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1713              		@ link register save eliminated.
  767:Src/usbd_conf.c ****   /* USER CODE BEGIN 6 */
  768:Src/usbd_conf.c ****   if (state == 1)
-ARM GAS  /tmp/ccCoCmhs.s 			page 50
-
-
- 1736              		.loc 1 768 3 view .LVU357
+ 1714              		.loc 1 768 3 view .LVU357
  769:Src/usbd_conf.c ****   {
  770:Src/usbd_conf.c ****     /* Configure Low connection state. */
  771:Src/usbd_conf.c **** 
@@ -2951,125 +2926,128 @@ ARM GAS  /tmp/ccCoCmhs.s 			page 1
  775:Src/usbd_conf.c ****     /* Configure High connection state */
  776:Src/usbd_conf.c **** 
  777:Src/usbd_conf.c ****   }
- 1737              		.loc 1 777 3 view .LVU358
+ 1715              		.loc 1 777 3 view .LVU358
  778:Src/usbd_conf.c ****   /* USER CODE END 6 */
  779:Src/usbd_conf.c **** }
- 1738              		.loc 1 779 1 is_stmt 0 view .LVU359
- 1739              		@ sp needed
- 1740 0000 7047     		bx	lr
- 1741              		.cfi_endproc
- 1742              	.LFE68:
- 1744              		.comm	hpcd_USB_FS,544,4
- 1745              		.section	.bss.mem.8188,"aw",%nobits
- 1746              		.align	2
- 1749              	mem.8188:
- 1750 0000 00000000 		.space	544
- 1750      00000000 
- 1750      00000000 
- 1750      00000000 
- 1750      00000000 
- 1751              		.text
- 1752              	.Letext0:
- 1753              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 1754              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 1755              		.file 4 "Drivers/CMSIS/Include/core_cm0.h"
- 1756              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
- 1757              		.file 6 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
- 1758              		.file 7 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
- 1759              		.file 8 "/usr/arm-none-eabi/include/sys/lock.h"
- 1760              		.file 9 "/usr/arm-none-eabi/include/sys/_types.h"
- 1761              		.file 10 "/usr/lib/gcc/arm-none-eabi/8.3.0/include/stddef.h"
- 1762              		.file 11 "/usr/arm-none-eabi/include/sys/reent.h"
- 1763              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
- 1764              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd.h"
- 1765              		.file 14 "/usr/arm-none-eabi/include/stdlib.h"
- 1766              		.file 15 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
- 1767              		.file 16 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
- 1768              		.file 17 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
- 1769              		.file 18 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd_ex.h"
- 1770              		.file 19 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
- 1771              		.file 20 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h"
-ARM GAS  /tmp/ccCoCmhs.s 			page 51
+ 1716              		.loc 1 779 1 is_stmt 0 view .LVU359
+ 1717              		@ sp needed
+ 1718 0000 7047     		bx	lr
+ 1719              		.cfi_endproc
+ 1720              	.LFE68:
+ 1722              		.comm	hpcd_USB_FS,544,4
+ 1723              		.section	.bss.mem.8377,"aw",%nobits
+ 1724              		.align	2
+ 1727              	mem.8377:
+ARM GAS  /tmp/ccuklJcP.s 			page 50
+
+
+ 1728 0000 00000000 		.space	544
+ 1728      00000000 
+ 1728      00000000 
+ 1728      00000000 
+ 1728      00000000 
+ 1729              		.text
+ 1730              	.Letext0:
+ 1731              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 1732              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 1733              		.file 4 "Drivers/CMSIS/Include/core_cm0.h"
+ 1734              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
+ 1735              		.file 6 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
+ 1736              		.file 7 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
+ 1737              		.file 8 "/usr/arm-none-eabi/include/sys/lock.h"
+ 1738              		.file 9 "/usr/arm-none-eabi/include/sys/_types.h"
+ 1739              		.file 10 "/usr/lib/gcc/arm-none-eabi/9.1.0/include/stddef.h"
+ 1740              		.file 11 "/usr/arm-none-eabi/include/sys/reent.h"
+ 1741              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
+ 1742              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd.h"
+ 1743              		.file 14 "/usr/arm-none-eabi/include/stdlib.h"
+ 1744              		.file 15 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 1745              		.file 16 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
+ 1746              		.file 17 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
+ 1747              		.file 18 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd_ex.h"
+ 1748              		.file 19 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
+ 1749              		.file 20 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h"
+ARM GAS  /tmp/ccuklJcP.s 			page 51
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_conf.c
-     /tmp/ccCoCmhs.s:16     .text.SystemClockConfig_Resume:0000000000000000 $t
-     /tmp/ccCoCmhs.s:23     .text.SystemClockConfig_Resume:0000000000000000 SystemClockConfig_Resume
-     /tmp/ccCoCmhs.s:45     .text.HAL_PCD_MspInit:0000000000000000 $t
-     /tmp/ccCoCmhs.s:52     .text.HAL_PCD_MspInit:0000000000000000 HAL_PCD_MspInit
-     /tmp/ccCoCmhs.s:116    .text.HAL_PCD_MspInit:0000000000000038 $d
-     /tmp/ccCoCmhs.s:122    .text.HAL_PCD_MspDeInit:0000000000000000 $t
-     /tmp/ccCoCmhs.s:129    .text.HAL_PCD_MspDeInit:0000000000000000 HAL_PCD_MspDeInit
-     /tmp/ccCoCmhs.s:173    .text.HAL_PCD_MspDeInit:0000000000000020 $d
-     /tmp/ccCoCmhs.s:180    .text.HAL_PCD_SetupStageCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:187    .text.HAL_PCD_SetupStageCallback:0000000000000000 HAL_PCD_SetupStageCallback
-     /tmp/ccCoCmhs.s:223    .text.HAL_PCD_DataOutStageCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:230    .text.HAL_PCD_DataOutStageCallback:0000000000000000 HAL_PCD_DataOutStageCallback
-     /tmp/ccCoCmhs.s:269    .text.HAL_PCD_DataInStageCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:276    .text.HAL_PCD_DataInStageCallback:0000000000000000 HAL_PCD_DataInStageCallback
-     /tmp/ccCoCmhs.s:313    .text.HAL_PCD_SOFCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:320    .text.HAL_PCD_SOFCallback:0000000000000000 HAL_PCD_SOFCallback
-     /tmp/ccCoCmhs.s:349    .text.HAL_PCD_ResetCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:356    .text.HAL_PCD_ResetCallback:0000000000000000 HAL_PCD_ResetCallback
-     /tmp/ccCoCmhs.s:401    .text.HAL_PCD_SuspendCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:408    .text.HAL_PCD_SuspendCallback:0000000000000000 HAL_PCD_SuspendCallback
-     /tmp/ccCoCmhs.s:453    .text.HAL_PCD_SuspendCallback:0000000000000020 $d
-     /tmp/ccCoCmhs.s:458    .text.HAL_PCD_ResumeCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:465    .text.HAL_PCD_ResumeCallback:0000000000000000 HAL_PCD_ResumeCallback
-     /tmp/ccCoCmhs.s:516    .text.HAL_PCD_ResumeCallback:0000000000000028 $d
-     /tmp/ccCoCmhs.s:521    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:528    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 HAL_PCD_ISOOUTIncompleteCallback
-     /tmp/ccCoCmhs.s:557    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:564    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 HAL_PCD_ISOINIncompleteCallback
-     /tmp/ccCoCmhs.s:593    .text.HAL_PCD_ConnectCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:600    .text.HAL_PCD_ConnectCallback:0000000000000000 HAL_PCD_ConnectCallback
-     /tmp/ccCoCmhs.s:629    .text.HAL_PCD_DisconnectCallback:0000000000000000 $t
-     /tmp/ccCoCmhs.s:636    .text.HAL_PCD_DisconnectCallback:0000000000000000 HAL_PCD_DisconnectCallback
-     /tmp/ccCoCmhs.s:665    .text.USBD_LL_Init:0000000000000000 $t
-     /tmp/ccCoCmhs.s:672    .text.USBD_LL_Init:0000000000000000 USBD_LL_Init
-     /tmp/ccCoCmhs.s:795    .text.USBD_LL_Init:0000000000000080 $d
+     /tmp/ccuklJcP.s:16     .text.SystemClockConfig_Resume:0000000000000000 $t
+     /tmp/ccuklJcP.s:23     .text.SystemClockConfig_Resume:0000000000000000 SystemClockConfig_Resume
+     /tmp/ccuklJcP.s:45     .text.HAL_PCD_MspInit:0000000000000000 $t
+     /tmp/ccuklJcP.s:52     .text.HAL_PCD_MspInit:0000000000000000 HAL_PCD_MspInit
+     /tmp/ccuklJcP.s:116    .text.HAL_PCD_MspInit:0000000000000038 $d
+     /tmp/ccuklJcP.s:122    .text.HAL_PCD_MspDeInit:0000000000000000 $t
+     /tmp/ccuklJcP.s:129    .text.HAL_PCD_MspDeInit:0000000000000000 HAL_PCD_MspDeInit
+     /tmp/ccuklJcP.s:173    .text.HAL_PCD_MspDeInit:0000000000000020 $d
+     /tmp/ccuklJcP.s:180    .text.HAL_PCD_SetupStageCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:187    .text.HAL_PCD_SetupStageCallback:0000000000000000 HAL_PCD_SetupStageCallback
+     /tmp/ccuklJcP.s:223    .text.HAL_PCD_DataOutStageCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:230    .text.HAL_PCD_DataOutStageCallback:0000000000000000 HAL_PCD_DataOutStageCallback
+     /tmp/ccuklJcP.s:269    .text.HAL_PCD_DataInStageCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:276    .text.HAL_PCD_DataInStageCallback:0000000000000000 HAL_PCD_DataInStageCallback
+     /tmp/ccuklJcP.s:313    .text.HAL_PCD_SOFCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:320    .text.HAL_PCD_SOFCallback:0000000000000000 HAL_PCD_SOFCallback
+     /tmp/ccuklJcP.s:349    .text.HAL_PCD_ResetCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:356    .text.HAL_PCD_ResetCallback:0000000000000000 HAL_PCD_ResetCallback
+     /tmp/ccuklJcP.s:401    .text.HAL_PCD_SuspendCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:408    .text.HAL_PCD_SuspendCallback:0000000000000000 HAL_PCD_SuspendCallback
+     /tmp/ccuklJcP.s:453    .text.HAL_PCD_SuspendCallback:0000000000000020 $d
+     /tmp/ccuklJcP.s:458    .text.HAL_PCD_ResumeCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:465    .text.HAL_PCD_ResumeCallback:0000000000000000 HAL_PCD_ResumeCallback
+     /tmp/ccuklJcP.s:516    .text.HAL_PCD_ResumeCallback:0000000000000028 $d
+     /tmp/ccuklJcP.s:521    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:528    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 HAL_PCD_ISOOUTIncompleteCallback
+     /tmp/ccuklJcP.s:557    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:564    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 HAL_PCD_ISOINIncompleteCallback
+     /tmp/ccuklJcP.s:593    .text.HAL_PCD_ConnectCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:600    .text.HAL_PCD_ConnectCallback:0000000000000000 HAL_PCD_ConnectCallback
+     /tmp/ccuklJcP.s:629    .text.HAL_PCD_DisconnectCallback:0000000000000000 $t
+     /tmp/ccuklJcP.s:636    .text.HAL_PCD_DisconnectCallback:0000000000000000 HAL_PCD_DisconnectCallback
+     /tmp/ccuklJcP.s:665    .text.USBD_LL_Init:0000000000000000 $t
+     /tmp/ccuklJcP.s:672    .text.USBD_LL_Init:0000000000000000 USBD_LL_Init
+     /tmp/ccuklJcP.s:795    .text.USBD_LL_Init:0000000000000080 $d
                             *COM*:0000000000000220 hpcd_USB_FS
-     /tmp/ccCoCmhs.s:801    .text.USBD_LL_DeInit:0000000000000000 $t
-     /tmp/ccCoCmhs.s:808    .text.USBD_LL_DeInit:0000000000000000 USBD_LL_DeInit
-     /tmp/ccCoCmhs.s:867    .text.USBD_LL_Start:0000000000000000 $t
-     /tmp/ccCoCmhs.s:874    .text.USBD_LL_Start:0000000000000000 USBD_LL_Start
-     /tmp/ccCoCmhs.s:933    .text.USBD_LL_Stop:0000000000000000 $t
-     /tmp/ccCoCmhs.s:940    .text.USBD_LL_Stop:0000000000000000 USBD_LL_Stop
-     /tmp/ccCoCmhs.s:999    .text.USBD_LL_OpenEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1006   .text.USBD_LL_OpenEP:0000000000000000 USBD_LL_OpenEP
-     /tmp/ccCoCmhs.s:1070   .text.USBD_LL_CloseEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1077   .text.USBD_LL_CloseEP:0000000000000000 USBD_LL_CloseEP
-     /tmp/ccCoCmhs.s:1136   .text.USBD_LL_FlushEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1143   .text.USBD_LL_FlushEP:0000000000000000 USBD_LL_FlushEP
-     /tmp/ccCoCmhs.s:1202   .text.USBD_LL_StallEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1209   .text.USBD_LL_StallEP:0000000000000000 USBD_LL_StallEP
-     /tmp/ccCoCmhs.s:1268   .text.USBD_LL_ClearStallEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1275   .text.USBD_LL_ClearStallEP:0000000000000000 USBD_LL_ClearStallEP
-     /tmp/ccCoCmhs.s:1334   .text.USBD_LL_IsStallEP:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1341   .text.USBD_LL_IsStallEP:0000000000000000 USBD_LL_IsStallEP
-     /tmp/ccCoCmhs.s:1404   .text.USBD_LL_SetUSBAddress:0000000000000000 $t
-ARM GAS  /tmp/ccCoCmhs.s 			page 52
+     /tmp/ccuklJcP.s:801    .text.USBD_LL_DeInit:0000000000000000 $t
+     /tmp/ccuklJcP.s:808    .text.USBD_LL_DeInit:0000000000000000 USBD_LL_DeInit
+     /tmp/ccuklJcP.s:865    .text.USBD_LL_Start:0000000000000000 $t
+     /tmp/ccuklJcP.s:872    .text.USBD_LL_Start:0000000000000000 USBD_LL_Start
+     /tmp/ccuklJcP.s:929    .text.USBD_LL_Stop:0000000000000000 $t
+     /tmp/ccuklJcP.s:936    .text.USBD_LL_Stop:0000000000000000 USBD_LL_Stop
+     /tmp/ccuklJcP.s:993    .text.USBD_LL_OpenEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1000   .text.USBD_LL_OpenEP:0000000000000000 USBD_LL_OpenEP
+     /tmp/ccuklJcP.s:1062   .text.USBD_LL_CloseEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1069   .text.USBD_LL_CloseEP:0000000000000000 USBD_LL_CloseEP
+     /tmp/ccuklJcP.s:1126   .text.USBD_LL_FlushEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1133   .text.USBD_LL_FlushEP:0000000000000000 USBD_LL_FlushEP
+     /tmp/ccuklJcP.s:1190   .text.USBD_LL_StallEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1197   .text.USBD_LL_StallEP:0000000000000000 USBD_LL_StallEP
+     /tmp/ccuklJcP.s:1254   .text.USBD_LL_ClearStallEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1261   .text.USBD_LL_ClearStallEP:0000000000000000 USBD_LL_ClearStallEP
+     /tmp/ccuklJcP.s:1318   .text.USBD_LL_IsStallEP:0000000000000000 $t
+     /tmp/ccuklJcP.s:1325   .text.USBD_LL_IsStallEP:0000000000000000 USBD_LL_IsStallEP
+     /tmp/ccuklJcP.s:1388   .text.USBD_LL_SetUSBAddress:0000000000000000 $t
+ARM GAS  /tmp/ccuklJcP.s 			page 52
 
 
-     /tmp/ccCoCmhs.s:1411   .text.USBD_LL_SetUSBAddress:0000000000000000 USBD_LL_SetUSBAddress
-     /tmp/ccCoCmhs.s:1470   .text.USBD_LL_Transmit:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1477   .text.USBD_LL_Transmit:0000000000000000 USBD_LL_Transmit
-     /tmp/ccCoCmhs.s:1536   .text.USBD_LL_PrepareReceive:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1543   .text.USBD_LL_PrepareReceive:0000000000000000 USBD_LL_PrepareReceive
-     /tmp/ccCoCmhs.s:1602   .text.USBD_LL_GetRxDataSize:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1609   .text.USBD_LL_GetRxDataSize:0000000000000000 USBD_LL_GetRxDataSize
-     /tmp/ccCoCmhs.s:1638   .text.USBD_LL_Delay:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1645   .text.USBD_LL_Delay:0000000000000000 USBD_LL_Delay
-     /tmp/ccCoCmhs.s:1668   .text.USBD_static_malloc:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1675   .text.USBD_static_malloc:0000000000000000 USBD_static_malloc
-     /tmp/ccCoCmhs.s:1694   .text.USBD_static_malloc:0000000000000004 $d
-     /tmp/ccCoCmhs.s:1749   .bss.mem.8188:0000000000000000 mem.8188
-     /tmp/ccCoCmhs.s:1699   .text.USBD_static_free:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1706   .text.USBD_static_free:0000000000000000 USBD_static_free
-     /tmp/ccCoCmhs.s:1721   .text.HAL_PCDEx_SetConnectionState:0000000000000000 $t
-     /tmp/ccCoCmhs.s:1728   .text.HAL_PCDEx_SetConnectionState:0000000000000000 HAL_PCDEx_SetConnectionState
-     /tmp/ccCoCmhs.s:1746   .bss.mem.8188:0000000000000000 $d
+     /tmp/ccuklJcP.s:1395   .text.USBD_LL_SetUSBAddress:0000000000000000 USBD_LL_SetUSBAddress
+     /tmp/ccuklJcP.s:1452   .text.USBD_LL_Transmit:0000000000000000 $t
+     /tmp/ccuklJcP.s:1459   .text.USBD_LL_Transmit:0000000000000000 USBD_LL_Transmit
+     /tmp/ccuklJcP.s:1516   .text.USBD_LL_PrepareReceive:0000000000000000 $t
+     /tmp/ccuklJcP.s:1523   .text.USBD_LL_PrepareReceive:0000000000000000 USBD_LL_PrepareReceive
+     /tmp/ccuklJcP.s:1580   .text.USBD_LL_GetRxDataSize:0000000000000000 $t
+     /tmp/ccuklJcP.s:1587   .text.USBD_LL_GetRxDataSize:0000000000000000 USBD_LL_GetRxDataSize
+     /tmp/ccuklJcP.s:1616   .text.USBD_LL_Delay:0000000000000000 $t
+     /tmp/ccuklJcP.s:1623   .text.USBD_LL_Delay:0000000000000000 USBD_LL_Delay
+     /tmp/ccuklJcP.s:1646   .text.USBD_static_malloc:0000000000000000 $t
+     /tmp/ccuklJcP.s:1653   .text.USBD_static_malloc:0000000000000000 USBD_static_malloc
+     /tmp/ccuklJcP.s:1672   .text.USBD_static_malloc:0000000000000004 $d
+     /tmp/ccuklJcP.s:1727   .bss.mem.8377:0000000000000000 mem.8377
+     /tmp/ccuklJcP.s:1677   .text.USBD_static_free:0000000000000000 $t
+     /tmp/ccuklJcP.s:1684   .text.USBD_static_free:0000000000000000 USBD_static_free
+     /tmp/ccuklJcP.s:1699   .text.HAL_PCDEx_SetConnectionState:0000000000000000 $t
+     /tmp/ccuklJcP.s:1706   .text.HAL_PCDEx_SetConnectionState:0000000000000000 HAL_PCDEx_SetConnectionState
+     /tmp/ccuklJcP.s:1724   .bss.mem.8377:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 SystemClock_Config

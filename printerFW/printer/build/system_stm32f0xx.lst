@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccEhobgE.s 			page 1
+ARM GAS  /tmp/ccxpoqQz.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
   30:Src/system_stm32f0xx.c ****   *-----------------------------------------------------------------------------
   31:Src/system_stm32f0xx.c ****   *        SYSCLK(Hz)                             | 8000000
   32:Src/system_stm32f0xx.c ****   *-----------------------------------------------------------------------------
-ARM GAS  /tmp/ccEhobgE.s 			page 2
+ARM GAS  /tmp/ccxpoqQz.s 			page 2
 
 
   33:Src/system_stm32f0xx.c ****   *        HCLK(Hz)                               | 8000000
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
   87:Src/system_stm32f0xx.c **** 
   88:Src/system_stm32f0xx.c **** /** @addtogroup STM32F0xx_System_Private_TypesDefinitions
   89:Src/system_stm32f0xx.c ****   * @{
-ARM GAS  /tmp/ccEhobgE.s 			page 3
+ARM GAS  /tmp/ccxpoqQz.s 			page 3
 
 
   90:Src/system_stm32f0xx.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  144:Src/system_stm32f0xx.c **** 
  145:Src/system_stm32f0xx.c **** /** @addtogroup STM32F0xx_System_Private_FunctionPrototypes
  146:Src/system_stm32f0xx.c ****   * @{
-ARM GAS  /tmp/ccEhobgE.s 			page 4
+ARM GAS  /tmp/ccxpoqQz.s 			page 4
 
 
  147:Src/system_stm32f0xx.c ****   */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
   49 000e 1A4B     		ldr	r3, .L5+8
   50 0010 1A68     		ldr	r2, [r3]
   51 0012 0121     		movs	r1, #1
-ARM GAS  /tmp/ccEhobgE.s 			page 5
+ARM GAS  /tmp/ccxpoqQz.s 			page 5
 
 
   52 0014 0A43     		orrs	r2, r1
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  201:Src/system_stm32f0xx.c ****   /* Reset USART2SW[1:0], USART1SW[1:0], I2C1SW, CECSW, USBSW and ADCSW bits */
  202:Src/system_stm32f0xx.c ****   RCC->CFGR3 &= (uint32_t)0xFFFCFE2CU;
   84              		.loc 1 202 3 is_stmt 1 view .LVU16
-ARM GAS  /tmp/ccEhobgE.s 			page 6
+ARM GAS  /tmp/ccxpoqQz.s 			page 6
 
 
   85              		.loc 1 202 14 is_stmt 0 view .LVU17
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  106 0056 064B     		ldr	r3, .L5
  107 0058 0D4A     		ldr	r2, .L5+32
  108 005a 1A60     		str	r2, [r3]
-ARM GAS  /tmp/ccEhobgE.s 			page 7
+ARM GAS  /tmp/ccxpoqQz.s 			page 7
 
 
  170:Src/system_stm32f0xx.c ****                                                      // 0x1fffC800 is "System Memory" start address
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
   49:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
   50:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
   51:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /tmp/ccEhobgE.s 			page 8
+ARM GAS  /tmp/ccxpoqQz.s 			page 8
 
 
   52:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  106:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  107:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  108:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccEhobgE.s 			page 9
+ARM GAS  /tmp/ccxpoqQz.s 			page 9
 
 
  109:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  163:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  164:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp, %0\n" : : "r" (topOfProcStack) : "sp");
  165:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccEhobgE.s 			page 10
+ARM GAS  /tmp/ccxpoqQz.s 			page 10
 
 
  166:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  139              	.L3:
  174:Src/system_stm32f0xx.c ****   }
  140              		.loc 1 174 7 discriminator 1 view .LVU33
-ARM GAS  /tmp/ccEhobgE.s 			page 11
+ARM GAS  /tmp/ccxpoqQz.s 			page 11
 
 
  174:Src/system_stm32f0xx.c ****   }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  258:Src/system_stm32f0xx.c ****   *             in voltage and temperature.
  259:Src/system_stm32f0xx.c ****   *
  260:Src/system_stm32f0xx.c ****   *         (**) HSE_VALUE is a constant defined in stm32f0xx_hal.h file (default value
-ARM GAS  /tmp/ccEhobgE.s 			page 12
+ARM GAS  /tmp/ccxpoqQz.s 			page 12
 
 
  261:Src/system_stm32f0xx.c ****   *              8 MHz), user has to ensure that HSE_VALUE is same as the real
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  289:Src/system_stm32f0xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
  290:Src/system_stm32f0xx.c ****       pllmull = ( pllmull >> 18) + 2;
  291:Src/system_stm32f0xx.c ****       predivfactor = (RCC->CFGR2 & RCC_CFGR2_PREDIV) + 1;
-ARM GAS  /tmp/ccEhobgE.s 			page 13
+ARM GAS  /tmp/ccxpoqQz.s 			page 13
 
 
  292:Src/system_stm32f0xx.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  281:Src/system_stm32f0xx.c ****       break;
  218              		.loc 1 281 23 view .LVU49
  219 0022 1A60     		str	r2, [r3]
-ARM GAS  /tmp/ccEhobgE.s 			page 14
+ARM GAS  /tmp/ccxpoqQz.s 			page 14
 
 
  282:Src/system_stm32f0xx.c ****     case RCC_CFGR_SWS_HSE:  /* HSE used as system clock */
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  288:Src/system_stm32f0xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
  260              		.loc 1 288 20 is_stmt 0 view .LVU64
  261 0044 144A     		ldr	r2, .L17
-ARM GAS  /tmp/ccEhobgE.s 			page 15
+ARM GAS  /tmp/ccxpoqQz.s 			page 15
 
 
  262 0046 5068     		ldr	r0, [r2, #4]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  301 006a 9342     		cmp	r3, r2
  302 006c 0DD0     		beq	.L16
  311:Src/system_stm32f0xx.c **** #else
-ARM GAS  /tmp/ccEhobgE.s 			page 16
+ARM GAS  /tmp/ccxpoqQz.s 			page 16
 
 
  303              		.loc 1 311 9 is_stmt 1 view .LVU80
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  346 00a4 00000000 		.word	.LANCHOR1
  347 00a8 006CDC02 		.word	48000000
  348              		.cfi_endproc
-ARM GAS  /tmp/ccEhobgE.s 			page 17
+ARM GAS  /tmp/ccxpoqQz.s 			page 17
 
 
  349              	.LFE38:
@@ -975,61 +975,44 @@ ARM GAS  /tmp/ccEhobgE.s 			page 1
  363              		.align	2
  364              		.set	.LANCHOR1,. + 0
  367              	AHBPrescTable:
- 368 0000 00       		.byte	0
- 369 0001 00       		.byte	0
- 370 0002 00       		.byte	0
- 371 0003 00       		.byte	0
- 372 0004 00       		.byte	0
- 373 0005 00       		.byte	0
- 374 0006 00       		.byte	0
- 375 0007 00       		.byte	0
- 376 0008 01       		.byte	1
- 377 0009 02       		.byte	2
- 378 000a 03       		.byte	3
- 379 000b 04       		.byte	4
- 380 000c 06       		.byte	6
- 381 000d 07       		.byte	7
- 382 000e 08       		.byte	8
- 383 000f 09       		.byte	9
- 384              		.section	.rodata.APBPrescTable,"a"
- 385              		.align	2
- 388              	APBPrescTable:
- 389 0000 00       		.byte	0
- 390 0001 00       		.byte	0
- 391 0002 00       		.byte	0
- 392 0003 00       		.byte	0
- 393 0004 01       		.byte	1
- 394 0005 02       		.byte	2
- 395 0006 03       		.byte	3
- 396 0007 04       		.byte	4
- 397              		.text
- 398              	.Letext0:
- 399              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 400              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 401              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
- 402              		.file 6 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
- 403              		.file 7 "/usr/arm-none-eabi/include/sys/lock.h"
- 404              		.file 8 "/usr/arm-none-eabi/include/sys/_types.h"
- 405              		.file 9 "/usr/lib/gcc/arm-none-eabi/8.3.0/include/stddef.h"
- 406              		.file 10 "/usr/arm-none-eabi/include/sys/reent.h"
-ARM GAS  /tmp/ccEhobgE.s 			page 18
+ 368 0000 00000000 		.ascii	"\000\000\000\000\000\000\000\000\001\002\003\004\006"
+ 368      00000000 
+ 368      01020304 
+ 368      06
+ 369 000d 070809   		.ascii	"\007\010\011"
+ 370              		.section	.rodata.APBPrescTable,"a"
+ 371              		.align	2
+ 374              	APBPrescTable:
+ 375 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
+ 375      01020304 
+ 376              		.text
+ 377              	.Letext0:
+ 378              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 379              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 380              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
+ 381              		.file 6 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
+ 382              		.file 7 "/usr/arm-none-eabi/include/sys/lock.h"
+ 383              		.file 8 "/usr/arm-none-eabi/include/sys/_types.h"
+ 384              		.file 9 "/usr/lib/gcc/arm-none-eabi/9.1.0/include/stddef.h"
+ 385              		.file 10 "/usr/arm-none-eabi/include/sys/reent.h"
+ARM GAS  /tmp/ccxpoqQz.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32f0xx.c
-     /tmp/ccEhobgE.s:16     .text.SystemInit:0000000000000000 $t
-     /tmp/ccEhobgE.s:24     .text.SystemInit:0000000000000000 SystemInit
-     /tmp/ccEhobgE.s:146    .text.SystemInit:0000000000000070 $d
+     /tmp/ccxpoqQz.s:16     .text.SystemInit:0000000000000000 $t
+     /tmp/ccxpoqQz.s:24     .text.SystemInit:0000000000000000 SystemInit
+     /tmp/ccxpoqQz.s:146    .text.SystemInit:0000000000000070 $d
                             *COM*:0000000000000004 SysMemBootJump
-     /tmp/ccEhobgE.s:163    .text.SystemCoreClockUpdate:0000000000000000 $t
-     /tmp/ccEhobgE.s:170    .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-     /tmp/ccEhobgE.s:343    .text.SystemCoreClockUpdate:0000000000000098 $d
-     /tmp/ccEhobgE.s:388    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-     /tmp/ccEhobgE.s:367    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-     /tmp/ccEhobgE.s:360    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-     /tmp/ccEhobgE.s:356    .data.SystemCoreClock:0000000000000000 $d
-     /tmp/ccEhobgE.s:363    .rodata.AHBPrescTable:0000000000000000 $d
-     /tmp/ccEhobgE.s:385    .rodata.APBPrescTable:0000000000000000 $d
+     /tmp/ccxpoqQz.s:163    .text.SystemCoreClockUpdate:0000000000000000 $t
+     /tmp/ccxpoqQz.s:170    .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+     /tmp/ccxpoqQz.s:343    .text.SystemCoreClockUpdate:0000000000000098 $d
+     /tmp/ccxpoqQz.s:374    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+     /tmp/ccxpoqQz.s:367    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+     /tmp/ccxpoqQz.s:360    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+     /tmp/ccxpoqQz.s:356    .data.SystemCoreClock:0000000000000000 $d
+     /tmp/ccxpoqQz.s:363    .rodata.AHBPrescTable:0000000000000000 $d
+     /tmp/ccxpoqQz.s:371    .rodata.APBPrescTable:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv

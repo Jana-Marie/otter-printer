@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cccaST3O.s 			page 1
+ARM GAS  /tmp/ccJRoqM6.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
   31:Src/usbd_cdc_if.c ****   *    this license is void and will automatically terminate your rights under 
   32:Src/usbd_cdc_if.c ****   *    this license. 
   33:Src/usbd_cdc_if.c ****   *
-ARM GAS  /tmp/cccaST3O.s 			page 2
+ARM GAS  /tmp/ccJRoqM6.s 			page 2
 
 
   34:Src/usbd_cdc_if.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
   88:Src/usbd_cdc_if.c **** /** @defgroup USBD_CDC_IF_Private_Defines USBD_CDC_IF_Private_Defines
   89:Src/usbd_cdc_if.c ****   * @brief Private defines.
   90:Src/usbd_cdc_if.c ****   * @{
-ARM GAS  /tmp/cccaST3O.s 			page 3
+ARM GAS  /tmp/ccJRoqM6.s 			page 3
 
 
   91:Src/usbd_cdc_if.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  145:Src/usbd_cdc_if.c **** 
  146:Src/usbd_cdc_if.c **** /* USER CODE END EXPORTED_VARIABLES */
  147:Src/usbd_cdc_if.c **** 
-ARM GAS  /tmp/cccaST3O.s 			page 4
+ARM GAS  /tmp/ccJRoqM6.s 			page 4
 
 
  148:Src/usbd_cdc_if.c **** /**
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
   29              		@ frame_needed = 0, uses_anonymous_args = 0
   30              		@ link register save eliminated.
  199:Src/usbd_cdc_if.c ****   /* USER CODE BEGIN 4 */
-ARM GAS  /tmp/cccaST3O.s 			page 5
+ARM GAS  /tmp/ccJRoqM6.s 			page 5
 
 
  200:Src/usbd_cdc_if.c ****   return (USBD_OK);
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  232:Src/usbd_cdc_if.c ****     case CDC_CLEAR_COMM_FEATURE:
  233:Src/usbd_cdc_if.c **** 
  234:Src/usbd_cdc_if.c ****     break;
-ARM GAS  /tmp/cccaST3O.s 			page 6
+ARM GAS  /tmp/ccJRoqM6.s 			page 6
 
 
  235:Src/usbd_cdc_if.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
   69              		.thumb_func
   70              		.fpu softvfp
   72              	CDC_Receive_FS:
-ARM GAS  /tmp/cccaST3O.s 			page 7
+ARM GAS  /tmp/ccJRoqM6.s 			page 7
 
 
   73              	.LVL2:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  104 0016 C046     		.align	2
  105              	.L4:
  106 0018 00000000 		.word	hUsbDeviceFS
-ARM GAS  /tmp/cccaST3O.s 			page 8
+ARM GAS  /tmp/ccJRoqM6.s 			page 8
 
 
  107              		.cfi_endproc
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  159              		.thumb_func
  160              		.fpu softvfp
  162              	CDC_Transmit_FS:
-ARM GAS  /tmp/cccaST3O.s 			page 9
+ARM GAS  /tmp/ccJRoqM6.s 			page 9
 
 
  163              	.LVL9:
@@ -514,16 +514,16 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  315:Src/usbd_cdc_if.c ****   USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;
  177              		.loc 1 315 3 view .LVU23
  178              		.loc 1 315 27 is_stmt 0 view .LVU24
- 179 0002 0A4C     		ldr	r4, .L13
+ 179 0002 0A4A     		ldr	r2, .L13
  180 0004 8623     		movs	r3, #134
  181 0006 9B00     		lsls	r3, r3, #2
- 182 0008 E458     		ldr	r4, [r4, r3]
+ 182 0008 D258     		ldr	r2, [r2, r3]
  183              	.LVL11:
  316:Src/usbd_cdc_if.c ****   if (hcdc->TxState != 0){
  184              		.loc 1 316 3 is_stmt 1 view .LVU25
  185              		.loc 1 316 11 is_stmt 0 view .LVU26
  186 000a 043B     		subs	r3, r3, #4
- 187 000c E358     		ldr	r3, [r4, r3]
+ 187 000c D358     		ldr	r3, [r2, r3]
  188              		.loc 1 316 6 view .LVU27
  189 000e 002B     		cmp	r3, #0
  190 0010 01D0     		beq	.L12
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  321:Src/usbd_cdc_if.c ****   /* USER CODE END 7 */
  322:Src/usbd_cdc_if.c ****   return result;
  323:Src/usbd_cdc_if.c **** }
-ARM GAS  /tmp/cccaST3O.s 			page 10
+ARM GAS  /tmp/ccJRoqM6.s 			page 10
 
 
  195              		.loc 1 323 1 view .LVU29
@@ -549,10 +549,10 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  319:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
  200              		.loc 1 319 3 is_stmt 1 view .LVU30
  201 0016 054C     		ldr	r4, .L13
- 202              	.LVL14:
+ 202 0018 0A00     		movs	r2, r1
+ 203              	.LVL14:
  319:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
- 203              		.loc 1 319 3 is_stmt 0 view .LVU31
- 204 0018 0A00     		movs	r2, r1
+ 204              		.loc 1 319 3 is_stmt 0 view .LVU31
  205 001a 0100     		movs	r1, r0
  206              	.LVL15:
  319:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
@@ -596,9 +596,9 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  242              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
  243              		.file 3 "/usr/arm-none-eabi/include/sys/lock.h"
  244              		.file 4 "/usr/arm-none-eabi/include/sys/_types.h"
- 245              		.file 5 "/usr/lib/gcc/arm-none-eabi/8.3.0/include/stddef.h"
+ 245              		.file 5 "/usr/lib/gcc/arm-none-eabi/9.1.0/include/stddef.h"
  246              		.file 6 "/usr/arm-none-eabi/include/sys/reent.h"
-ARM GAS  /tmp/cccaST3O.s 			page 11
+ARM GAS  /tmp/ccJRoqM6.s 			page 11
 
 
  247              		.file 7 "/usr/arm-none-eabi/include/sys/_stdint.h"
@@ -607,28 +607,28 @@ ARM GAS  /tmp/cccaST3O.s 			page 1
  250              		.file 10 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
  251              		.file 11 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
  252              		.file 12 "Inc/usbd_cdc_if.h"
-ARM GAS  /tmp/cccaST3O.s 			page 12
+ARM GAS  /tmp/ccJRoqM6.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc_if.c
-     /tmp/cccaST3O.s:16     .text.CDC_DeInit_FS:0000000000000000 $t
-     /tmp/cccaST3O.s:23     .text.CDC_DeInit_FS:0000000000000000 CDC_DeInit_FS
-     /tmp/cccaST3O.s:40     .text.CDC_Control_FS:0000000000000000 $t
-     /tmp/cccaST3O.s:46     .text.CDC_Control_FS:0000000000000000 CDC_Control_FS
-     /tmp/cccaST3O.s:66     .text.CDC_Receive_FS:0000000000000000 $t
-     /tmp/cccaST3O.s:72     .text.CDC_Receive_FS:0000000000000000 CDC_Receive_FS
-     /tmp/cccaST3O.s:106    .text.CDC_Receive_FS:0000000000000018 $d
-     /tmp/cccaST3O.s:111    .text.CDC_Init_FS:0000000000000000 $t
-     /tmp/cccaST3O.s:117    .text.CDC_Init_FS:0000000000000000 CDC_Init_FS
-     /tmp/cccaST3O.s:148    .text.CDC_Init_FS:000000000000001c $d
+     /tmp/ccJRoqM6.s:16     .text.CDC_DeInit_FS:0000000000000000 $t
+     /tmp/ccJRoqM6.s:23     .text.CDC_DeInit_FS:0000000000000000 CDC_DeInit_FS
+     /tmp/ccJRoqM6.s:40     .text.CDC_Control_FS:0000000000000000 $t
+     /tmp/ccJRoqM6.s:46     .text.CDC_Control_FS:0000000000000000 CDC_Control_FS
+     /tmp/ccJRoqM6.s:66     .text.CDC_Receive_FS:0000000000000000 $t
+     /tmp/ccJRoqM6.s:72     .text.CDC_Receive_FS:0000000000000000 CDC_Receive_FS
+     /tmp/ccJRoqM6.s:106    .text.CDC_Receive_FS:0000000000000018 $d
+     /tmp/ccJRoqM6.s:111    .text.CDC_Init_FS:0000000000000000 $t
+     /tmp/ccJRoqM6.s:117    .text.CDC_Init_FS:0000000000000000 CDC_Init_FS
+     /tmp/ccJRoqM6.s:148    .text.CDC_Init_FS:000000000000001c $d
                             *COM*:00000000000003e8 UserTxBufferFS
                             *COM*:00000000000003e8 UserRxBufferFS
-     /tmp/cccaST3O.s:155    .text.CDC_Transmit_FS:0000000000000000 $t
-     /tmp/cccaST3O.s:162    .text.CDC_Transmit_FS:0000000000000000 CDC_Transmit_FS
-     /tmp/cccaST3O.s:224    .text.CDC_Transmit_FS:000000000000002c $d
-     /tmp/cccaST3O.s:235    .data.USBD_Interface_fops_FS:0000000000000000 USBD_Interface_fops_FS
-     /tmp/cccaST3O.s:232    .data.USBD_Interface_fops_FS:0000000000000000 $d
+     /tmp/ccJRoqM6.s:155    .text.CDC_Transmit_FS:0000000000000000 $t
+     /tmp/ccJRoqM6.s:162    .text.CDC_Transmit_FS:0000000000000000 CDC_Transmit_FS
+     /tmp/ccJRoqM6.s:224    .text.CDC_Transmit_FS:000000000000002c $d
+     /tmp/ccJRoqM6.s:235    .data.USBD_Interface_fops_FS:0000000000000000 USBD_Interface_fops_FS
+     /tmp/ccJRoqM6.s:232    .data.USBD_Interface_fops_FS:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_CDC_SetRxBuffer

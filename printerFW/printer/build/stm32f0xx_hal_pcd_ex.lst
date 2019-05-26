@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccyHUNw5.s 			page 1
+ARM GAS  /tmp/ccR1XMVw.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
   29:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-ARM GAS  /tmp/ccyHUNw5.s 			page 2
+ARM GAS  /tmp/ccR1XMVw.s 			page 2
 
 
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
   86:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   *                @arg USB_DBL_BUF: Double Buffer used
   87:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   * @param  pmaadress EP address in The PMA: In case of single buffer endpoint
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   *                   this parameter is 16-bit value providing the address
-ARM GAS  /tmp/ccyHUNw5.s 			page 3
+ARM GAS  /tmp/ccR1XMVw.s 			page 3
 
 
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   *                   in PMA allocated to endpoint.
@@ -164,9 +164,9 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
   48              		.loc 1 108 8 view .LVU7
   49 000a CC00     		lsls	r4, r1, #3
   50 000c 611A     		subs	r1, r4, r1
-  51 000e 8C00     		lsls	r4, r1, #2
-  52 0010 2834     		adds	r4, r4, #40
-  53 0012 0019     		adds	r0, r0, r4
+  51 000e 8900     		lsls	r1, r1, #2
+  52 0010 2831     		adds	r1, r1, #40
+  53 0012 4018     		adds	r0, r0, r1
   54              	.LVL2:
   55              	.L3:
  109:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   }
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
  115:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   /* Here we check if the endpoint is single or double Buffer*/
  116:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   if (ep_kind == PCD_SNG_BUF)
   56              		.loc 1 116 3 is_stmt 1 view .LVU8
-ARM GAS  /tmp/ccyHUNw5.s 			page 4
+ARM GAS  /tmp/ccR1XMVw.s 			page 4
 
 
   57              		.loc 1 116 6 is_stmt 0 view .LVU9
@@ -227,10 +227,10 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
   81              	.LVL6:
  112:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   }
   82              		.loc 1 112 8 view .LVU19
-  83 0024 8C00     		lsls	r4, r1, #2
-  84 0026 0934     		adds	r4, r4, #9
-  85 0028 FF34     		adds	r4, r4, #255
-  86 002a 0019     		adds	r0, r0, r4
+  83 0024 8900     		lsls	r1, r1, #2
+  84 0026 0931     		adds	r1, r1, #9
+  85 0028 FF31     		adds	r1, r1, #255
+  86 002a 4018     		adds	r0, r0, r1
   87              	.LVL7:
  112:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****   }
   88              		.loc 1 112 8 view .LVU20
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
   90              	.L4:
  126:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****     /*Configure the PMA*/
   91              		.loc 1 126 5 is_stmt 1 view .LVU21
-ARM GAS  /tmp/ccyHUNw5.s 			page 5
+ARM GAS  /tmp/ccR1XMVw.s 			page 5
 
 
  126:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c ****     /*Configure the PMA*/
@@ -273,16 +273,16 @@ ARM GAS  /tmp/ccyHUNw5.s 			page 1
  115              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
  116              		.file 6 "/usr/arm-none-eabi/include/sys/lock.h"
  117              		.file 7 "/usr/arm-none-eabi/include/sys/_types.h"
- 118              		.file 8 "/usr/lib/gcc/arm-none-eabi/8.3.0/include/stddef.h"
+ 118              		.file 8 "/usr/lib/gcc/arm-none-eabi/9.1.0/include/stddef.h"
  119              		.file 9 "/usr/arm-none-eabi/include/sys/reent.h"
  120              		.file 10 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  121              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd.h"
-ARM GAS  /tmp/ccyHUNw5.s 			page 6
+ARM GAS  /tmp/ccR1XMVw.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_pcd_ex.c
-     /tmp/ccyHUNw5.s:16     .text.HAL_PCDEx_PMAConfig:0000000000000000 $t
-     /tmp/ccyHUNw5.s:24     .text.HAL_PCDEx_PMAConfig:0000000000000000 HAL_PCDEx_PMAConfig
+     /tmp/ccR1XMVw.s:16     .text.HAL_PCDEx_PMAConfig:0000000000000000 $t
+     /tmp/ccR1XMVw.s:24     .text.HAL_PCDEx_PMAConfig:0000000000000000 HAL_PCDEx_PMAConfig
 
 NO UNDEFINED SYMBOLS
