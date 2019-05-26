@@ -13,8 +13,6 @@ DMA_HandleTypeDef hdma_usart3_rx;
 DMA_HandleTypeDef hdma_usart3_tx;
 DMA_HandleTypeDef hdma_tim2_uev;
 
-uint16_t PER = 90;
-
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
@@ -32,6 +30,10 @@ void dfu_otter_bootloader(void)
   *((unsigned long *)0x20003FF0) = 0xDEADBEEF;
   NVIC_SystemReset();
 }
+
+uint16_t PER = 60;
+
+enum color { CYAN, MAGENTA, YELLOW };
 
 #define data_len ((14*8*2)+8)
 uint16_t my_data_buf[data_len];
@@ -72,15 +74,15 @@ int main(void)
   memset(my_data_buf, 0xFFFF, data_len*2);
   for (uint16_t i = 0; i < data_len - 9; i += 16) {
     my_data_buf[i + 0]  = 0b0000010000000000;
-    my_data_buf[i + 1]  = 0b1110000000100001;
-    my_data_buf[i + 2]  = 0b0000000000100000;
-    my_data_buf[i + 3]  = 0b0000000000001001;
-    my_data_buf[i + 4]  = 0b0000010000001000;
-    my_data_buf[i + 5]  = 0b0000000000000011;
-    my_data_buf[i + 6]  = 0b0000000010000010;
-    my_data_buf[i + 7]  = 0b0000000010010001;
-    my_data_buf[i + 8]  = 0b1110000010010000;
-    my_data_buf[i + 9]  = 0b0000000000000100;
+    my_data_buf[i + 1]  = 0b0000010000100001;
+    my_data_buf[i + 2]  = 0b0000000000100000; // BYTE START //nope
+    my_data_buf[i + 3]  = 0b0000000000001001; // nope
+    my_data_buf[i + 4]  = 0b0000010000001000; // nope
+    my_data_buf[i + 5]  = 0b0000000000000011; // yep
+    my_data_buf[i + 6]  = 0b0000000010000010; // nope
+    my_data_buf[i + 7]  = 0b0000000010010001; // nope
+    my_data_buf[i + 8]  = 0b0000000010010000; // nope
+    my_data_buf[i + 9]  = 0b0000000000000100; //BYTE END // nope
     my_data_buf[i + 10] = 0b0000000001000100;
     my_data_buf[i + 11] = 0b0000000001000000;
     my_data_buf[i + 12] = 0b0000000001000000;
@@ -133,10 +135,26 @@ int main(void)
       //setRow(color++);
       HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 1);
       startDMA();
-      HAL_Delay(2);
+      HAL_Delay(20);
     }
   }
 }
+/*
+// stolen from @Sprite_TM
+void printcart_fire_nozzle_color(uint8_t *wav, int p, color _color) {
+	//Byte order for the three colors. Note that these arrays are
+	//just shifted versions of eachother.
+	int bo[3][14]={
+		{8,13,4,9,0,5,10,1,6,11,2,7,12,3},
+		{11,2,7,12,3,8,13,4,9,0,5,10,1,6},
+		{0,5,10,1,6,11,2,7,12,3,8,13,4,9}
+	};
+	if (p>(8*14) || p<0) return;
+	int byteno=bo[_color][p%14];
+	int bitno=p/14;
+	wav[(byteno*2)+(14*color)]|=(1<<bitno);
+}
+*/
 
 void setRow(uint8_t c){
   for (uint16_t i = 0; i < data_len - 9; i += 16) {

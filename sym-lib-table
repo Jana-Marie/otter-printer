@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name printer-otter-rescue)(type Legacy)(uri ${KIPRJMOD}/printer-otter-rescue.lib)(options "")(descr ""))
 )
