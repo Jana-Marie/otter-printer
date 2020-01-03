@@ -24,6 +24,8 @@ void data_tramsmitted_handler(DMA_HandleTypeDef * hdma);
 void dma_init();
 void startDMA(void);
 void setRow(uint8_t c);
+void printcart_fire_nozzle_black(uint16_t *l, int p, int row);
+void clearWav(uint16_t *d, uint16_t len);
 
 void dfu_otter_bootloader(void)
 {
@@ -31,12 +33,14 @@ void dfu_otter_bootloader(void)
   NVIC_SystemReset();
 }
 
-uint16_t PER = 60;
+uint16_t PER = 60; // NEVER SET TO A HIGHER VALUE!
 
-enum color { CYAN, MAGENTA, YELLOW };
+enum color_t { CYAN, MAGENTA, YELLOW };
 
-#define data_len ((14*8*2)+8)
+#define data_len ((14*8*2)+16)
 uint16_t my_data_buf[data_len];
+
+volatile uint8_t lock = 0;
 
 void dataTransmittedHandler0(DMA_HandleTypeDef *hdma) {
   HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 0);
@@ -48,8 +52,8 @@ void dataTransmittedHandler2(DMA_HandleTypeDef *hdma) {
   HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_4);
   HAL_GPIO_WritePin(GPIOC, F5_Pin, 0);
   HAL_GPIO_WritePin(GPIOC, F3_Pin, 0);
+  lock = 0;
 }
-
 
 int main(void)
 {
@@ -71,27 +75,60 @@ int main(void)
 
   HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 1);
 
-  memset(my_data_buf, 0xFFFF, data_len*2);
-  for (uint16_t i = 0; i < data_len - 9; i += 16) {
-    my_data_buf[i + 0]  = 0b0000010000000000;
-    my_data_buf[i + 1]  = 0b0000010000100001;
-    my_data_buf[i + 2]  = 0b0000000000100000; // BYTE START //nope
-    my_data_buf[i + 3]  = 0b0000000000001001; // nope
-    my_data_buf[i + 4]  = 0b0000010000001000; // nope
-    my_data_buf[i + 5]  = 0b0000000000000011; // yep
-    my_data_buf[i + 6]  = 0b0000000010000010; // nope
-    my_data_buf[i + 7]  = 0b0000000010010001; // nope
-    my_data_buf[i + 8]  = 0b0000000010010000; // nope
-    my_data_buf[i + 9]  = 0b0000000000000100; //BYTE END // nope
-    my_data_buf[i + 10] = 0b0000000001000100;
-    my_data_buf[i + 11] = 0b0000000001000000;
-    my_data_buf[i + 12] = 0b0000000001000000;
-    my_data_buf[i + 13] = 0b0000000000000000;
-    my_data_buf[i + 14] = 0b0000000000000000;
-    my_data_buf[i + 15] = 0b0000000000000000;
-  }
+
 
   /*
+  my_data_buf[i + 0]  = 0b1110010000000001;
+  my_data_buf[i + 1]  = 0b0000010000000001;
+  my_data_buf[i + 2]  = 0b1110000000100000; // Start
+  my_data_buf[i + 3]  = 0b0000010000100000;
+  my_data_buf[i + 4]  = 0b1110000000000001;
+  my_data_buf[i + 5]  = 0b0000000000000001;
+  my_data_buf[i + 6]  = 0b1110000000001000;
+  my_data_buf[i + 7]  = 0b0000000000001000;
+  my_data_buf[i + 8]  = 0b1110000000000001;
+  my_data_buf[i + 9]  = 0b0000000000000001; // End
+  my_data_buf[i + 10] = 0b1110000000000010;
+  my_data_buf[i + 11] = 0b0000000000000010;
+  my_data_buf[i + 12] = 0b1110000000000001;
+  my_data_buf[i + 13] = 0b0000000010000001;
+  my_data_buf[i + 14] = 0b1110000010010000;
+  my_data_buf[i + 15] = 0b0000000010011000;
+
+  my_data_buf[i + 0]  = 0b0000010000000000;
+  my_data_buf[i + 1]  = 0b1110010000000001;
+  my_data_buf[i + 2]  = 0b0000000000100000; // Start
+  my_data_buf[i + 3]  = 0b1110010000000001;
+  my_data_buf[i + 4]  = 0b0000000000001000;
+  my_data_buf[i + 5]  = 0b1110000000000001;
+  my_data_buf[i + 6]  = 0b0000000010000010;
+  my_data_buf[i + 7]  = 0b1110000010000001;
+  my_data_buf[i + 8]  = 0b0000000010010000;
+  my_data_buf[i + 9]  = 0b1110000000000100; // End
+  my_data_buf[i + 10] = 0b0000000001000000;
+  my_data_buf[i + 11] = 0b0000000001000000;
+  my_data_buf[i + 12] = 0b0000000001000000;
+  my_data_buf[i + 13] = 0b0000000000000000;
+  my_data_buf[i + 14] = 0b0000000000000000;
+  my_data_buf[i + 15] = 0b0000000000000000;
+
+
+  my_data_buf[i + 0]  = 0b0000010000000000;
+  my_data_buf[i + 1]  = 0b1110000000100001;
+  my_data_buf[i + 2]  = 0b0000000000100000;
+  my_data_buf[i + 3]  = 0b0000000000001001;
+  my_data_buf[i + 4]  = 0b0000010000001000;
+  my_data_buf[i + 5]  = 0b0000000000000011;
+  my_data_buf[i + 6]  = 0b0000000010000010;
+  my_data_buf[i + 7]  = 0b0000000010010001;
+  my_data_buf[i + 8]  = 0b1110000010010000;
+  my_data_buf[i + 9]  = 0b0000000000000100;
+  my_data_buf[i + 10] = 0b0000000001000100;
+  my_data_buf[i + 11] = 0b0000000001000000;
+  my_data_buf[i + 12] = 0b0000000001000000;
+  my_data_buf[i + 13] = 0b0000000000000000;
+  my_data_buf[i + 14] = 0b0000000000000000;
+my_data_buf[i + 15] = 0b0000000000000000;
   TUT
   my_data_buf[i + 0]  = 0b0000010000000000;
   my_data_buf[i + 1]  = 0b0110000000100001;
@@ -111,14 +148,7 @@ int main(void)
   my_data_buf[i + 15] = 0b0000000000000000;
   */
 
-  my_data_buf[data_len - 8 + 0] = 0b0000010000000000;//02
-  my_data_buf[data_len - 8 + 1] = 0b0000000000000000;
-  my_data_buf[data_len - 8 + 2] = 0b0000010000000000;
-  my_data_buf[data_len - 8 + 3] = 0b0000000000000000;
-  my_data_buf[data_len - 8 + 4] = 0b0000010000000000;//01
-  my_data_buf[data_len - 8 + 5] = 0b0000000000000000;
-  my_data_buf[data_len - 8 + 6] = 0b0000010000000000;
-  my_data_buf[data_len - 8 + 7] = 0b0000000000000000;
+  clearWav(my_data_buf,data_len);
 
   htim2.hdma[TIM_DMA_ID_CC1]->XferCpltCallback = dataTransmittedHandler0;
   __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
@@ -131,17 +161,28 @@ int main(void)
   {
     HAL_GPIO_WritePin(GPIOB, LED_POWER_Pin, 1);
     if(HAL_GPIO_ReadPin(GPIOB, BUTTON_Pin)) {
-      //color = color % 4;
-      //setRow(color++);
-      HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 1);
-      startDMA();
-      HAL_Delay(20);
+      //for (int row=0; row<2; row++) {
+        for (int y=0; y<168; y++) {
+        clearWav(my_data_buf,data_len);
+
+        //printcart_fire_nozzle_black(my_data_buf, y, 0);
+        printcart_fire_nozzle_color(my_data_buf,y,CYAN);
+
+        HAL_GPIO_WritePin(GPIOB, LED_STATUS_Pin, 1);
+        lock = 1;
+        startDMA();
+        //HAL_Delay(10);
+        while(lock){
+          HAL_Delay(1);
+          }
+        }
+      //}
     }
   }
 }
-/*
+
 // stolen from @Sprite_TM
-void printcart_fire_nozzle_color(uint8_t *wav, int p, color _color) {
+void printcart_fire_nozzle_color(uint8_t *wav, int p, uint8_t _color) {
 	//Byte order for the three colors. Note that these arrays are
 	//just shifted versions of eachother.
 	int bo[3][14]={
@@ -149,12 +190,47 @@ void printcart_fire_nozzle_color(uint8_t *wav, int p, color _color) {
 		{11,2,7,12,3,8,13,4,9,0,5,10,1,6},
 		{0,5,10,1,6,11,2,7,12,3,8,13,4,9}
 	};
-	if (p>(8*14) || p<0) return;
+	if (p>(16*14) || p<0) return;
 	int byteno=bo[_color][p%14];
 	int bitno=p/14;
-	wav[(byteno*2)+(14*color)]|=(1<<bitno);
+	wav[(byteno*16)+(bitno + 1 )]&=~(1<<(_color+13));
 }
-*/
+
+// stolen from @Sprite_TM
+
+typedef struct {
+	int c;
+	int bit;
+	int order;
+} bw_nozinfo_t;
+
+const bw_nozinfo_t ni[]={
+	{2,0,1}, {2,1,1}, {1,0,1}, {1,1,1},
+	{0,0,1}, {0,1,1}, {2,4,1}, {2,5,1},
+	{1,4,1}, {1,5,1}, {0,4,1}, {0,5,1},
+	{2,2,0}, {2,3,0}, {1,2,0}, {1,3,0},
+	{0,2,0}, {0,3,0}, {2,6,0}, {2,7,0},
+	{1,6,0}, {1,7,0}, {0,6,0}, {0,7,0},
+};
+
+//In a set of bits representing the bits being shifted out to the cartridge, this function sets
+//the enable bit for the p'th nozzle from the top of the inkjet nozzles. The black cartridge has two rows,
+//the 2nd one is slightly offset in the X direction and interleaved with the 1st (offset by half
+//a nozzle).
+//Note that the 2 first and last nozzles of each 168-nozzle row are not connected (giving a total
+//of 324 nozzles in the combined two rows).
+void printcart_fire_nozzle_black(uint16_t *l, int p, int row) {
+	if (row) p+=168;
+	int j=p/14;
+	int k=13-(p%14);
+
+	const int bo[2][14]={
+		{4,12,10,2,8,0,6,13,7,1,9,3,11,5},
+		{13,7,1,9,3,11,5,4,12,10,2,8,0,6},
+	};
+
+	l[(bo[ni[j].order][k]*16) + 1 + ni[j].bit] &= ~(1UL <<(ni[j].c + 13));
+}
 
 void setRow(uint8_t c){
   for (uint16_t i = 0; i < data_len - 9; i += 16) {
@@ -163,6 +239,45 @@ void setRow(uint8_t c){
       my_data_buf[i+j+1] &= ~(1UL << (c+12));
     }
   }
+}
+
+
+void clearWav(uint16_t *d, uint16_t len){
+  //memset(my_data_buf, 0xFFFF, data_len*2);
+  for (uint16_t i = 0; i < len; i += 16) {
+    d[i + 0]  = 0b1110000000000000;
+    d[i + 1]  = 0b1110010000000001;
+    d[i + 2]  = 0b1110010000100000; // Start
+    d[i + 3]  = 0b1110010000000001;
+    d[i + 4]  = 0b1110000000001000;
+    d[i + 5]  = 0b1110000000000001;
+    d[i + 6]  = 0b1110000000000010;
+    d[i + 7]  = 0b1110000010000001;
+    d[i + 8]  = 0b1110000010010000;
+    d[i + 9]  = 0b1110000010000100; // End
+    d[i + 10] = 0b1110000000000000;
+    d[i + 11] = 0b1110000001000000;
+    d[i + 12] = 0b1110000001000000;
+    d[i + 13] = 0b1110000001000000;
+    d[i + 14] = 0b1110000000000000;
+    d[i + 15] = 0b1110000000000000;
+  }
+  d[len - 16 + 0]  = 0b1110010000000000;//02
+  d[len - 16 + 1]  = 0b1110010000000000;
+  d[len - 16 + 2]  = 0b1110010000000000;
+  d[len - 16 + 3]  = 0b1110000000000000;
+  d[len - 16 + 4]  = 0b1110010000000000;//01
+  d[len - 16 + 5]  = 0b1110010000000000;
+  d[len - 16 + 6]  = 0b1110010000000000;
+  d[len - 16 + 7]  = 0b1110000000000000;
+  d[len - 16 + 8]  = 0b1110010000000000;//02
+  d[len - 16 + 9]  = 0b1110010000000000;
+  d[len - 16 + 10] = 0b1110010000000000;
+  d[len - 16 + 11] = 0b1110000000000000;
+  d[len - 16 + 12] = 0b1110000000000000;//01
+  d[len - 16 + 13] = 0b1110010000000000;
+  d[len - 16 + 14] = 0b1110010000000000;
+  d[len - 16 + 15] = 0b1110010000000000;
 }
 
 void startDMA(void) {
